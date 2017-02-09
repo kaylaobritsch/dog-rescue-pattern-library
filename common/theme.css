@@ -1,12 +1,12 @@
 :root {
-  --color-primary: #06386E;
-  --color-primary-light: #0B4D89;
+  --color-primary: #06386e;
+  --color-primary-light: #0b4D89;
   --color-primary-dark: #052642;
-  --color-secondary:#5CDB94;
-  --color-accent: #F0A979;
-  --color-light-grey: #CBCBCB;
+  --color-secondary: #5CdB94;
+  --color-accent: #f0A979;
+  --color-light-grey: #cbcbcb;
   --color-dark-grey: #585858;
-  --color-neutral-lace: #FDF9E6;
+  --color-neutral-lace: #fdf9E6;
 
   --font-primary: "Fira Sans", sans-serif;
   --font-secondary: "Lora", serif;
