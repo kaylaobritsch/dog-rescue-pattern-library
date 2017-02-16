@@ -14,4 +14,149 @@
 
 html {
   font-family: var(--font-primary);
+  font-weight: normal;
+}
+
+/* Logo */
+/* Change to white for website */
+
+h1 {
+  color: var(--color-primary);
+  font-family: var(--font-secondary);
+}
+
+/* Headings */
+
+h2 {
+  color: var(--color-primary);
+  font-weight: 600;
+}
+
+h3 {
+  color: var(--color-accent);
+  font-weight: 500;
+}
+
+h4 {
+  color: var(--color-light-grey);
+  font-weight: 500;
+}
+
+h5 {
+  color: var(--color-primary);
+  font-weight: 500;
+  text-transform: uppercase;
+}
+
+h6 {
+  color: var(--color-light-grey);
+  font-weight: normal;
+}
+
+/* Lists */
+
+ul {
+  color: var(--color-dark-grey);
+  list-style-type: none;
+}
+
+ul li::before {
+  color: var(--color-accent);
+  content: "•";
+}
+
+ol {
+  color: var(--color-dark-grey);
+}
+
+ol li::before {
+  color: var(--color-accent);
+}
+
+dt {
+  color: var(--color-accent);
+}
+
+dd {
+  color: var(--color-dark-grey);
+}
+
+/* Links */
+
+a {
+  color: var(--color-primary);
+  text-decoration: none;
+}
+
+a:hover {
+  color: var(--color-accent);
+}
+
+/* Blockquotes */
+
+blockquote {
+  color: var(--color-dark-grey);
+  font-weight: 600;
+}
+
+cite {
+  color: var(--color-secondary);
+  font-weight: 300;
+  font-style: normal;
+}
+
+q {
+  color: var(--color-accent);
+}
+
+/* Emphasis & edits */
+
+em {
+  font-style: italic;
+}
+
+strong {
+  color: var(--color-secondary);
+  font-weight: 600;
+}
+
+del {
+  font-weight: 300;
+  text-decoration: line-through;
+}
+
+ins {
+  text-decoration: underline;
+}
+
+abbr {
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+dfn {
+  font-style: italic;
+  font-weight: 600;
+}
+
+i {
+  font-style: italic;
+}
+
+b {
+  color: var(--color-secondary);
+  font-weight: 600;
+}
+
+mark {
+  background-color: var(--color-secondary);
+  color: white;
+}
+
+s {
+  text-decoration: line-through;
+}
+
+u {
+  text-decoration: underline;
 }
