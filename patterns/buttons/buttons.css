@@ -29,30 +29,28 @@
   color: #fff;
 }
 
-/* Add an animation paw icon?
+/* Add an animation paw icon */
 
-.btn-reverse span {
+.paw {
+  fill: var(--color-primary);
+}
+
+.btn-icon span {
   display: inline-block;
   position: relative;
-  transition: 0.5s;
 }
 
-.btn-reverse span:after {
-  content: '•';
-  position: absolute;
-  top: -.15rem;
-  left: -.15rem;
+.btn-icon .icon {
   opacity: 0;
-  transition: 0.5s;
+  left: -.5;
+  transition: 200ms,
 }
 
-.btn-reverse:hover span {
-  padding-left: 1rem;
+.btn-icon:hover .icon-label {
+  transform: translate(15px)
 }
 
-.btn-reverse:hover span:after {
+.btn-icon:hover .icon {
   opacity: 1;
-  left: -.5rem;
+  left: 0rem;
 }
-
-*/

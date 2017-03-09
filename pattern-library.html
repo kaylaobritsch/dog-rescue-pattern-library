@@ -21,6 +21,7 @@
               <li><a class="gutter pad-t-1-4 pad-b-1-4 block" href="#grid">Grid</a></li>
               <li><a class="gutter pad-t-1-4 pad-b-1-4 block" href="#modules">Modules</a></li>
               <li><a class="gutter pad-t-1-4 pad-b-1-4 block" href="#icons">Icons</a></li>
+                <li><a class="gutter pad-t-1-4 pad-b-1-4 block" href="#banner">Banner</a></li>
                 <li><a class="gutter pad-t-1-4 pad-b-1-4 block" href="#buttons">Buttons</a></li>
                 <li><a class="gutter pad-t-1-4 pad-b-1-4 block" href="#cards">Cards</a></li>
           </ul>
@@ -405,6 +406,36 @@
 
 </section>
 
+        <section class="pattern" id="banner">
+  <div class="push">
+    <div class="pattern-toolbar gutter pad-t-1-4 pad-b-1-4">
+      <h2 class="pattern-name peta push-1-8">Banner</h2>
+    </div>
+
+  </div>
+
+  
+
+    <div class="pattern-details push" id="banner-banner">
+
+      <div class="pattern-examples">
+        <div class="gutter">
+          <iframe class="push" src="patterns/banner/banner.html" onload="resizeIframe(this)"></iframe>
+        </div>
+          <div class="gutter">
+            <div class="pattern-code milli island-1-2">
+              <code><pre>&lt;img class="img-flex" src="../../images/banner.jpg" alt=""&gt;
+&lt;h2>Rescuing Dogs in Need&lt;/h2>
+&lt;p>Connecting foster dogs with their forever homes in the Toronto area.&lt;/p>
+&lt;a class="btn btn-reverse" href="#">Adopt&lt;/a>
+</pre></code>
+            </div>
+          </div>
+      </div>
+    </div>
+
+</section>
+
         <section class="pattern" id="buttons">
   <div class="push">
     <div class="pattern-toolbar gutter pad-t-1-4 pad-b-1-4">
@@ -432,8 +463,11 @@
         </div>
           <div class="gutter">
             <div class="pattern-code milli island-1-2">
-              <code><pre>&lt;a class="btn" href="#"&gt;Adopt&lt;/a>
-&lt;a class="btn btn-reverse" href="#">Adopt Winston&lt;/a>
+              <code><pre>&lt;a class="btn" href="#"&gt;Send&lt;/a>
+&lt;a class="btn btn-reverse" href="#">Adopt&lt;/a>
+&lt;a class="btn btn-icon relative" href="#">&lt;i class="icon i-18 gutter absolute">
+  &lt;svg>&lt;use class="paw" xlink:href="../../images/icons.svg#paw"/>&lt;/svg>
+&lt;/i>&lt;span class="icon-label">Adopt Winston&lt;/span>&lt;/a>
 </pre></code>
             </div>
           </div>
@@ -474,7 +508,12 @@
     &lt;p class="push-0 mega">Pug&lt;/p>
     &lt;p class="push-2 mega ">Puppy | Male&lt;/p>
     &lt;div class="text-center">
-      &lt;a class="btn" href="#">Adopt Winston&lt;/a>
+      &lt;a class="btn btn-icon relative" href="#">
+        &lt;i class="icon i-18 gutter absolute">
+            &lt;svg>&lt;use class="paw" xlink:href="../../images/icons.svg#paw"/>&lt;/svg>
+          &lt;/i>
+        &lt;span class="icon-label">Adopt Winston&lt;/span>
+      &lt;/a>
     &lt;/div>
   &lt;/div>
 &lt;/div>
