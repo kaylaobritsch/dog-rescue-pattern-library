@@ -1,0 +1,55 @@
+h2,
+p,
+.image {
+  display: block;
+  text-align: center;
+}
+
+.dots {
+  visibility: hidden;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+.step-1 {
+  order: 1;
+}
+
+.step-2 {
+  order: 2;
+}
+
+.step-3 {
+  order: 3;
+}
+
+@media only screen and (min-width: 25em) {
+
+  .dots {
+    visibility: visible;
+  }
+
+  .wrapper {
+    display: inline-block;
+  }
+
+  #heart-1 {
+    transition: 700ms;
+    transform-origin: center;
+  }
+
+  #heart-2 {
+    transition: 300ms;
+    transform-origin: center;
+  }
+
+  #pug:hover #heart-1,
+  #pug:hover #heart-2 {
+    fill: var(--color-accent);
+    transform: scale(1.5);
+
+  }
+}
