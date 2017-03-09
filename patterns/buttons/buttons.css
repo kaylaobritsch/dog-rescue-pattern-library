@@ -29,10 +29,15 @@
   color: #fff;
 }
 
-/* Add an animation paw icon */
+/* Add an paw icon */
 
 .paw {
   fill: var(--color-primary);
+}
+
+.btn-icon:hover {
+  background-color: var(--color-accent);
+  border-color: var(--color-accent);
 }
 
 .btn-icon span {
@@ -42,15 +47,14 @@
 
 .btn-icon .icon {
   opacity: 0;
-  left: -.5;
-  transition: 200ms,
+  transition: 1s;
 }
 
 .btn-icon:hover .icon-label {
-  transform: translate(15px)
+  transform: translate(-.75rem);
 }
 
 .btn-icon:hover .icon {
   opacity: 1;
-  left: 0rem;
+  transform: translate(6.5rem);
 }
