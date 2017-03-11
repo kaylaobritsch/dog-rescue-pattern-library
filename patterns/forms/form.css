@@ -1,0 +1,82 @@
+html {
+  font-family: sans-serif;
+}
+
+input {
+  border: solid 4px var(--color-neutral-light-grey);
+  background-color: var(--color-neutral-light-grey);
+  border-radius: 8px;
+  height: 3rem;
+  padding-left: .5rem;
+}
+
+.icon-form input {
+  padding-left: 3.5rem;
+}
+
+input:focus {
+  border: solid 4px var(--color-secondary);
+  outline: none;
+}
+
+textarea {
+  background-color: var(--color-neutral-light-grey);
+  border: solid 4px var(--color-neutral-light-grey);
+  border-radius: 8px;
+  height: 6rem;
+  padding-left: .5rem;
+  resize: none;
+}
+
+.icon-form textarea {
+  padding-left: 3.5rem;
+}
+
+textarea:focus {
+  border: solid 4px var(--color-secondary);
+  outline: none;
+}
+
+label {
+  color: var(--color-neutral-dark-grey);
+}
+
+.form-background {
+  background-color: var(--color-secondary);
+  border-bottom-left-radius: 8px;
+  border-top-left-radius: 8px;
+  width: 3rem;
+  height: 3rem;
+}
+
+.form-background-question {
+  height: 6rem;
+}
+
+.icon-form svg {
+  fill: #fff;
+}
+
+.flag-optional {
+  color: #999;
+}
+
+.is-validated input:invalid,
+.is-validated input[type="checkbox"]:invalid + label::before {
+  border-color: #f33;
+}
+
+.error-message {
+  display: none;
+  color: #f33;
+}
+
+.error-message-highlighted {
+  color: #fff;
+}
+
+.is-validated > .error-message:first-child,
+.is-validated input:invalid + .error-message,
+.is-validated input:invalid + label + .error-message {
+  display: block;
+}

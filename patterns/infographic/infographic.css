@@ -1,8 +1,12 @@
-h2,
-p,
+.infographic h2,
+.infographic p,
 .image {
   display: block;
   text-align: center;
+}
+
+.infographic p {
+  color: var(--color-neutral-light-grey);
 }
 
 .dots {
@@ -24,6 +28,10 @@ p,
 
 .step-3 {
   order: 3;
+}
+
+svg.animation {
+  overflow: visible;
 }
 
 @media only screen and (min-width: 25em) {
@@ -49,7 +57,7 @@ p,
   #pug:hover #heart-1,
   #pug:hover #heart-2 {
     fill: var(--color-accent);
-    transform: scale(1.5);
+    transform: scale(1.25);
 
   }
 }

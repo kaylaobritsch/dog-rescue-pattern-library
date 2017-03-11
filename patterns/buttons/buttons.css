@@ -8,12 +8,12 @@
   transition:
     background-color 200ms ease-in,
     border-color 200ms ease-in,
-    color 700ms ease-in;
+    color 500ms ease-in;
 }
 
 .btn:hover {
-  background-color: transparent;
-  border: solid 3px #fff;
+  background-color: var(--color-accent);
+  border: solid 3px var(--color-accent);
   color: var(--color-primary);
 }
 
@@ -30,11 +30,6 @@
 }
 
 /* Add an paw icon */
-
-.paw {
-  fill: var(--color-primary);
-}
-
 .btn-icon:hover {
   background-color: var(--color-accent);
   border-color: var(--color-accent);
@@ -45,9 +40,20 @@
   position: relative;
 }
 
+.paw {
+  fill: white;
+  transition: 500ms;
+}
+
 .btn-icon .icon {
   opacity: 0;
   transition: 1s;
+  transform: translate(6.5rem);
+  transition: 500ms;
+}
+
+.btn-icon:hover .paw {
+  fill: var(--color-primary);
 }
 
 .btn-icon:hover .icon-label {
