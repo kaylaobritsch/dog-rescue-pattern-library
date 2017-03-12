@@ -4,9 +4,8 @@
   --color-primary-dark: #052642;
   --color-secondary: #5cdb94;
   --color-accent: #f0a979;
-  --color-neutral-light-grey: #cbcbcb;
+  --color-neutral-light-grey: #e8e8e8;
   --color-neutral-dark-grey: #585858;
-  --color-neutral-lace: #fdf9e6;
 
   --font-primary: "Fira Sans", sans-serif;
   --font-secondary: "Lora", serif;
@@ -17,40 +16,34 @@ html {
   font-weight: normal;
 }
 
-/* Logo */
-/* Change to white for website */
-
-h1 {
-  color: var(--color-primary);
-  font-family: var(--font-secondary);
-}
-
 /* Headings */
 
-h2 {
+h1 {
   color: var(--color-primary);
   font-weight: 600;
 }
 
-h3 {
+h2 {
   color: var(--color-accent);
   font-weight: 500;
 }
 
+h3 {
+  color: var(--color-neutral-dark-grey);
+  font-weight: 400;
+}
+
 h4 {
-  color: var(--color-neutral-light-grey);
-  font-weight: 500;
+  font-weight: 400;
 }
 
 h5 {
-  color: var(--color-primary);
-  font-weight: 500;
-  text-transform: uppercase;
+  color: var(--color-neutral-light-grey);
+  font-weight: 300;
 }
 
 h6 {
-  color: var(--color-neutral-light-grey);
-  font-weight: 300;
+
 }
 
 /* Lists */

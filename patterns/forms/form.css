@@ -2,16 +2,16 @@ html {
   font-family: sans-serif;
 }
 
+.basic-form svg {
+  fill: #f33;
+}
+
 input {
   border: solid 4px var(--color-neutral-light-grey);
   background-color: var(--color-neutral-light-grey);
   border-radius: 8px;
   height: 3rem;
   padding-left: .5rem;
-}
-
-.icon-form input {
-  padding-left: 3.5rem;
 }
 
 input:focus {
@@ -28,17 +28,25 @@ textarea {
   resize: none;
 }
 
-.icon-form textarea {
-  padding-left: 3.5rem;
-}
-
 textarea:focus {
   border: solid 4px var(--color-secondary);
   outline: none;
 }
 
-label {
-  color: var(--color-neutral-dark-grey);
+input[type="radio"] + label::before,
+input[type="checkbox"] + label::before {
+  background-color: var(--color-neutral-light-grey);
+  border: solid 4px var(--color-neutral-light-grey);
+}
+
+input[type="radio"]:checked + label::before,
+input[type="checkbox"]:checked + label::before {
+  border: solid 4px var(--color-secondary);
+}
+
+.icon-form textarea,
+.icon-form input {
+  padding-left: 3.5rem;
 }
 
 .form-background {
@@ -57,11 +65,18 @@ label {
   fill: #fff;
 }
 
+.warning {
+  background-color: var(--color-accent);
+  color: #fff;
+  font-weight: 300;
+}
+
 .flag-optional {
-  color: #999;
+  color: var(--color-accent);
 }
 
 .is-validated input:invalid,
+.is-validated textarea:invalid,
 .is-validated input[type="checkbox"]:invalid + label::before {
   border-color: #f33;
 }
@@ -72,11 +87,12 @@ label {
 }
 
 .error-message-highlighted {
-  color: #fff;
+  color: #f33;
 }
 
 .is-validated > .error-message:first-child,
 .is-validated input:invalid + .error-message,
+.is-validated textarea:invalid + .error-message,
 .is-validated input:invalid + label + .error-message {
   display: block;
 }

@@ -14,121 +14,185 @@
 </head>
 <body>
   <section class="wrapper island">
-  <h1>Application</h1>
-  <p>This information is used to consider you for a phone interview.</p>
-  <h2>Personal Information</h2>
+  <h1 class="yotta push-1-2">Application</h1>
+  <p class="push-1-2">This information is used to consider you for a phone interview.</p>
+  <p class="push-2">Please note at this time adoption is only available to Canadian residents.</p>
+  <h2 class="exa">Personal Information</h2>
   <section class="grid basic-form">
   <form class="w-1" method="post" novalidate>
       <div class="unit xs-1 s-1 m-1 l-1 error-message error-message-highlighted push" role="alert" aria-live="assertive">
-        <h3 class="push-0">
-        <span class="icon-label">There was an error with the highlighted fields below</span>
-        </h3>
+        <h3 class="push-0 tera warning text-center pad-t pad-b">There was an error with the highlighted fields below</h3>
       </div>
 
-      <h3 class="unit xs-1 s-1 m-1-5 yotta">Dog</h3>
+      <fieldset>
+        <h3 class="unit xs-1 s-1 m-1-5 giga">Dog's Info</h3>
+        <div class="unit xs-1 s-1 m-2-5 push-1-2 gutter-1-4">
+          <label class="milli" for="dog-name">Dog's name</label>
+            <input id="dog-name" required aria-describedby="dog-name-error">
+            <p class="error-message micro island-1-4 push-0" id="dog-name-error">
+              <i class="icon i-24"><svg><use xlink:href="../../images/icons.svg#warning"  /></svg></i>
+              <span class="icon-label">Provide the name of the dog</span>
+            </p>
+        </div>
 
-      <div class="unit xs-1 s-1 m-2-5 push-1-2 gutter-1-4">
-        <label class="milli" for="dog-name">Name of adoptable dog</label>
-          <input id="dog-name" required aria-describedby="dog-name-error">
-          <p class="error-message milli island-1-4 push-0" id="dog-name-error">
-          <span class="icon-label">Provide the name of the dog you want to adopt</span>
-          </p>
-      </div>
 
-      <div class="unit xs-1 s-1 m-2-5 push-1-2 gutter-1-4">
-        <label class="milli" for="adopt-num">Adoption number</label>
-          <div class="relative">
-            <input type="number" id="adopt-name" required aria-describedby="adopt-num-error">
-            <p class="error-message milli island-1-4 push-0" id="adopt-num-error">
-            <span class="icon-label">What is the dog's adoption number</span>
+        <div class="unit xs-1 s-1 m-2-5 push-1-2 gutter-1-4">
+          <label class="milli" for="adopt-num">Adoption number</label>
+            <input type="number" id="adopt-num" required aria-describedby="adopt-num-error">
+            <p class="error-message micro island-1-4 push-0" id="adopt-num-error">
+              <i class="icon i-24"><svg><use xlink:href="../../images/icons.svg#warning"  /></svg></i>
+              <span class="icon-label">Provide the dog's adoption number</span>
             </p>
           </div>
-      </div>
+      </fieldset>
 
-      <h3 class="unit xs-1 s-1 m-1-5 yotta">About You</h3>
+      <h3 class="unit xs-1 s-1 m-1-5 giga">About You</h3>
 
-      <div class="unit xs-1 s-1 m-2-5 push-1-2 gutter-1-4">
-        <label class="milli" for="last-name">Last name</label>
-          <input id="last-name" required aria-describedby="last-name-error">
-          <p class="error-message milli island-1-4 push-0" id="last-name-error">
-          <span class="icon-label">Provide your last name</span>
+      <div class="unit xs-1 s-1 m-3-5 push-1-2 gutter-1-4">
+        <label class="milli" for="name">Full name</label>
+          <input id="name" required aria-describedby="name-error">
+          <p class="error-message micro island-1-4 push-0" id="name-error">
+            <i class="icon i-24"><svg><use xlink:href="../../images/icons.svg#warning"  /></svg></i>
+            <span class="icon-label">Provide your full name</span>
           </p>
-      </div>
-
-      <div class="unit xs-1 s-1 m-2-5 push-1-2 gutter-1-4">
-        <label class="milli" for="first-name">First name</label>
-          <input id="first-name" required aria-describedby="first-name-error">
-          <p class="error-message milli island-1-4 push-0" id="first-name-error">
-          <span class="icon-label">Provide your first name</span>
-          </p>
-      </div>
-
-      <div class="unit xs-1 s-1 m-1-5"></div>
+        </div>
 
       <div class="unit xs-1 s-1 m-1-5 push-1-2 gutter-1-4">
-        <label class="milli" for="last-name">Age</label>
+        <label class="milli" for="age">Age</label>
           <input type="number" id="age" min="18" required aria-describedby="age-error">
-          <p class="error-message milli island-1-4 push-0" id="age-error">
-          <span class="icon-label">Provide your age. You must be over 18.</span>
+          <p class="error-message micro island-1-4 push-0" id="age-error">
+            <i class="icon i-24"><svg><use xlink:href="../../images/icons.svg#warning"  /></svg></i>
+            <span class="icon-label">Must be over 18</span>
           </p>
-      </div>
+        </div>
 
-      <div class="unit xs-1 s-1 m-1-5 push-1-2 gutter-1-4">
-        <label class="milli" for="employer">Employer</label>
-          <input id="employer" required aria-describedby="employer-error">
-          <p class="error-message milli island-1-4 push-0" id="employer-error">
-          <span class="icon-label">Provide the company you work for</span>
+      <div class="unit xs-1 s-1 m-1-5"></div>
+
+      <div class="unit xs-1 s-1 m-2-5 push-1-2 gutter-1-4">
+        <legend class="milli push-1-2">Are you employed?</legend>
+          <input type="radio" name="employed" id="yes-employed" required aria-describedby="employed-error" />
+          <label for="yes-employed">Yes</label>
+          <input type="radio" name="employed" id="no-employed" required aria-describedby="employed-error" />
+          <label for="no-employed" class="gutter-1-2">No</label>
+          <p class="error-message micro island-1-4 push-0" id="employed-error">
+            <i class="icon i-24"><svg><use xlink:href="../../images/icons.svg#warning"  /></svg></i>
+            <span class="icon-label">Select yes if you are employed</span>
           </p>
+        </div>
       </div>
 
       <div class="unit xs-1 s-1 m-2-5 push-1-2 gutter-1-4">
-        <label class="milli" for="job-title">Job title</label>
-          <input id="job-title" required aria-describedby="job-title-error">
-          <p class="error-message milli island-1-4 push-0" id="job-title-error">
-          <span class="icon-label">Provide what you do for a job</span>
-          </p>
+        <label class="milli" for="job-title">If yes, your job title <em class="flag-optional micro normal">(optional)</em></label>
+          <input id="job-title">
       </div>
 
-      <h3 class="unit xs-1 s-1 m-1-5 yotta">Contact</h3>
+      <h3 class="unit xs-1 s-1 m-1-5 giga">Contact</h3>
 
-      <div class="unit xs-1 s-1 m-1-5 push-1-2 gutter-1-4">
-        <label class="milli" for="employer">Primary phone</label>
-          <input id="employer" required aria-describedby="employer-error">
-          <p class="error-message milli island-1-4 push-0" id="employer-error">
-          <span class="icon-label">Provide the company you work for</span>
+      <div class="unit xs-1 s-1 m-2-5 push-1-2 gutter-1-4">
+        <label class="milli" for="phone">Primary phone</label>
+          <input type="tel" id="phone" required aria-describedby="phone-error">
+          <p class="error-message micro island-1-4 push-0" id="phone-error">
+            <i class="icon i-24"><svg><use xlink:href="../../images/icons.svg#warning"  /></svg></i>
+            <span class="icon-label">Provide your phone number</span>
           </p>
+        </div>
+
+      <div class="unit xs-1 s-1 m-2-5 push-1-2 gutter-1-4">
+        <label class="milli" for="email">E-mail address</label>
+          <input type="email" id="email" required aria-describedby="email-error">
+          <p class="error-message micro island-1-4 push-0" id="email-error">
+            <i class="icon i-24"><svg><use xlink:href="../../images/icons.svg#warning"  /></svg></i>
+            <span class="icon-label">Provide your e-mail address</span>
+          </p>
+        </div>
+
+      <div class="unit xs-1 s-1 m-1-5"></div>
+
+      <div class="unit xs-1 s-1 m-2-5 push-1-2 gutter-1-4">
+        <label class="milli" for="work-phone">Work phone <em class="flag-optional micro normal">(optional)</em></label>
+          <input type="tel" id="work-phone">
       </div>
 
       <div class="unit xs-1 s-1 m-2-5 push-1-2 gutter-1-4">
-        <label class="milli" for="job-title">E-mail address</label>
-          <input id="job-title" required aria-describedby="job-title-error">
-          <p class="error-message milli island-1-4 push-0" id="job-title-error">
-          <span class="icon-label">Provide what you do for a job</span>
+        <legend class="milli push-1-2">Can we call you at work? <em class="flag-optional micro normal">(optional)</em></legend>
+          <input type="radio" name="work-call" id="yes-work" />
+          <label for="yes-work">Yes</label>
+          <input type="radio" name="work-call" id="no-work" />
+          <label for="no-work" class="gutter-1-2">No</label>
+      </div>
+
+      <h3 class="unit xs-1 s-1 m-1-5 giga">Address</h3>
+
+      <div class="unit xs-1 s-1 m-2-5 push-1-2 gutter-1-4">
+        <label class="milli" for="apart-num">Apartment number <em class="flag-optional micro normal">(optional)</em></label>
+          <input id="apart-num">
+      </div>
+
+      <div class="unit xs-1 s-1 m-2-5 push-1-2 gutter-1-4">
+        <label class="milli" for="street">Street address</label>
+          <input type="tel" id="street" required aria-describedby="street-error">
+          <p class="error-message micro island-1-4 push-0" id="street-error">
+          <span class="icon-label">Provide your street address</span>
           </p>
       </div>
 
       <div class="unit xs-1 s-1 m-1-5"></div>
 
       <div class="unit xs-1 s-1 m-1-5 push-1-2 gutter-1-4">
-        <label class="milli" for="employer">Work phone</label>
-          <input id="employer" required aria-describedby="employer-error">
-          <p class="error-message milli island-1-4 push-0" id="employer-error">
-          <span class="icon-label">Provide the company you work for</span>
+        <label class="milli" for="province">Province</label>
+          <input list="province-list" id="province" required aria-describedby="province-error">
+          <datalist id="province-list">
+            <option value="AB">
+            <option value="BC">
+            <option value="MB">
+            <option value="NB">
+            <option value="NL">
+            <option value="NS">
+            <option value="NT">
+            <option value="NU">
+            <option value="ON">
+            <option value="PE">
+            <option value="QC">
+            <option value="SK">
+            <option value="YT">
+          </datalist>
+          <p class="error-message micro island-1-4 push-0" id="province-error">
+          <span class="icon-label">Which province do you live in?</span>
           </p>
       </div>
 
       <div class="unit xs-1 s-1 m-2-5 push-1-2 gutter-1-4">
-        <legend class="milli" for="job-title">Can we call you at work?</legend>
-          <input type="radio" name="work-call" id="work-call" value="yes" required aria-describedby="job-title-error">Yes
-          <input type="radio" name="work-call" id="work-call" value="no" required aria-describedby="job-title-error">No
-          <p class="error-message milli island-1-4 push-0" id="job-title-error">
-          <span class="icon-label">Provide what you do for a job</span>
+        <label class="milli" for="city">City</label>
+          <input type="city" id="city" required aria-describedby="city-error">
+          <p class="error-message milli island-1-4 push-0" id="city-error">
+          <span class="icon-label">Which city do you live in?</span>
           </p>
       </div>
 
+      <div class="unit xs-1 s-1 m-1-5 push-1-2 gutter-1-4">
+        <label class="milli" for="postal">Postal code</label>
+          <input type="postal" id="postal" pattern="[A-Za-z][0-9][A-Za-z] ?[0-9][A-Za-z][0-9]" required aria-describedby="postal-error">
+          <p class="error-message micro island-1-4 push-0" id="postal-error">
+          <span class="icon-label">Provide your postal code</span>
+          </p>
+      </div>
+
+      <h3 class="unit xs-1 s-1 m-1-5 giga">Preference</h3>
+
+      <div class="unit xs-1 s-1 m-4-5 push-1-2 gutter-1-4">
+        <legend class="milli push-1-2">What size of dog do you prefer? <em class="flag-optional micro normal">(optional)</em></legend>
+          <input type="checkbox" name="size" id="toy" />
+          <label for="toy">Toy</label>
+          <input type="checkbox" name="size" id="small" />
+          <label for="small" class="gutter-1-2">Small</label>
+          <input type="checkbox" name="size" id="medium" />
+          <label for="medium" class="gutter-1-2">Medium</label>
+          <input type="checkbox" name="size" id="large" />
+          <label for="large" class="gutter-1-2">Large</label>
+      </div>
 
       <div class="pad-t-1-2">
-        <button class="btn" type="submit">Send</button>
+        <button class="btn" type="submit">Submit</button>
       </div>
 
       </form>
