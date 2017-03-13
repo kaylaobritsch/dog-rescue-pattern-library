@@ -30,6 +30,7 @@
 }
 
 /* Add an paw icon */
+
 .btn-icon:hover {
   background-color: var(--color-accent);
   border-color: var(--color-accent);
@@ -47,7 +48,6 @@
 
 .btn-icon .icon {
   opacity: 0;
-  transition: 1s;
   transform: translate(6.5rem);
   transition: 500ms;
 }

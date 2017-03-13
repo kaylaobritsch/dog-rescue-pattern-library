@@ -8,7 +8,7 @@ fonts:
     The primary typeface is used for headers, body copy and is the default typeface. The exception is for the use of the logo.
 
   secondary: |
-    The secondary typeface, Lora, are serif with calligraphic roots is used to contrast the primary typeface. The brushed curves contrast the primary typeface. Lora is optimized for the screen but is used for printed material.
+    The secondary typeface, Lora, is a serif with calligraphic roots used to contrast the primary typeface. The brushed curves contrast the primary typeface. Lora is optimized for the screen but is used for printed material.
 
     The secondary typeface is only used in the instance of the logo. This is for branding purposes.
 

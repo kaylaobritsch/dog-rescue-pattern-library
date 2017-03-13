@@ -2,5 +2,6 @@ These buttons are use the primary colour to bring unity to the whole website. Ea
 
 - The regular button is for use on any white background.
 - The reverse button is for use on an image or dark background. Specifically this will be used for the banner.
+- The icon button is for use on the cards showcasing the adoptable dogs.
 
 These are mixed with typografier classes to create buttons of all different sizes.

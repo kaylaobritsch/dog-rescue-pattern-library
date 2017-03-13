@@ -6,7 +6,20 @@ html {
   fill: #f33;
 }
 
-input {
+fieldset {
+  border: none;
+  margin: 0;
+  padding: 0;
+}
+
+.main-legend {
+  color: var(--color-accent);
+  display: inline-block;
+  font-weight: 500;
+}
+
+input,
+select {
   border: solid 4px var(--color-neutral-light-grey);
   background-color: var(--color-neutral-light-grey);
   border-radius: 8px;
@@ -25,6 +38,9 @@ textarea {
   border-radius: 8px;
   height: 6rem;
   padding-left: .5rem;
+}
+
+.icon-form textarea {
   resize: none;
 }
 
