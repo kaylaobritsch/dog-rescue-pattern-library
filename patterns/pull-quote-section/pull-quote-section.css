@@ -1,0 +1,11 @@
+p {
+  color: var(--color-neutral-dark-grey);
+}
+
+span {
+  color: var(--color-secondary);
+  font-size: 12rem;
+  top: -3rem;
+  left: -1rem;
+  z-index: -1;
+}

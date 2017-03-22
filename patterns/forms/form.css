@@ -82,7 +82,7 @@ input[type="checkbox"]:checked + label::before {
 }
 
 .warning {
-  background-color: var(--color-accent);
+  background-color: #f33;
   color: #fff;
   font-weight: 300;
 }
@@ -95,6 +95,11 @@ input[type="checkbox"]:checked + label::before {
 .is-validated textarea:invalid,
 .is-validated input[type="checkbox"]:invalid + label::before {
   border-color: #f33;
+}
+
+.is-validated input:invalid ~ .form-background,
+.is-validated textarea:invalid ~ .form-background-question {
+  background-color: #f33;
 }
 
 .error-message {

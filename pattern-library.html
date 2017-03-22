@@ -55,6 +55,8 @@
                 <li><a class="gutter pad-t-1-4 pad-b-1-4 block" href="#cards">Cards</a></li>
                 <li><a class="gutter pad-t-1-4 pad-b-1-4 block" href="#forms">Forms</a></li>
                 <li><a class="gutter pad-t-1-4 pad-b-1-4 block" href="#infographic">Infographic</a></li>
+                <li><a class="gutter pad-t-1-4 pad-b-1-4 block" href="#pull-quote-section">Pull quote section</a></li>
+                <li><a class="gutter pad-t-1-4 pad-b-1-4 block" href="#section">Section</a></li>
           </ul>
         </nav>
       </div>
@@ -754,16 +756,16 @@
     <div class="pattern-details" id="cards-basic-card">
 
       <div class="pattern-examples pad-t-1-2 pad-b">
-        <div class="gutter-2 pad-t-1-2 pad-b-1-2 push-1-2" style="">
-          <div class="resizeable-pattern relative" style="">
+        <div class="gutter-2 pad-t-1-2 pad-b-1-2 push-1-2" style="background-color:#06386e;">
+          <div class="resizeable-pattern relative" style="width:300px">
             <iframe src="patterns/cards/basic-card.html" scrolling="no" onload="resizeIframe(this)"></iframe>
               <div class="resizeable-pattern-length">
-                <div class="resize-handle resize-handle-left" style="">
+                <div class="resize-handle resize-handle-left" style="border-color:rgba(255,255,255,.1); color:rgba(255,255,255,.3);">
                   <i class="icon i-18">
                     <svg><use xlink:href="#resize-handle" /></svg>
                   </i>
                 </div>
-                <div class="resize-handle resize-handle-right" style="">
+                <div class="resize-handle resize-handle-right" style="border-color:rgba(255,255,255,.1); color:rgba(255,255,255,.3);">
                   <i class="icon i-18">
                     <svg><use xlink:href="#resize-handle" /></svg>
                   </i>
@@ -779,8 +781,8 @@
     &lt;img class="img-flex relative" alt="winston" src="images/winston.jpg">
   &lt;/div>
   &lt;div class="island-1-2">
-    &lt;h2 class="push-1-8 yotta">Winston&lt;/h2>
-    &lt;h3 class="push-1-2 mega">#4563&lt;/h3>
+    &lt;h3 class="push-1-8 yotta">Winston&lt;/h3>
+    &lt;h4 class="push-1-2 mega">#4563&lt;/h4>
     &lt;p class="push-0 mega">Pug&lt;/p>
     &lt;p class="push-2 mega ">Puppy | Male&lt;/p>
     &lt;div class="text-center">
@@ -861,9 +863,9 @@
   &lt;p class="push-1-2">This information is used to consider you for a phone interview.&lt;/p>
   &lt;p class="push-2">Please note at this time adoption is only available to Canadian residents.&lt;/p>
 
-  &lt;form class="basic-form grid" method="post" novalidate="">
+  &lt;form class="basic-form grid" method="POST" novalidate="" action="https://formspree.io/obri0205@algonquincollege.com">
     &lt;div class="unit xs-1 s-1 m-1 l-1 error-message error-message-highlighted push" role="alert" aria-live="assertive">
-      &lt;h3 class="push-0 tera warning text-center pad-t pad-b">There was an error with the highlighted fields below&lt;/h3>
+      &lt;h3 class="push-0 tera warning text-center pad-t pad-b gutter">There was an error with the highlighted fields below&lt;/h3>
     &lt;/div>
     &lt;fieldset class="w-1">
       &lt;legend class="unit xs-1 exa main-legend">Personal Information&lt;/legend>
@@ -871,7 +873,7 @@
       &lt;h3 class="unit xs-1 s-1 m-1-5 l-1-5 giga">Dog&apos;s Info&lt;/h3>
       &lt;div class="unit xs-1 s-1 m-2-5 push-1-2 gutter-1-4">
         &lt;label class="milli" for="dog-name">Dog&apos;s name&lt;/label>
-        &lt;input id="dog-name" required aria-describedby="dog-name-error">
+        &lt;input id="dog-name" name="dog name" required aria-describedby="dog-name-error">
         &lt;p class="error-message micro island-1-4 push-0" id="dog-name-error">
           &lt;i class="icon i-24">&lt;svg>&lt;use xlink:href="../../images/icons.svg#warning"/>&lt;/svg>&lt;/i>
           &lt;span class="icon-label">Provide the name of the dog&lt;/span>
@@ -880,7 +882,7 @@
 
       &lt;div class="unit xs-1 s-1 m-2-5 l-2-5 push-1-2 gutter-1-4">
         &lt;label class="milli" for="adopt-num">Adoption number&lt;/label>
-        &lt;input type="number" id="adopt-num" required aria-describedby="adopt-num-error">
+        &lt;input type="number" name="adoption-number" id="adopt-num" required aria-describedby="adopt-num-error">
         &lt;p class="error-message micro island-1-4 push-0" id="adopt-num-error">
           &lt;i class="icon i-24">&lt;svg>&lt;use xlink:href="../../images/icons.svg#warning"/>&lt;/svg>&lt;/i>
           &lt;span class="icon-label">Provide the dog&apos;s adoption number&lt;/span>
@@ -891,7 +893,7 @@
 
       &lt;div class="unit xs-1 s-1 m-3-5 l-3-5 push-1-2 gutter-1-4">
         &lt;label class="milli" for="name">Full name&lt;/label>
-        &lt;input id="name" required aria-describedby="name-error">
+        &lt;input id="name" name="full-name" required aria-describedby="name-error">
         &lt;p class="error-message micro island-1-4 push-0" id="name-error">
           &lt;i class="icon i-24">&lt;svg>&lt;use xlink:href="../../images/icons.svg#warning"/>&lt;/svg>&lt;/i>
           &lt;span class="icon-label">Provide your full name&lt;/span>
@@ -900,7 +902,7 @@
 
       &lt;div class="unit xs-1 s-1 m-1-5 l-1-5 push-1-2 gutter-1-4">
         &lt;label class="milli" for="age">Age&lt;/label>
-        &lt;input type="number" id="age" min="18" required aria-describedby="age-error">
+        &lt;input type="number" name="age" id="age" min="18" required aria-describedby="age-error">
         &lt;p class="error-message micro island-1-4 push-0" id="age-error">
           &lt;i class="icon i-24">&lt;svg>&lt;use xlink:href="../../images/icons.svg#warning"/>&lt;/svg>&lt;/i>
           &lt;span class="icon-label">Must be over 18&lt;/span>
@@ -924,14 +926,14 @@
 
       &lt;div class="unit xs-1 s-1 m-2-5 l-2-5 push-1-2 gutter-1-4">
         &lt;label class="milli" for="job-title">If yes, your job title &lt;em class="flag-optional micro normal">(optional)&lt;/em>&lt;/label>
-        &lt;input id="job-title">
+        &lt;input id="job-title" name="job-title">
       &lt;/div>
 
       &lt;h3 class="unit xs-1 s-1 m-1-5 giga">Contact&lt;/h3>
 
       &lt;div class="unit xs-1 s-1 m-2-5 l-2-5 push-1-2 gutter-1-4">
         &lt;label class="milli" for="phone">Primary phone&lt;/label>
-        &lt;input type="tel" id="phone" required aria-describedby="phone-error">
+        &lt;input type="tel" name="primary-phone" id="phone" required aria-describedby="phone-error">
         &lt;p class="error-message micro island-1-4 push-0" id="phone-error">
           &lt;i class="icon i-24">&lt;svg>&lt;use xlink:href="../../images/icons.svg#warning"/>&lt;/svg>&lt;/i>
           &lt;span class="icon-label">Provide your phone number&lt;/span>
@@ -940,7 +942,7 @@
 
       &lt;div class="unit xs-1 s-1 m-2-5 l-2-5 push-1-2 gutter-1-4">
         &lt;label class="milli" for="email">E-mail address&lt;/label>
-        &lt;input type="email" id="email" required aria-describedby="email-error">
+        &lt;input type="email" name="e-mail" id="email" required aria-describedby="email-error">
         &lt;p class="error-message micro island-1-4 push-0" id="email-error">
           &lt;i class="icon i-24">&lt;svg>&lt;use xlink:href="../../images/icons.svg#warning"/>&lt;/svg>&lt;/i>
           &lt;span class="icon-label">Provide your e-mail address&lt;/span>
@@ -952,7 +954,7 @@
 
       &lt;div class="unit xs-1 s-1 m-2-5 l-2-5 push-1-2 gutter-1-4">
         &lt;label class="milli" for="work-phone">Work phone &lt;em class="flag-optional micro normal">(optional)&lt;/em>&lt;/label>
-        &lt;input type="tel" id="work-phone">
+        &lt;input type="tel" id="work-phone" name="work-phone">
       &lt;/div>
 
       &lt;fieldset class="unit xs-1 s-1 m-2-5 l-2-5 push-1-2 gutter-1-4">
@@ -967,12 +969,12 @@
 
       &lt;div class="unit xs-1 s-1 m-2-5 l-2-5 push-1-2 gutter-1-4">
         &lt;label class="milli" for="apart-num">Apartment number &lt;em class="flag-optional micro normal">(optional)&lt;/em>&lt;/label>
-        &lt;input id="apart-num">
+        &lt;input name="apartment-number" id="apart-num">
       &lt;/div>
 
       &lt;div class="unit xs-1 s-1 m-2-5 l-2-5 push-1-2 gutter-1-4">
         &lt;label class="milli" for="street">Street address&lt;/label>
-        &lt;input type="tel" id="street" required aria-describedby="street-error">
+        &lt;input type="tel" name="street-address" id="street" required aria-describedby="street-error">
         &lt;p class="error-message micro island-1-4 push-0" id="street-error">
           &lt;i class="icon i-24">&lt;svg>&lt;use xlink:href="../../images/icons.svg#warning"/>&lt;/svg>&lt;/i>
           &lt;span class="icon-label">Provide your street address&lt;/span>
@@ -984,7 +986,7 @@
 
       &lt;fieldset class="unit xs-1 s-1 m-1-5 l-1-5 gutter-1-4">
         &lt;label class="milli" for="province">Province&lt;/label>
-        &lt;select id="province">
+        &lt;select name="province" id="province">
           &lt;option value="AB">AB&lt;/option>
           &lt;option value="BC">BC&lt;/option>
           &lt;option value="MB">MB&lt;/option>
@@ -1003,7 +1005,7 @@
 
       &lt;div class="unit xs-1 s-1 m-2-5 l-2-5 push-1-2 gutter-1-4">
         &lt;label class="milli" for="city">City&lt;/label>
-        &lt;input id="city" required aria-describedby="city-error">
+        &lt;input name="city-address" id="city" required aria-describedby="city-error">
         &lt;p class="error-message milli island-1-4 push-0" id="city-error">
           &lt;i class="icon i-24">&lt;svg>&lt;use xlink:href="../../images/icons.svg#warning"/>&lt;/svg>&lt;/i>
           &lt;span class="icon-label">Which city do you live in?&lt;/span>
@@ -1012,7 +1014,7 @@
 
       &lt;div class="unit xs-1 s-1 m-1-5 l-1-5 push-1-2 gutter-1-4">
         &lt;label class="milli" for="postal">Postal code&lt;/label>
-        &lt;input id="postal" pattern="[A-Za-z][0-9][A-Za-z] ?[0-9][A-Za-z][0-9]" required aria-describedby="postal-error">
+        &lt;input name="postal-code" id="postal" pattern="[A-Za-z][0-9][A-Za-z] ?[0-9][A-Za-z][0-9]" required aria-describedby="postal-error">
         &lt;p class="error-message micro island-1-4 push-0" id="postal-error">
           &lt;i class="icon i-24">&lt;svg>&lt;use xlink:href="../../images/icons.svg#warning"/>&lt;/svg>&lt;/i>
           &lt;span class="icon-label">Provide your postal code&lt;/span>
@@ -1041,7 +1043,7 @@
 
       &lt;div class="unit xs-1 s-1 m-4-5 l-4-5 push-1-2 gutter-1-4">
         &lt;label class="milli" for="why-adopt">Why do you want to adopt a dog?&lt;/label>
-        &lt;textarea id="why-adopt" required aria-describedby="why-adopt-error">&lt;/textarea>
+        &lt;textarea name="why-adopt" id="why-adopt" required aria-describedby="why-adopt-error">&lt;/textarea>
         &lt;p class="error-message milli island-1-4 push-0" id="why-adopt-error">
           &lt;i class="icon i-24">&lt;svg>&lt;use xlink:href="../../images/icons.svg#warning"/>&lt;/svg>&lt;/i>
           &lt;span class="icon-label">Tell us why you want to adopt&lt;/span>
@@ -1055,7 +1057,7 @@
 
     &lt;div class="unit xs-1 s-1 m-2-5 l-2-5 push-1-2 gutter-1-4">
       &lt;label class="milli" for="date">Date&lt;/label>
-      &lt;input type="date" id="date" required aria-describedby="date-error">
+      &lt;input type="date" name="today-date" id="date" required aria-describedby="date-error">
       &lt;p class="error-message milli island-1-4 push-0" id="date-error">
         &lt;span class="icon-label">Select todays date&lt;/span>
       &lt;/p>
@@ -1077,6 +1079,8 @@
     &lt;div class="unit xs-1 s-1 m-1-5 l-1-5 pad-t-1-2">
       &lt;button class="btn" type="submit">Submit&lt;/button>
     &lt;/div>
+
+    &lt;input type="hidden" name="_subject" value="Request to adopt a dog">
 
   &lt;/form>
 &lt;/section>
@@ -1122,7 +1126,7 @@
   &lt;h2 class="push-1-2 exa">Contact Us&lt;/h2>
   &lt;form method="post" novalidate="">
     &lt;div class="error-message error-message-highlighted push" role="alert" aria-live="assertive">
-      &lt;h3 class="push-0 tera warning text-center pad-t pad-b">There was an error with the highlighted fields below&lt;/h3>
+      &lt;h3 class="push-0 tera warning text-center pad-t pad-b gutter">There was an error with the highlighted fields below&lt;/h3>
     &lt;/div>
 
     &lt;div class="push-1-2">
@@ -1290,6 +1294,142 @@
     &lt;/svg>
   &lt;/div>
 &lt;/div>
+</pre></code>
+            </div>
+          </div>
+      </div>
+    </div>
+
+</section>
+
+        <section class="pattern" id="pull-quote-section">
+  <div class="pattern-toolbar gutter pad-t-1-4 pad-b-1-8 relative">
+    <h2 class="pattern-name peta push-1-4">Pull quote section</h2>
+        <div class="gutter absolute pin-cr">
+          <a class="pattern-pop" href="patterns/pull-quote-section/pull-quote-section.html" target="_blank" title="Open pattern in a new tab">
+            <i class="icon i-18">
+              <svg><use xlink:href="#pop-out" /></svg>
+            </i>
+          </a>
+        </div>
+  </div>
+
+    <div class="pattern-desc milli island">
+      <div class="max-length"><p>This section features pull quotes from happy dog adoption stories. This section is called happy tails.</p>
+</div>
+    </div>
+
+  
+
+    <div class="pattern-details" id="pull-quote-section-pull-quote-section">
+
+      <div class="pattern-examples pad-t-1-2 pad-b">
+        <div class="gutter-2 pad-t-1-2 pad-b-1-2 push-1-2" style="">
+          <div class="resizeable-pattern relative" style="">
+            <iframe src="patterns/pull-quote-section/pull-quote-section.html" scrolling="no" onload="resizeIframe(this)"></iframe>
+              <div class="resizeable-pattern-length">
+                <div class="resize-handle resize-handle-left" style="">
+                  <i class="icon i-18">
+                    <svg><use xlink:href="#resize-handle" /></svg>
+                  </i>
+                </div>
+                <div class="resize-handle resize-handle-right" style="">
+                  <i class="icon i-18">
+                    <svg><use xlink:href="#resize-handle" /></svg>
+                  </i>
+                </div>
+              </div>
+          </div>
+        </div>
+
+          <div class="gutter">
+            <div class="pattern-code milli island-1-2">
+              <code><pre>&lt;section class="wrapper pad-t-2 gutter-1-2 pull-quote-section grid"&gt;
+  &lt;h2 class="unit xs-1 s-1 m-1 l-1 zetta">Happy Tails&lt;/h2>
+
+  &lt;div class="unit xs-1 s-1 m-1-3 relative">
+    &lt;span class="absolute">&#x201C;&lt;/span>
+    &lt;p class="pull-quote island giga">I adopted Nutmeg 2 years ago. I am so thankful for Loyal Rescue and all the foster families.&lt;/p>
+  &lt;/div>
+
+  &lt;div class="unit xs-1 s-1 m-1-3 pad-b gutter">
+    &lt;img class="img-flex" src="../../images/dog-quote-1.jpg" alt="">
+  &lt;/div>
+
+  &lt;div class="unit xs-1 s-1 m-1-3 relative">
+    &lt;span class="absolute">&#x201C;&lt;/span>
+    &lt;p class="pull-quote island giga">Thanks Loyal Rescue for making our family complete.&lt;/p>
+  &lt;/div>
+
+  &lt;div class="unit xs-1 s-1 m-1-3 pad-b gutter">
+    &lt;img class="img-flex" src="../../images/dog-quote-5.jpg" alt="">
+  &lt;/div>
+
+  &lt;div class="unit xs-1 s-1 m-1-3 relative">
+    &lt;span class="absolute">&#x201C;&lt;/span>
+    &lt;p class="pull-quote island giga">Oreo was rescued three years ago. We are so happy that we could rescue him and see him happy.&lt;/p>
+  &lt;/div>
+
+  &lt;div class="unit xs-1 s-1 m-1-3 pad-b gutter">
+    &lt;img class="img-flex" src="../../images/dog-quote-4.jpg" alt="">
+  &lt;/div>
+&lt;/section>
+</pre></code>
+            </div>
+          </div>
+      </div>
+    </div>
+
+</section>
+
+        <section class="pattern" id="section">
+  <div class="pattern-toolbar gutter pad-t-1-4 pad-b-1-8 relative">
+    <h2 class="pattern-name peta push-1-4">Section</h2>
+        <div class="gutter absolute pin-cr">
+          <a class="pattern-pop" href="patterns/section/section.html" target="_blank" title="Open pattern in a new tab">
+            <i class="icon i-18">
+              <svg><use xlink:href="#pop-out" /></svg>
+            </i>
+          </a>
+        </div>
+  </div>
+
+
+  
+
+    <div class="pattern-details" id="section-section">
+
+      <div class="pattern-examples pad-t-1-2 pad-b">
+        <div class="gutter-2 pad-t-1-2 pad-b-1-2 push-1-2" style="">
+          <div class="resizeable-pattern relative" style="">
+            <iframe src="patterns/section/section.html" scrolling="no" onload="resizeIframe(this)"></iframe>
+              <div class="resizeable-pattern-length">
+                <div class="resize-handle resize-handle-left" style="">
+                  <i class="icon i-18">
+                    <svg><use xlink:href="#resize-handle" /></svg>
+                  </i>
+                </div>
+                <div class="resize-handle resize-handle-right" style="">
+                  <i class="icon i-18">
+                    <svg><use xlink:href="#resize-handle" /></svg>
+                  </i>
+                </div>
+              </div>
+          </div>
+        </div>
+
+          <div class="gutter">
+            <div class="pattern-code milli island-1-2">
+              <code><pre>&lt;section class="grid wrapper pad-t-1-2 gutter-1-2"&gt;
+  &lt;div class="unit xs-1 s-1 m-1-2 l-1-2 pad-b">
+    &lt;img class="img-flex" src="../../images/mission-section.jpg" alt="">
+  &lt;/div>
+  &lt;div class="unit xs-1 s-1 m-1-2 l-1-2 section-text gutter">
+    &lt;h2 class="zetta push-1-4 pad-t">Our Mission&lt;/h2>
+    &lt;p class="push-1-2">Our mission is to connect fostered dogs to their forever homes in the Toronto area. And for 7 years we have proudly beed doing just that.&lt;/p>
+    &lt;p>Our fosters have opened their hearts and homes to dogs in need of rescue. Loyal Rescue has never operated out of a shelter and as such each dog is viewed in a private home. We are always in desperated need for commited foster families to join our team.&lt;/p>
+  &lt;/div>
+&lt;/section>
 </pre></code>
             </div>
           </div>
