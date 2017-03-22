@@ -1,0 +1,19 @@
+html {
+  background-color: var(--color-primary);
+}
+
+.card {
+  background-color: #fff;
+  border-radius: 15px;
+}
+
+.img {
+  overflow: hidden;
+  -moz-border-top-left-radius: 15px;
+  -moz-border-top-right-radius: 15px;
+  -webkit-top-left-radius: 15px;
+  -webkit-top-right-radius: 15px;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  display: inline-block;
+}
