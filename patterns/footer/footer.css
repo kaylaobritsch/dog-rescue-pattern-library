@@ -3,7 +3,8 @@ footer {
 }
 
 footer nav a {
-  background-color: var(--color-secondary);  color: #fff;
+  background-color: var(--color-secondary);
+  color: #fff;
   display: block;
   text-decoration: none;
 }
@@ -22,7 +23,6 @@ li a,
 .drop-content {
   background-color: #ccc;
   display: none;
-
   left: 50%;
   top: 1.5rem;
   transform: translateX(-50%);

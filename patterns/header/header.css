@@ -44,11 +44,11 @@ li.drop {
 
 .drop-content a:hover {
   background-color: white;
-  color: var(--color-secondary)
+  color: var(--color-secondary);
 }
 
 .drop:hover .drop-content {
-    display: block;
+  display: block;
 }
 
 @media only screen and (min-width: 60em) {
