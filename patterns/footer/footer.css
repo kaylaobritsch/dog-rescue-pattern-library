@@ -1,0 +1,62 @@
+footer {
+  background-color: var(--color-secondary);
+}
+
+footer nav a {
+  background-color: var(--color-secondary);  color: #fff;
+  display: block;
+  text-decoration: none;
+}
+
+footer nav a:hover {
+  color: var(--color-primary);
+}
+
+li a,
+.drop-btn {
+  color: white;
+  text-align: center;
+  text-decoration: none;
+}
+
+.drop-content {
+  background-color: #ccc;
+  display: none;
+
+  left: 50%;
+  top: 1.5rem;
+  transform: translateX(-50%);
+  width: 10rem;
+}
+
+.drop-content a {
+  background-color: var(--color-primary);
+  color: white;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.drop-content a:hover {
+  background-color: white;
+  color: var(--color-secondary);
+}
+
+.drop:hover .drop-content {
+  display: block;
+}
+
+.icon {
+  border-radius: 25em;
+  color: var(--color-primary);
+}
+
+.icon:hover {
+  background-color: white;
+}
+
+.copyright {
+  background-color: var(--color-primary);
+  color: white;
+}
