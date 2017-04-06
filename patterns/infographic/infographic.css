@@ -13,7 +13,7 @@
   visibility: hidden;
 }
 
-.wrapper {
+.wrapper-infographic {
   display: flex;
   flex-direction: column;
 }
@@ -40,7 +40,7 @@ svg.animation {
     visibility: visible;
   }
 
-  .wrapper {
+  .wrapper-infographic {
     display: inline-block;
   }
 
@@ -57,7 +57,6 @@ svg.animation {
   #pug:hover #heart-1,
   #pug:hover #heart-2 {
     fill: var(--color-accent);
-    transform: scale(1.25);
 
   }
 }

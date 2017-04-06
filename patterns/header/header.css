@@ -1,13 +1,13 @@
-header h1 {
+.header h1 {
   font-family: var(--font-secondary);
   text-align: center;
 }
 
-header {
+.header {
   background-color: var(--color-primary);
 }
 
-header nav a {
+.header nav a {
   color: #fff;
   display: block;
   text-decoration: none;
@@ -53,7 +53,7 @@ li.drop {
 
 @media only screen and (min-width: 60em) {
 
-  header h1 {
+  .header h1 {
     text-align: left;
   }
 

@@ -1,19 +1,18 @@
-footer {
+.footer {
   background-color: var(--color-secondary);
 }
 
-footer nav a {
+.footer nav a {
   background-color: var(--color-secondary);
   color: #fff;
   display: block;
   text-decoration: none;
 }
 
-footer nav a:hover {
+.footer nav a:hover {
   color: var(--color-primary);
 }
 
-li a,
 .drop-btn {
   color: white;
   text-align: center;
@@ -21,7 +20,6 @@ li a,
 }
 
 .drop-content {
-  background-color: #ccc;
   display: none;
   left: 50%;
   top: 1.5rem;
