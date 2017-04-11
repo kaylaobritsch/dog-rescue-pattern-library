@@ -1,3 +1,7 @@
+.infographic-section {
+  background-color: white;
+}
+
 .infographic h2,
 .infographic p,
 .image {
@@ -14,8 +18,10 @@
 }
 
 .wrapper-infographic {
+  background-color: white;
   display: flex;
   flex-direction: column;
+  max-width: 52em;
 }
 
 .step-1 {

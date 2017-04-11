@@ -13,7 +13,11 @@
 
 html {
   font-family: var(--font-primary);
-  font-weight: normal;
+  font-weight: 300;
+}
+
+p {
+  font-weight: 300;
 }
 
 /* Headings */
