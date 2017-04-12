@@ -17,29 +17,40 @@
   <link href="https://fonts.googleapis.com/css?family=Fira+Sans:300,300i,400,400i,500,500i,600,600i" rel="stylesheet">
 </head>
 <body class="adopt">
+  <ul class="skip-links">
+    <li><a href="#main">Jump to main content</a></li>
+    <li><a href="#nav">Jump to navigation</a></li>
+    <li><a href="#steps">Jump to adoption steps</a></li>
+    <li><a href="#dogs">Jump to adoptable dogs</a></li>
+  </ul>
+
   <header class="masthead grid grid-middle gutter pad-t-1-2 pad-b-1-2 header">
     <h1 class="giga unit xs-1 s-1 m-1 l-1-3 push-0">
-      <i class="icon i-64">
-        <img src="../images/logo-64.svg" alt="">
-      </i><span class="gutter-1-2">Loyal Rescue</span>
+      <a class="logo" href="home.html">
+        <i class="icon i-64">
+          <img src="../images/logo-64.svg" alt="Loyal Rescue logo">
+        </i><span class="gutter-1-2">Loyal Rescue</span>
+      </a>
     </h1>
-      <nav class="unit xs-1 s-1 m-1 l-2-3 island-1-2 relative" id="nav" role="navigation">
-        <ul class="grid list-group text-center">
-          <li class="drop relative unit xs-1-2 s-1-2 m-1-2 l-1-4">
-            <a class="drop-btn utter-1-2 pad-t-1-4 pad-b-1-4" href="javascript:void(0)">Home</a>
-            <div class="drop-content absolute zindex-1">
-              <a href="#">Happy Tails</a>
-              <a href="#">Our Mission</a>
-              <a href="#">Contact Us</a>
-            </div>
-          </li>
-          <li class="unit xs-1-2 s-1-2 m-1-2 l-1-4"><a class="gutter-1-2 pad-t-1-4 pad-b-1-4" href="#">Blog</a></li>
-          <li class="unit xs-1-2 s-1-2 m-1-2 l-1-4"><a class="gutter-1-2 pad-t-1-4 pad-b-1-4" href="#adopt">Adopt</a></li>
-          <li class="unit xs-1-2 s-1-2 m-1-2 l-1-4"><a class="gutter-1-2 pad-t-1-4 pad-b-1-4" href="#application">Application</a></li>
-        </ul>
-      </nav>
-    </header>
 
+    <nav class="unit xs-1 s-1 m-1 l-2-3 island-1-2 relative" id="nav" role="navigation">
+      <ul class="grid list-group text-center">
+        <li class="drop relative unit xs-1-2 s-1-2 m-1-2 l-1-4">
+          <a class="drop-btn gutter-1-2 pad-t-1-4 pad-b-1-4" href="home.html">Home</a>
+          <div class="drop-content absolute zindex-1">
+            <a href="home.html#tails">Happy Tails</a>
+            <a href="home.html#mission">Our Mission</a>
+            <a href="home.html#contact">Contact Us</a>
+          </div>
+        </li>
+        <li class="unit xs-1-2 s-1-2 m-1-2 l-1-4"><a class="gutter-1-2 pad-t-1-4 pad-b-1-4" href="#">Blog</a></li>
+        <li class="unit xs-1-2 s-1-2 m-1-2 l-1-4"><a class="gutter-1-2 pad-t-1-4 pad-b-1-4" href="adopt.html">Adopt</a></li>
+        <li class="unit xs-1-2 s-1-2 m-1-2 l-1-4"><a class="gutter-1-2 pad-t-1-4 pad-b-1-4" href="application.html">Application</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main role="main" id="main">
     <section class="grid intro-section">
       <div class="intro-text wrapper pad-t-1-2 gutter-1-2">
         <h2 class="unit xs-1 s-1 m-1 l-1">Adopt</h2>
@@ -49,362 +60,366 @@
       </div>
     </section>
 
-  <div class="text-center infographic-section">
-    <section class="grid island wrapper-infographic infographic">
-      <div class="unit xs-1 s-1-2 step-1">
-        <div class="pad-t-1-2">
-          <h2 class="push-1-2 tera">Step 1</h2>
-          <p class="milli">Find your forever pet</p>
-        </div>
-        <div class="image push-2">
-          <svg class="animation" width="96" height="96" viewBox="0 0 96 96">
-            <g id="pug">
-              <g id="face">
-                <rect width="66.7" height="60.37" x="14.6" y="24.9" fill="#cbcaca" rx="6.8" ry="6.8"/>
-                <rect width="36.3" height="8.09" x="29.9" y="79.6" fill="#06386e" rx="2.4" ry="2.4"/>
-                <circle cx="48" cy="90.5" r="4.4" fill="#f0a979"/>
-                <path fill="#06386e" d="M21.3 25a6.7 6.7 0 0 0-6.7 6.7v16L35.5 25z"/>
-                <path fill="#06386e" d="M74.7 25a6.7 6.7 0 0 1 6.7 6.7v16L60.5 25z"/>
-                <circle cx="31.7" cy="47.5" r="5.6" fill="#06386e"/>
-                <circle cx="64.4" cy="47.5" r="5.6" fill="#06386e"/>
-                <path fill="#fff" d="M35 47c-.5 1-.8-.4-1.8-.9s-2.3.1-1.8-.9A2 2 0 0 1 35 47z"/>
-                <path fill="#fff" d="M67.9 47c-.5 1-.8-.4-1.8-.9s-2.3.1-1.8-.9a2 2 0 1 1 3.6 1.8z"/>
-                <path fill="#06386e" d="M48.8 61.5c.6 4.3 4.8 5.3 7.2 5.5a1.5 1.5 0 0 1 1.2 1.9c-3 9.3-15.3 9.3-18.5 0A1.4 1.4 0 0 1 40 67c2.5-.2 6.6-1.1 7.2-5.5"/>
-                <line x1="48" x2="48" y1="31.7" y2="48" fill="none" stroke="#06386e" stroke-linecap="round" stroke-miterlimit="10" stroke-width="1.52"/>
-                <circle cx="48" cy="57.1" r="5.4" fill="#06386e"/>
-                <path fill="none" stroke="#06386e" stroke-linecap="round" stroke-miterlimit="10" stroke-width="1.52" d="M54 29.7a5.9 5.9 0 1 1-11.8 0"/>
-                <path fill="none" stroke="#fff" stroke-linecap="round" stroke-miterlimit="10" stroke-width="1.14" d="M51 58.2c0-1.3-1.3-2.3-3-2.3s-3 1-3 2.3"/>
-                <path fill="none" stroke="#06386e" stroke-linecap="round" stroke-miterlimit="10" stroke-width="3.03" d="M69.5 62.5c0-8-9.6-14.5-21.5-14.5s-21.4 6.5-21.4 14.5"/>
-                <line x1="48.1" x2="48.1" y1="55.9" y2="62.4" fill="none" stroke="#fff" stroke-linecap="round" stroke-miterlimit="10" stroke-width="1.14"/>
-                <circle cx="33.5" cy="83.5" r="1.8" fill="#fff"/>
-                <circle cx="62.3" cy="83.5" r="1.8" fill="#fff"/>
-                <circle cx="40.7" cy="83.5" r="1.8" fill="#fff"/>
-                <circle cx="47.9" cy="83.5" r="1.8" fill="#fff"/>
-                <circle cx="55.1" cy="83.5" r="1.8" fill="#fff"/>
-                <path fill="#ff739d" d="M51.9 68.4v5.8A3.9 3.9 0 0 1 48 78a3.9 3.9 0 0 1-3.9-3.9v-5.7"/>
+    <div class="text-center infographic-section" id="steps">
+      <section class="grid island wrapper-infographic infographic">
+        <div class="unit xs-1 s-1-2 step-1">
+          <div class="pad-t-1-2">
+            <h2 class="push-1-2 tera">Step 1</h2>
+            <p class="milli">Find your forever pet</p>
+          </div>
+          <div class="image push-2">
+            <svg class="animation" width="96" height="96" viewBox="0 0 96 96">
+              <g id="pug">
+                <g id="face">
+                  <rect width="66.7" height="60.37" x="14.6" y="24.9" fill="#cbcaca" rx="6.8" ry="6.8"/>
+                  <rect width="36.3" height="8.09" x="29.9" y="79.6" fill="#06386e" rx="2.4" ry="2.4"/>
+                  <circle cx="48" cy="90.5" r="4.4" fill="#f0a979"/>
+                  <path fill="#06386e" d="M21.3 25a6.7 6.7 0 0 0-6.7 6.7v16L35.5 25z"/>
+                  <path fill="#06386e" d="M74.7 25a6.7 6.7 0 0 1 6.7 6.7v16L60.5 25z"/>
+                  <circle cx="31.7" cy="47.5" r="5.6" fill="#06386e"/>
+                  <circle cx="64.4" cy="47.5" r="5.6" fill="#06386e"/>
+                  <path fill="#fff" d="M35 47c-.5 1-.8-.4-1.8-.9s-2.3.1-1.8-.9A2 2 0 0 1 35 47z"/>
+                  <path fill="#fff" d="M67.9 47c-.5 1-.8-.4-1.8-.9s-2.3.1-1.8-.9a2 2 0 1 1 3.6 1.8z"/>
+                  <path fill="#06386e" d="M48.8 61.5c.6 4.3 4.8 5.3 7.2 5.5a1.5 1.5 0 0 1 1.2 1.9c-3 9.3-15.3 9.3-18.5 0A1.4 1.4 0 0 1 40 67c2.5-.2 6.6-1.1 7.2-5.5"/>
+                  <line x1="48" x2="48" y1="31.7" y2="48" fill="none" stroke="#06386e" stroke-linecap="round" stroke-miterlimit="10" stroke-width="1.52"/>
+                  <circle cx="48" cy="57.1" r="5.4" fill="#06386e"/>
+                  <path fill="none" stroke="#06386e" stroke-linecap="round" stroke-miterlimit="10" stroke-width="1.52" d="M54 29.7a5.9 5.9 0 1 1-11.8 0"/>
+                  <path fill="none" stroke="#fff" stroke-linecap="round" stroke-miterlimit="10" stroke-width="1.14" d="M51 58.2c0-1.3-1.3-2.3-3-2.3s-3 1-3 2.3"/>
+                  <path fill="none" stroke="#06386e" stroke-linecap="round" stroke-miterlimit="10" stroke-width="3.03" d="M69.5 62.5c0-8-9.6-14.5-21.5-14.5s-21.4 6.5-21.4 14.5"/>
+                  <line x1="48.1" x2="48.1" y1="55.9" y2="62.4" fill="none" stroke="#fff" stroke-linecap="round" stroke-miterlimit="10" stroke-width="1.14"/>
+                  <circle cx="33.5" cy="83.5" r="1.8" fill="#fff"/>
+                  <circle cx="62.3" cy="83.5" r="1.8" fill="#fff"/>
+                  <circle cx="40.7" cy="83.5" r="1.8" fill="#fff"/>
+                  <circle cx="47.9" cy="83.5" r="1.8" fill="#fff"/>
+                  <circle cx="55.1" cy="83.5" r="1.8" fill="#fff"/>
+                  <path fill="#ff739d" d="M51.9 68.4v5.8A3.9 3.9 0 0 1 48 78a3.9 3.9 0 0 1-3.9-3.9v-5.7"/>
+                </g>
+                <path id="heart-2" fill="#5cdb94" d="M16.9 7.3l-.4.2a4.1 4.1 0 0 0-1.8 3.1.3.3 0 0 1-.4.2 4.1 4.1 0 0 0-3.5-.3l-.4.2C8.6 12 8 13.6 9.7 16s6.1 3.3 9.5 3.9c1.5-3.1 3.4-6.8 2.4-10S19 6.7 16.9 7.3z"/>
+                <path id="heart-1" fill="#5cdb94" d="M35.6 1.1h-.4a4.1 4.1 0 0 0-2.9 2.1.3.3 0 0 1-.4 0 4.1 4.1 0 0 0-3.1-1.8h-.4c-2.2.5-3.4 1.7-2.8 4.5s4.2 5.5 7.1 7.5c2.6-2.2 5.9-4.8 6.3-8.1s-1.2-3.9-3.4-4.2z"/>
               </g>
-              <path id="heart-2" fill="#5cdb94" d="M16.9 7.3l-.4.2a4.1 4.1 0 0 0-1.8 3.1.3.3 0 0 1-.4.2 4.1 4.1 0 0 0-3.5-.3l-.4.2C8.6 12 8 13.6 9.7 16s6.1 3.3 9.5 3.9c1.5-3.1 3.4-6.8 2.4-10S19 6.7 16.9 7.3z"/>
-              <path id="heart-1" fill="#5cdb94" d="M35.6 1.1h-.4a4.1 4.1 0 0 0-2.9 2.1.3.3 0 0 1-.4 0 4.1 4.1 0 0 0-3.1-1.8h-.4c-2.2.5-3.4 1.7-2.8 4.5s4.2 5.5 7.1 7.5c2.6-2.2 5.9-4.8 6.3-8.1s-1.2-3.9-3.4-4.2z"/>
-            </g>
-          </svg>
+            </svg>
+          </div>
         </div>
-      </div>
 
-      <div class="unit xs-1 s-1-2 step-3">
-        <div class="pad-t-1-2">
-          <h2 class="push-1-2 tera">Step 3</h2>
-          <p class="milli">Bring them to their new home</p>
+        <div class="unit xs-1 s-1-2 step-3">
+          <div class="pad-t-1-2">
+            <h2 class="push-1-2 tera">Step 3</h2>
+            <p class="milli">Bring them to their new home</p>
+          </div>
+          <div class="unit image push-2">
+            <svg id="house" width="96" height="96" viewBox="0 0 96 96">
+              <path id="roof" fill="#f0a979" d="M87.7 38.6L56.5 16.7a2.7 2.7 0 0 0-2.8-.2L29.4 28.3v-4.7a1 1 0 0 0-1-1h-6.1a1 1 0 0 0-1 1v8.6L8.7 38.3a2.7 2.7 0 0 0 1.2 5.2l1.2-.3 43.6-21.1L84.5 43a2.7 2.7 0 0 0 3.1-4.5z"/>
+              <circle id="smoke-3" cx="22.1" cy="16.2" r="3.2" fill="#06386e"/>
+              <circle id="smoke-2" cx="27.8" cy="11.6" r="2.6" fill="#06386e"/>
+              <circle id="smoke-1" cx="23.1" cy="5" r="2.1" fill="#06386e"/>
+              <path id="house-2" fill="#06386e" d="M54.7 28.1L16.1 46.8v39.8a6.5 6.5 0 0 0 6.5 6.5h5.8V71.8a11.1 11.1 0 0 1 22.3 0v21.4h22.7a6.5 6.5 0 0 0 6.5-6.5V45.8zm13.9 21.7c-.8 4.2-5.1 7.1-8.5 9.8-3.4-2.7-7.7-5.7-8.3-10s1.1-5.1 3.9-5.5h.6a5.1 5.1 0 0 1 3.7 2.4.3.3 0 0 0 .6 0 5.1 5.1 0 0 1 3.8-2.4h.6c2.6.6 4.1 2.1 3.6 5.7z" data-name="house"/>
+            </svg>
+          </div>
         </div>
-        <div class="unit image push-2">
-          <svg id="house" width="96" height="96" viewBox="0 0 96 96">
-            <path id="roof" fill="#f0a979" d="M87.7 38.6L56.5 16.7a2.7 2.7 0 0 0-2.8-.2L29.4 28.3v-4.7a1 1 0 0 0-1-1h-6.1a1 1 0 0 0-1 1v8.6L8.7 38.3a2.7 2.7 0 0 0 1.2 5.2l1.2-.3 43.6-21.1L84.5 43a2.7 2.7 0 0 0 3.1-4.5z"/>
-            <circle id="smoke-3" cx="22.1" cy="16.2" r="3.2" fill="#06386e"/>
-            <circle id="smoke-2" cx="27.8" cy="11.6" r="2.6" fill="#06386e"/>
-            <circle id="smoke-1" cx="23.1" cy="5" r="2.1" fill="#06386e"/>
-            <path id="house-2" fill="#06386e" d="M54.7 28.1L16.1 46.8v39.8a6.5 6.5 0 0 0 6.5 6.5h5.8V71.8a11.1 11.1 0 0 1 22.3 0v21.4h22.7a6.5 6.5 0 0 0 6.5-6.5V45.8zm13.9 21.7c-.8 4.2-5.1 7.1-8.5 9.8-3.4-2.7-7.7-5.7-8.3-10s1.1-5.1 3.9-5.5h.6a5.1 5.1 0 0 1 3.7 2.4.3.3 0 0 0 .6 0 5.1 5.1 0 0 1 3.8-2.4h.6c2.6.6 4.1 2.1 3.6 5.7z" data-name="house"/>
-          </svg>
-        </div>
-      </div>
 
-      <div class="dots unit xs-1 push">
-        <img class="img-flex" src="../../images/dots.png" alt="">
-      </div>
-
-      <div class="unit xs-1 step-2">
-        <div class="pad-t-1-2">
-          <h2 class="push-1-2 tera">Step 2</h2>
-          <p class="milli">Send your application</p>
+        <div class="dots unit xs-1 push">
+          <img class="img-flex" src="../../images/dots.png" alt="">
         </div>
-        <div class="unit image push-2">
-          <svg width="80" height="80" viewBox="0 0 96 96">
-            <g id="airplane">
-              <g id="plane">
-                <path id="body" fill="#06386e" d="M27.7 48.9l22 22a2.2 2.2 0 0 0 3.5-.4L90.7 6.8a2.2 2.2 0 0 0-2.4-3.3L6.4 24.4a2.2 2.2 0 0 0-1 3.7l12.3 12.3 51.7-23.5z"/>
-                <polygon id="wing" fill="#cbcaca" points="17.7 65.2 27.7 48.9 69.4 16.9 17.7 40.4 17.7 65.2"/>
-                <polygon id="shadow" fill="#585858" points="37.6 58.8 17.7 65.2 27.7 48.9 37.6 58.8"/>
-                <ellipse id="ground" cx="32.5" cy="88.4" fill="#cbcaca" rx="24.5" ry="5.4"/>
+
+        <div class="unit xs-1 step-2">
+          <div class="pad-t-1-2">
+            <h2 class="push-1-2 tera">Step 2</h2>
+            <p class="milli">Send your application</p>
+          </div>
+          <div class="unit image push-2">
+            <svg width="80" height="80" viewBox="0 0 96 96">
+              <g id="airplane">
+                <g id="plane">
+                  <path id="body" fill="#06386e" d="M27.7 48.9l22 22a2.2 2.2 0 0 0 3.5-.4L90.7 6.8a2.2 2.2 0 0 0-2.4-3.3L6.4 24.4a2.2 2.2 0 0 0-1 3.7l12.3 12.3 51.7-23.5z"/>
+                  <polygon id="wing" fill="#cbcaca" points="17.7 65.2 27.7 48.9 69.4 16.9 17.7 40.4 17.7 65.2"/>
+                  <polygon id="shadow" fill="#585858" points="37.6 58.8 17.7 65.2 27.7 48.9 37.6 58.8"/>
+                  <ellipse id="ground" cx="32.5" cy="88.4" fill="#cbcaca" rx="24.5" ry="5.4"/>
+                </g>
               </g>
-            </g>
-          </svg>
+            </svg>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <section class="grid island-1-2 wrapper card-section" id="dogs">
+      <div class="island-1-2 unit xs-1 s-1 m-1-2 l-1-3">
+        <div class="card">
+          <div class="img">
+            <img class="img-flex relative" alt="winston" src="../../images/card-winston.jpg">
+          </div>
+          <div class="island-1-2">
+            <h3 class="push-1-8 tera">Winston</h3>
+            <h4 class="push-1-2 mega">#4563</h4>
+            <p class="push-0">Golden Retriever</p>
+            <p class="push">Puppy | Male</p>
+            <div class="text-center">
+              <a class="btn btn-icon relative" href="#">
+                <i class="icon i-18 gutter absolute">
+                  <svg><use class="paw" xlink:href="../../images/icons.svg#paw"/></svg>
+                </i>
+                <span class="icon-label">Adopt Me</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="island-1-2 unit xs-1 s-1 m-1-2 l-1-3">
+        <div class="card">
+          <div class="img">
+            <img class="img-flex relative" alt="winston" src="../../images/card-oliver.jpg">
+          </div>
+          <div class="island-1-2">
+            <h3 class="push-1-8 tera">Oliver</h3>
+            <h4 class="push-1-2 mega">#4564</h4>
+            <p class="push-0">Dachshund</p>
+            <p class="push">Adult | Male</p>
+            <div class="text-center">
+              <a class="btn btn-icon relative" href="#">
+                <i class="icon i-18 gutter absolute">
+                  <svg><use class="paw" xlink:href="../../images/icons.svg#paw"/></svg>
+                </i>
+                <span class="icon-label">Adopt Me</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="island-1-2 unit xs-1 s-1 m-1-2 l-1-3">
+        <div class="card">
+          <div class="img">
+            <img class="img-flex relative" alt="winston" src="../../images/card-princess.jpg">
+          </div>
+          <div class="island-1-2">
+            <h3 class="push-1-8 tera">Princess</h3>
+            <h4 class="push-1-2 mega">#4565</h4>
+            <p class="push-0">Dachshund</p>
+            <p class="push">Puppy | Female</p>
+            <div class="text-center">
+              <a class="btn btn-icon relative" href="#">
+                <i class="icon i-18 gutter absolute">
+                  <svg><use class="paw" xlink:href="../../images/icons.svg#paw"/></svg>
+                </i>
+                <span class="icon-label">Adopt Me</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="island-1-2 unit xs-1 s-1 m-1-2 l-1-3">
+        <div class="card">
+          <div class="img">
+            <img class="img-flex relative" alt="teddy" src="../../images/card-teddy.jpg">
+          </div>
+          <div class="island-1-2">
+            <h3 class="push-1-8 tera">Teddy</h3>
+            <h4 class="push-1-2 mega">#4566</h4>
+            <p class="push-0">King Charles Spaniel</p>
+            <p class="push">Adult | Male</p>
+            <div class="text-center">
+              <a class="btn btn-icon relative" href="#">
+                <i class="icon i-18 gutter absolute">
+                  <svg><use class="paw" xlink:href="../../images/icons.svg#paw"/></svg>
+                </i>
+                <span class="icon-label">Adopt Me</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="island-1-2 unit xs-1 s-1 m-1-2 l-1-3">
+        <div class="card">
+          <div class="img">
+            <img class="img-flex relative" alt="lily" src="../../images/card-lily.jpg">
+          </div>
+          <div class="island-1-2">
+            <h3 class="push-1-8 tera">Lily</h3>
+            <h4 class="push-1-2 mega">#4567</h4>
+            <p class="push-0">Borzoi</p>
+            <p class="push">Adult | Female</p>
+            <div class="text-center">
+              <a class="btn btn-icon relative" href="#">
+                <i class="icon i-18 gutter absolute">
+                  <svg><use class="paw" xlink:href="../../images/icons.svg#paw"/></svg>
+                </i>
+                <span class="icon-label">Adopt Me</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="island-1-2 unit xs-1 s-1 m-1-2 l-1-3">
+        <div class="card">
+          <div class="img">
+            <img class="img-flex relative" alt="zoe" src="../../images/card-zoe.jpg">
+          </div>
+          <div class="island-1-2">
+            <h3 class="push-1-8 tera">Zoe</h3>
+            <h4 class="push-1-2 mega">#4568</h4>
+            <p class="push-0">Yorkshire Terrier</p>
+            <p class="push">Puppy | Female</p>
+            <div class="text-center">
+              <a class="btn btn-icon relative" href="#">
+                <i class="icon i-18 gutter absolute">
+                  <svg><use class="paw" xlink:href="../../images/icons.svg#paw"/></svg>
+                </i>
+                <span class="icon-label">Adopt Me</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="island-1-2 unit xs-1 s-1 m-1-2 l-1-3">
+        <div class="card">
+          <div class="img">
+            <img class="img-flex relative" alt="lucy" src="../../images/card-lucy.jpg">
+          </div>
+          <div class="island-1-2">
+            <h3 class="push-1-8 tera">Lucy</h3>
+            <h4 class="push-1-2 mega">#4569</h4>
+            <p class="push-0">Pug</p>
+            <p class="push">Adult | Female</p>
+            <div class="text-center">
+              <a class="btn btn-icon relative" href="#">
+                <i class="icon i-18 gutter absolute">
+                  <svg><use class="paw" xlink:href="../../images/icons.svg#paw"/></svg>
+                </i>
+                <span class="icon-label">Adopt Me</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="island-1-2 unit xs-1 s-1 m-1-2 l-1-3">
+        <div class="card">
+          <div class="img">
+            <img class="img-flex relative" alt="copper" src="../../images/card-copper.jpg">
+          </div>
+          <div class="island-1-2">
+            <h3 class="push-1-8 tera">Copper</h3>
+            <h4 class="push-1-2 mega">#4570</h4>
+            <p class="push-0">Dalmatian</p>
+            <p class="push">Adult | Male</p>
+            <div class="text-center">
+              <a class="btn btn-icon relative" href="#">
+                <i class="icon i-18 gutter absolute">
+                  <svg><use class="paw" xlink:href="../../images/icons.svg#paw"/></svg>
+                </i>
+                <span class="icon-label">Adopt Me</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="island-1-2 unit xs-1 s-1 m-1-2 l-1-3">
+        <div class="card">
+          <div class="img">
+            <img class="img-flex relative" alt="riley" src="../../images/card-riley.jpg">
+          </div>
+          <div class="island-1-2">
+            <h3 class="push-1-8 tera">Riley</h3>
+            <h4 class="push-1-2 mega">#4571</h4>
+            <p class="push-0">Chihauhua</p>
+            <p class="push">Senior | Male</p>
+            <div class="text-center">
+              <a class="btn btn-icon relative" href="#">
+                <i class="icon i-18 gutter absolute">
+                  <svg><use class="paw" xlink:href="../../images/icons.svg#paw"/></svg>
+                </i>
+                <span class="icon-label">Adopt Me</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="island-1-2 unit xs-1 s-1 m-1-2 l-1-3">
+        <div class="card">
+          <div class="img">
+            <img class="img-flex relative" alt="bear" src="../../images/card-bear.jpg">
+          </div>
+          <div class="island-1-2">
+            <h3 class="push-1-8 tera">Bear</h3>
+            <h4 class="push-1-2 mega">#4572</h4>
+            <p class="push-0">Bernese Mountain Dog</p>
+            <p class="push">Adult | Male</p>
+            <div class="text-center">
+              <a class="btn btn-icon relative" href="#">
+                <i class="icon i-18 gutter absolute">
+                  <svg><use class="paw" xlink:href="../../images/icons.svg#paw"/></svg>
+                </i>
+                <span class="icon-label">Adopt Me</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="island-1-2 unit xs-1 s-1 m-1-2 l-1-3">
+        <div class="card">
+          <div class="img">
+            <img class="img-flex relative" alt="lucky" src="../../images/card-lucky.jpg">
+          </div>
+          <div class="island-1-2">
+            <h3 class="push-1-8 tera">Lucky</h3>
+            <h4 class="push-1-2 mega">#4573</h4>
+            <p class="push-0">Jack Russel</p>
+            <p class="push">Adult | Male</p>
+            <div class="text-center">
+              <a class="btn btn-icon relative" href="#">
+                <i class="icon i-18 gutter absolute">
+                  <svg><use class="paw" xlink:href="../../images/icons.svg#paw"/></svg>
+                </i>
+                <span class="icon-label">Adopt Me</span>
+              </a>
+            </div>
+          </div>
         </div>
       </div>
     </section>
-  </div>
+  </main>
 
-  <section class="grid island-1-2 wrapper card-section">
-    <div class="island-1-2 unit xs-1 s-1 m-1-2 l-1-3">
-      <div class="card">
-        <div class="img">
-          <img class="img-flex relative" alt="winston" src="../../images/card-winston.jpg">
-        </div>
-        <div class="island-1-2">
-          <h3 class="push-1-8 tera">Winston</h3>
-          <h4 class="push-1-2 mega">#4563</h4>
-          <p class="push-0">Golden Retriever</p>
-          <p class="push">Puppy | Male</p>
-          <div class="text-center">
-            <a class="btn btn-icon relative" href="#">
-              <i class="icon i-18 gutter absolute">
-                <svg><use class="paw" xlink:href="../../images/icons.svg#paw"/></svg>
-              </i>
-              <span class="icon-label">Adopt Me</span>
-            </a>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <div class="island-1-2 unit xs-1 s-1 m-1-2 l-1-3">
-      <div class="card">
-        <div class="img">
-          <img class="img-flex relative" alt="winston" src="../../images/card-oliver.jpg">
-        </div>
-        <div class="island-1-2">
-          <h3 class="push-1-8 tera">Oliver</h3>
-          <h4 class="push-1-2 mega">#4564</h4>
-          <p class="push-0">Dachshund</p>
-          <p class="push">Adult | Male</p>
-          <div class="text-center">
-            <a class="btn btn-icon relative" href="#">
-              <i class="icon i-18 gutter absolute">
-                <svg><use class="paw" xlink:href="../../images/icons.svg#paw"/></svg>
-              </i>
-              <span class="icon-label">Adopt Me</span>
-            </a>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <div class="island-1-2 unit xs-1 s-1 m-1-2 l-1-3">
-      <div class="card">
-        <div class="img">
-          <img class="img-flex relative" alt="winston" src="../../images/card-princess.jpg">
-        </div>
-        <div class="island-1-2">
-          <h3 class="push-1-8 tera">Princess</h3>
-          <h4 class="push-1-2 mega">#4565</h4>
-          <p class="push-0">Dachshund</p>
-          <p class="push">Puppy | Female</p>
-          <div class="text-center">
-            <a class="btn btn-icon relative" href="#">
-              <i class="icon i-18 gutter absolute">
-                <svg><use class="paw" xlink:href="../../images/icons.svg#paw"/></svg>
-              </i>
-              <span class="icon-label">Adopt Me</span>
-            </a>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <div class="island-1-2 unit xs-1 s-1 m-1-2 l-1-3">
-      <div class="card">
-        <div class="img">
-          <img class="img-flex relative" alt="teddy" src="../../images/card-teddy.jpg">
-        </div>
-        <div class="island-1-2">
-          <h3 class="push-1-8 tera">Teddy</h3>
-          <h4 class="push-1-2 mega">#4566</h4>
-          <p class="push-0">King Charles Spaniel</p>
-          <p class="push">Adult | Male</p>
-          <div class="text-center">
-            <a class="btn btn-icon relative" href="#">
-              <i class="icon i-18 gutter absolute">
-                <svg><use class="paw" xlink:href="../../images/icons.svg#paw"/></svg>
-              </i>
-              <span class="icon-label">Adopt Me</span>
-            </a>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <div class="island-1-2 unit xs-1 s-1 m-1-2 l-1-3">
-      <div class="card">
-        <div class="img">
-          <img class="img-flex relative" alt="lily" src="../../images/card-lily.jpg">
-        </div>
-        <div class="island-1-2">
-          <h3 class="push-1-8 tera">Lily</h3>
-          <h4 class="push-1-2 mega">#4567</h4>
-          <p class="push-0">Borzoi</p>
-          <p class="push">Adult | Female</p>
-          <div class="text-center">
-            <a class="btn btn-icon relative" href="#">
-              <i class="icon i-18 gutter absolute">
-                <svg><use class="paw" xlink:href="../../images/icons.svg#paw"/></svg>
-              </i>
-              <span class="icon-label">Adopt Me</span>
-            </a>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <div class="island-1-2 unit xs-1 s-1 m-1-2 l-1-3">
-      <div class="card">
-        <div class="img">
-          <img class="img-flex relative" alt="zoe" src="../../images/card-zoe.jpg">
-        </div>
-        <div class="island-1-2">
-          <h3 class="push-1-8 tera">Zoe</h3>
-          <h4 class="push-1-2 mega">#4568</h4>
-          <p class="push-0">Yorkshire Terrier</p>
-          <p class="push">Puppy | Female</p>
-          <div class="text-center">
-            <a class="btn btn-icon relative" href="#">
-              <i class="icon i-18 gutter absolute">
-                <svg><use class="paw" xlink:href="../../images/icons.svg#paw"/></svg>
-              </i>
-              <span class="icon-label">Adopt Me</span>
-            </a>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <div class="island-1-2 unit xs-1 s-1 m-1-2 l-1-3">
-      <div class="card">
-        <div class="img">
-          <img class="img-flex relative" alt="lucy" src="../../images/card-lucy.jpg">
-        </div>
-        <div class="island-1-2">
-          <h3 class="push-1-8 tera">Lucy</h3>
-          <h4 class="push-1-2 mega">#4569</h4>
-          <p class="push-0">Pug</p>
-          <p class="push">Adult | Female</p>
-          <div class="text-center">
-            <a class="btn btn-icon relative" href="#">
-              <i class="icon i-18 gutter absolute">
-                <svg><use class="paw" xlink:href="../../images/icons.svg#paw"/></svg>
-              </i>
-              <span class="icon-label">Adopt Me</span>
-            </a>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <div class="island-1-2 unit xs-1 s-1 m-1-2 l-1-3">
-      <div class="card">
-        <div class="img">
-          <img class="img-flex relative" alt="copper" src="../../images/card-copper.jpg">
-        </div>
-        <div class="island-1-2">
-          <h3 class="push-1-8 tera">Copper</h3>
-          <h4 class="push-1-2 mega">#4570</h4>
-          <p class="push-0">Dalmatian</p>
-          <p class="push">Adult | Male</p>
-          <div class="text-center">
-            <a class="btn btn-icon relative" href="#">
-              <i class="icon i-18 gutter absolute">
-                <svg><use class="paw" xlink:href="../../images/icons.svg#paw"/></svg>
-              </i>
-              <span class="icon-label">Adopt Me</span>
-            </a>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <div class="island-1-2 unit xs-1 s-1 m-1-2 l-1-3">
-      <div class="card">
-        <div class="img">
-          <img class="img-flex relative" alt="riley" src="../../images/card-riley.jpg">
-        </div>
-        <div class="island-1-2">
-          <h3 class="push-1-8 tera">Riley</h3>
-          <h4 class="push-1-2 mega">#4571</h4>
-          <p class="push-0">Chihauhua</p>
-          <p class="push">Senior | Male</p>
-          <div class="text-center">
-            <a class="btn btn-icon relative" href="#">
-              <i class="icon i-18 gutter absolute">
-                <svg><use class="paw" xlink:href="../../images/icons.svg#paw"/></svg>
-              </i>
-              <span class="icon-label">Adopt Me</span>
-            </a>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <div class="island-1-2 unit xs-1 s-1 m-1-2 l-1-3">
-      <div class="card">
-        <div class="img">
-          <img class="img-flex relative" alt="bear" src="../../images/card-bear.jpg">
-        </div>
-        <div class="island-1-2">
-          <h3 class="push-1-8 tera">Bear</h3>
-          <h4 class="push-1-2 mega">#4572</h4>
-          <p class="push-0">Bernese Mountain Dog</p>
-          <p class="push">Adult | Male</p>
-          <div class="text-center">
-            <a class="btn btn-icon relative" href="#">
-              <i class="icon i-18 gutter absolute">
-                <svg><use class="paw" xlink:href="../../images/icons.svg#paw"/></svg>
-              </i>
-              <span class="icon-label">Adopt Me</span>
-            </a>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <div class="island-1-2 unit xs-1 s-1 m-1-2 l-1-3">
-      <div class="card">
-        <div class="img">
-          <img class="img-flex relative" alt="lucky" src="../../images/card-lucky.jpg">
-        </div>
-        <div class="island-1-2">
-          <h3 class="push-1-8 tera">Lucky</h3>
-          <h4 class="push-1-2 mega">#4573</h4>
-          <p class="push-0">Jack Russel</p>
-          <p class="push">Adult | Male</p>
-          <div class="text-center">
-            <a class="btn btn-icon relative" href="#">
-              <i class="icon i-18 gutter absolute">
-                <svg><use class="paw" xlink:href="../../images/icons.svg#paw"/></svg>
-              </i>
-              <span class="icon-label">Adopt Me</span>
-            </a>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <footer class="grid grid-middle footer">
-    <nav class="unit xs-1 s-1 m-1 l-2-3 island push-2 relative" id="nav" role="navigation">
+  <footer class="grid grid-middle footer" role="contentinfo">
+    <nav class="unit xs-1 s-1 m-1 l-2-3 island relative" id="nav-footer" role="navigation">
       <ul class="grid list-group text-center">
-        <li class="drop-footer relative unit xs-1-2 s-1-2 m-1-2 l-1-4">
-          <a class="drop-btn-footer utter-1-2 pad-t-1-4 pad-b-1-4" href="javascript:void(0)">Home</a>
-          <div class="drop-content-footer absolute zindex-1">
-            <a href="#">Happy Tails</a>
-            <a href="#">Our Mission</a>
-            <a href="#">Contact Us</a>
-          </div>
+        <li class="unit xs-1-2 s-1-2 m-1-2 l-1-4">
+          <a class="gutter-1-2 pad-t-1-4 pad-b-1-4" href="home.html">Home</a>
+          <a class="gutter-1-2 pad-t-1-4 pad-b-1-4 milli" href="home.html#tails">Happy Tails</a>
+          <a class="gutter-1-2 pad-t-1-4 pad-b-1-4 milli" href="home.html#mission">Our Mission</a>
+          <a class="gutter-1-2 pad-t-1-4 pad-b-1-4 milli" href="home.html#contact">Contact Us</a>
         </li>
         <li class="unit xs-1-2 s-1-2 m-1-2 l-1-4"><a class="gutter-1-2 pad-t-1-4 pad-b-1-4" href="#">Blog</a></li>
-        <li class="unit xs-1-2 s-1-2 m-1-2 l-1-4"><a class="gutter-1-2 pad-t-1-4 pad-b-1-4" href="#adopt">Adopt</a></li>
-        <li class="unit xs-1-2 s-1-2 m-1-2 l-1-4"><a class="gutter-1-2 pad-t-1-4 pad-b-1-4" href="#application">Application</a></li>
+        <li class="unit xs-1-2 s-1-2 m-1-2 l-1-4"><a class="gutter-1-2 pad-t-1-4 pad-b-1-4" href="adopt.html">Adopt</a></li>
+        <li class="unit xs-1-2 s-1-2 m-1-2 l-1-4"><a class="gutter-1-2 pad-t-1-4 pad-b-1-4" href="application.html">Application</a></li>
       </ul>
     </nav>
-    <div class="unit xs-1 s-1 m-1 l-1-3 push-2 text-center">
-      <a class="gutter-1-2" href="#">
-        <i class="icon icon-footer i-48">
+    <div class="unit xs-1 s-1 m-1 l-1-3 push text-center">
+      <a class="gutter-1-2 social" href="#">
+        <i class="icon icon-footer i-32">
           <svg><use class="facebook" xlink:href="../../images/icons.svg#facebook"/></svg>
         </i>
       </a>
-      <a class="gutter-1-2" href="#">
+      <a class="gutter-1-2 social" href="#">
         <i class="icon icon-footer i-48">
           <svg><use class="twitter" xlink:href="../../images/icons.svg#twitter"/></svg>
         </i>
       </a>
+      <a class="gutter-1-2 social" href="#">
+        <i class="icon icon-footer i-48">
+          <svg><use class="instagram" xlink:href="../../images/icons.svg#instagram"/></svg>
+        </i>
+      </a>
     </div>
     <div class="island copyright unit xs-1 s-1 m-1 l-1 relative">
-      <small>© Loyal Rescue. All right reserved.</small>
+      <small class="milli">© Loyal Rescue. All right reserved.</small>
     </div>
   </footer>
 </body>
