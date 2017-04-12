@@ -13,36 +13,8 @@
   color: var(--color-primary);
 }
 
-.drop-btn-footer {
-  color: white;
-  text-align: center;
-  text-decoration: none;
-}
-
-.drop-content-footer {
-  display: none;
-  left: 50%;
-  top: 1.5rem;
-  transform: translateX(-50%);
-  width: 10rem;
-}
-
-.drop-content-footer a {
-  background-color: var(--color-primary);
-  color: white;
-  padding: 12px 16px;
-  text-decoration: none;
-  display: block;
-  text-align: left;
-}
-
-.drop-content-footer a:hover {
-  background-color: white;
-  color: var(--color-secondary);
-}
-
-.drop-footer:hover .drop-content-footer {
-  display: block;
+.footer nav a:focus {
+  color: var(--color-primary);
 }
 
 .icon-footer {
@@ -50,8 +22,12 @@
   color: var(--color-primary);
 }
 
-.icon-footer:hover {
-  background-color: white;
+.facebook:hover, .twitter:hover, .instagram:hover {
+  fill: white;
+}
+
+.facebook:focus, .twitter:focus, .instagram:focus {
+  fill: white;
 }
 
 .copyright {

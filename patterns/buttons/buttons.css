@@ -17,6 +17,12 @@
   color: var(--color-primary);
 }
 
+.btn:focus {
+  background-color: var(--color-accent);
+  border: solid 3px var(--color-accent);
+  color: var(--color-primary);
+}
+
 .btn-reverse {
   background-color: #fff;
   border-color: #fff;
@@ -29,9 +35,20 @@
   color: #fff;
 }
 
+.btn-reverse:focus {
+  background-color: var(--color-primary);
+  border-color: var(--color-primary);
+  color: #fff;
+}
+
 /* Add an paw icon */
 
 .btn-icon:hover {
+  background-color: var(--color-accent);
+  border-color: var(--color-accent);
+}
+
+.btn-icon:focus {
   background-color: var(--color-accent);
   border-color: var(--color-accent);
 }
@@ -56,11 +73,24 @@
   fill: var(--color-primary);
 }
 
+.btn-icon:focus .paw {
+  fill: var(--color-primary);
+}
+
 .btn-icon:hover .icon-label {
   transform: translate(-.9rem);
 }
 
+.btn-icon:focus .icon-label {
+  transform: translate(-.9rem);
+}
+
 .btn-icon:hover .icon {
+  opacity: 1;
+  transform: translate(3.7rem, .2rem);
+}
+
+.btn-icon:focus .icon {
   opacity: 1;
   transform: translate(3.7rem, .2rem);
 }

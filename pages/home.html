@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en-ca">
+
 <head>
   <meta charset="utf-8">
   <title>Loyal Rescue</title>
@@ -8,46 +9,58 @@
   <link href="../common/grid.css" rel="stylesheet">
   <link href="../common/type.css" rel="stylesheet">
   <link href="../common/theme.css" rel="stylesheet">
+  <link href="../patterns/header/header.css" rel="stylesheet">
   <link href="../patterns/banner/banner.css" rel="stylesheet">
   <link href="../patterns/buttons/buttons.css" rel="stylesheet">
-  <link href="../patterns/footer/footer.css" rel="stylesheet">
-  <link href="../patterns/header/header.css" rel="stylesheet">
   <link href="../patterns/pull-quote-section/pull-quote-section.css" rel="stylesheet">
   <link href="../patterns/section/section.css" rel="stylesheet">
   <link href="../patterns/forms/form.css" rel="stylesheet">
-  <link href="../patterns/buttons/buttons.css" rel="stylesheet">
+  <link href="../patterns/footer/footer.css" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Fira+Sans:300,300i,400,400i,500,500i,600,600i" rel="stylesheet">
 </head>
+
 <body>
+
+  <ul class="skip-links">
+    <li><a href="#main">Jump to main content</a></li>
+    <li><a href="#nav">Jump to navigation</a></li>
+    <li><a href="tails">Jump to Happy Tails</a></li>
+    <li><a href="#mission">Jump to Our Mission</a></li>
+    <li><a href="#contact">Jump to Contact</a></li>
+  </ul>
+
   <header class="masthead grid grid-middle gutter pad-t-1-2 pad-b-1-2 header">
     <h1 class="giga unit xs-1 s-1 m-1 l-1-3 push-0">
-      <i class="icon i-64">
-        <img src="../images/logo-64.svg" alt="">
-      </i><span class="gutter-1-2">Loyal Rescue</span>
+      <a class="logo" href="home.html">
+        <i class="icon i-64">
+          <img src="../images/logo-64.svg" alt="Loyal Rescue logo">
+        </i><span class="gutter-1-2">Loyal Rescue</span>
+      </a>
     </h1>
+
     <nav class="unit xs-1 s-1 m-1 l-2-3 island-1-2 relative" id="nav" role="navigation">
       <ul class="grid list-group text-center">
         <li class="drop relative unit xs-1-2 s-1-2 m-1-2 l-1-4">
-          <a class="drop-btn utter-1-2 pad-t-1-4 pad-b-1-4" href="javascript:void(0)">Home</a>
+          <a class="drop-btn gutter-1-2 pad-t-1-4 pad-b-1-4" href="javascript:void(0)">Home</a>
           <div class="drop-content absolute zindex-1">
-            <a href="#">Happy Tails</a>
-            <a href="#">Our Mission</a>
-            <a href="#">Contact Us</a>
+            <a href="#tails">Happy Tails</a>
+            <a href="#mission">Our Mission</a>
+            <a href="#contact">Contact Us</a>
           </div>
         </li>
         <li class="unit xs-1-2 s-1-2 m-1-2 l-1-4"><a class="gutter-1-2 pad-t-1-4 pad-b-1-4" href="#">Blog</a></li>
-        <li class="unit xs-1-2 s-1-2 m-1-2 l-1-4"><a class="gutter-1-2 pad-t-1-4 pad-b-1-4" href="#adopt">Adopt</a></li>
-        <li class="unit xs-1-2 s-1-2 m-1-2 l-1-4"><a class="gutter-1-2 pad-t-1-4 pad-b-1-4" href="#application">Application</a></li>
+        <li class="unit xs-1-2 s-1-2 m-1-2 l-1-4"><a class="gutter-1-2 pad-t-1-4 pad-b-1-4" href="adopt.html">Adopt</a></li>
+        <li class="unit xs-1-2 s-1-2 m-1-2 l-1-4"><a class="gutter-1-2 pad-t-1-4 pad-b-1-4" href="application.html">Application</a></li>
       </ul>
     </nav>
   </header>
 
-  <section class="push-2">
+  <section role="banner">
     <div class="relative">
       <div>
-        <img class="img-flex" src="../images/banner.jpg" alt="">
+        <img class="img-flex" src="../images/banner.jpg" alt="Loyal Rescue banner">
       </div>
-      <div class="info w-1 text-center">
+      <div class="info w-1 text-center" id="banner">
         <h2 class="yotta push-1-2 pad-t banner-heading">Rescuing Dogs in Need</h2>
         <p class="push banner-text giga">Connecting foster dogs with their forever homes in the Toronto area.</p>
         <div>
@@ -57,139 +70,163 @@
     </div>
   </section>
 
-  <section class="wrapper pull-quote-section grid island-1-2">
-    <h2 class="unit xs-1 s-1 m-1 l-1 peta">Happy Tails</h2>
+  <main class="island" role="main" id="main">
+    <section class="grid wrapper pull-quote-section island" id="tails">
+      <h2 class="unit xs-1 s-1 m-1 l-1 peta push-1-4 pad-t-1-2">Happy Tails</h2>
 
-    <div class="unit xs-1 s-1 m-1-3 relative">
-      <span class="absolute proper-left">“</span>
-      <p class="pull-quote island giga">I adopted Nutmeg 2 years ago. I am so thankful for Loyal Rescue and all the foster families.</p>
-    </div>
-
-    <div class="unit xs-1 s-1 m-1-3 pad-b gutter-1-2">
-      <img class="img-flex" src="../images/dog-quote-1.jpg" alt="">
-    </div>
-
-    <div class="unit xs-1 s-1 m-1-3 relative">
-      <span class="absolute proper-left">“</span>
-      <p class="pull-quote island giga">Thanks Loyal Rescue for making our family complete.</p>
-    </div>
-
-    <div class="unit xs-1 s-1 m-1-3 pad-b gutter-1-2">
-      <img class="img-flex" src="../images/dog-quote-5.jpg" alt="">
-    </div>
-
-    <div class="unit xs-1 s-1 m-1-3 relative">
-      <span class="absolute proper-left">“</span>
-      <p class="pull-quote island giga">Oreo was rescued three years ago. We are so happy that we could rescue him and see him happy.</p>
-    </div>
-
-    <div class="unit xs-1 s-1 m-1-3 pad-b gutter-1-2">
-      <img class="img-flex" src="../images/dog-quote-4.jpg" alt="">
-    </div>
-  </section>
-
-  <section class="section wrapper pad-t-1-2 gutter-1-2">
-    <div class="section-text gutter max-length">
-      <h2 class="peta push-1-4 pad-t-1-2">Our Mission</h2>
-      <p class="push-1-2">Our mission is to connect fostered dogs to their forever homes in the Toronto area. For 7 years we have proudly been doing just that.</p>
-      <p>Our fosters have opened their hearts and homes to dogs in need of rescue. Loyal Rescue has never operated out of a shelter and as such each dog is viewed in a private home. We are always in desperate need for commited foster families to join our team.</p>
-    </div>
-    <div class="grid push stats">
-      <div class="unit xs-1-3 s-1-3 m-1-3 l-1-3">
-        <p class="yotta text-center push-1-4 bold">11</p>
-        <p class="text-center">adoptable dogs waiting</p>
-      </div>
-      <div class="unit xs-1-3 s-1-3 m-1-3 l-1-3">
-        <p class="yotta text-center push-1-4 bold">2,013</p>
-        <p class="text-center">dogs adopted so far</p>
-      </div>
-      <div class="unit xs-1-3 s-1-3 m-1-3 l-1-3">
-        <p class="yotta text-center push-1-4 bold">$1,045</p>
-        <p class="text-center">donated this month</p>
-      </div>
-    </div>
-  </section>
-
-  <section class="wrapper island icon-form">
-    <h2 class="push-1-2 peta">Contact Us</h2>
-    <form class="max-length" method="post" novalidate>
-      <div class="error-message error-message-highlighted push" role="alert" aria-live="assertive">
-        <h3 class="push-0 tera warning text-center pad-t pad-b gutter">There was an error with the highlighted fields below</h3>
+      <div class="unit xs-1 s-1 m-1-3 relative" id="pull-quote-1">
+        <span class="absolute proper-left">“</span>
+        <p class="pull-quote island giga">I adopted Nutmeg 2 years ago. I am so thankful for Loyal Rescue and all the foster families.</p>
       </div>
 
-      <div class="push-1-2">
-        <label class="mega" for="name">Full Name</label>
-        <div class="relative">
-          <input id="name" required aria-describedby="name-error">
-          <p class="error-message milli pad-t-1-4 push-1-2" id="name-error">Please provide a full name</p>
-          <div class="form-background absolute pin-top-left">
-            <i class="icon i-24 absolute pin-center island-1-2"><svg><use xlink:href="../../images/icons.svg#person" /></svg></i>
-          </div>
+      <div class="unit xs-1 s-1 m-1-3 pad-b gutter-1-2">
+        <img class="img-flex" src="../images/dog-quote-1.jpg" alt="Dog laying on couch">
+      </div>
+
+      <div class="unit xs-1 s-1 m-1-3 relative" id="pull-quote-2">
+        <span class="absolute proper-left">“</span>
+        <p class="pull-quote island giga">Thanks Loyal Rescue for making our family complete.</p>
+      </div>
+
+      <div class="unit xs-1 s-1 m-1-3 pad-b gutter-1-2">
+        <img class="img-flex" src="../images/dog-quote-2.jpg" alt="Dog holding rope">
+      </div>
+
+      <div class="unit xs-1 s-1 m-1-3 relative" id="pull-quote-3">
+        <span class="absolute proper-left">“</span>
+        <p class="pull-quote island giga">Oreo was rescued three years ago. We are so happy that we could rescue him and see him happy.</p>
+      </div>
+
+      <div class="unit xs-1 s-1 m-1-3 pad-b gutter-1-2">
+        <img class="img-flex" src="../images/dog-quote-3.jpg" alt="Dog on beach">
+      </div>
+    </section>
+
+    <section class="section wrapper island push" id="mission">
+      <div class="section-text gutter max-length push-2">
+        <h2 class="peta push-1-4 pad-t-1-2">Our Mission</h2>
+        <p class="push-1-2">Our mission is to connect fostered dogs to their forever homes in the Toronto area. For 7 years we have proudly been doing just that.</p>
+        <p>Our fosters have opened their hearts and homes to dogs in need of rescue. Loyal Rescue has never operated out of a shelter and as such each dog is viewed in a private home. We are always in desperate need for commited foster families to join our
+          team.</p>
+      </div>
+      <div class="grid push stats">
+        <div class="unit xs-1-3 s-1-3 m-1-3 l-1-3 text-center">
+          <i class="icon i-48 push">
+            <svg><use class="paw-outline" xlink:href="../../images/icons.svg#paw-outline"/></svg>
+          </i>
+          <p class="yotta text-center push-1-4 bold">11</p>
+          <p class="text-center">adoptable dogs waiting</p>
+        </div>
+        <div class="unit xs-1-3 s-1-3 m-1-3 l-1-3 text-center">
+          <i class="icon i-48 push">
+            <svg><use class="heart" xlink:href="../../images/icons.svg#heart"/></svg>
+          </i>
+          <p class="yotta text-center push-1-4 bold">2,013</p>
+          <p class="text-center">dogs adopted so far</p>
+        </div>
+        <div class="unit xs-1-3 s-1-3 m-1-3 l-1-3 text-center">
+          <i class="icon i-48 push">
+            <svg><use class="money" xlink:href="../../images/icons.svg#money"/></svg>
+          </i>
+          <p class="yotta text-center push-1-4 bold">$1,045</p>
+          <p class="text-center">donated this month</p>
         </div>
       </div>
+    </section>
 
-      <div class="push-1-2">
-        <label class="mega" for="email">Email</label>
-        <div class="relative">
-          <input id="email" required aria-describedby="email-error">
-          <p class="error-message milli pad-t-1-4 push-1-2" id="email-error">Please provide a proper e-mail</p>
-          <div class="form-background absolute pin-top-left">
-            <i class="icon i-24 absolute pin-center island-1-2"><svg><use xlink:href="../../images/icons.svg#mail" /></svg></i>
-          </div>
-        </div>
+    <section class="wrapper island icon-form" id="contact">
+      <div class="max-length">
+        <form method="POST" novalidate action="https://formspree.io/obritschk@gmail.com">
+          <fieldset>
+            <legend class="peta push-1-4 pad-t-1-2 contact-legend">Contact Us</legend>
+            <div class="error-message error-message-highlighted push" role="alert" aria-live="assertive">
+              <h3 class="push-0 tera warning text-center pad-t pad-b gutter">There was an error with the highlighted fields below</h3>
+            </div>
+
+            <div class="push-1-2">
+              <label class="mega" for="name">Full Name</label>
+              <div class="relative">
+                <input id="name" required aria-describedby="name-error">
+                <p class="error-message milli pad-t-1-4 push-1-2" id="name-error">Please provide a full name</p>
+                <div class="form-background absolute pin-top-left">
+                  <i class="icon i-24 absolute pin-center island-1-2"><svg><use xlink:href="../../images/icons.svg#person" /></svg></i>
+                </div>
+              </div>
+            </div>
+
+            <div class="push-1-2">
+              <label class="mega" for="email">Email</label>
+              <div class="relative">
+                <input id="email" required aria-describedby="email-error">
+                <p class="error-message milli pad-t-1-4 push-1-2" id="email-error">Please provide a proper e-mail</p>
+                <div class="form-background absolute pin-top-left">
+                  <i class="icon i-24 absolute pin-center island-1-2"><svg><use xlink:href="../../images/icons.svg#mail" /></svg></i>
+                </div>
+              </div>
+            </div>
+
+            <div class="push-1-2">
+              <label class="mega" for="question">Questions or comments?</label>
+              <div class="relative">
+                <textarea name="question" id="question" required aria-describedby="question-error"></textarea>
+                <p class="error-message milli pad-t-1-4 push-1-2" id="question-error">Please tell us your comment</p>
+                <div class="form-background form-background-question absolute pin-top-left">
+                  <i class="icon i-24 absolute pin-center island-1-2"><svg><use xlink:href="../../images/icons.svg#question" /></svg></i>
+                </div>
+              </div>
+            </div>
+
+            <div>
+              <input type="hidden" name="_subject" value="Contact">
+            </div>
+
+            <div class="pad-t-1-2">
+              <button class="btn" type="submit">Send</button>
+            </div>
+          </fieldset>
+        </form>
       </div>
+    </section>
 
-      <div class="push-1-2">
-        <label class="mega" for="question">Questions or comments?</label>
-        <div class="relative">
-          <textarea name="question" id="question" required aria-describedby="question-error"></textarea>
-          <p class="error-message milli pad-t-1-4 push-1-2" id="question-error">Please tell us your comment</p>
-          <div class="form-background form-background-question absolute pin-top-left">
-            <i class="icon i-24 absolute pin-center island-1-2"><svg><use xlink:href="../../images/icons.svg#question" /></svg></i>
-          </div>
-        </div>
-      </div>
+    <script src="https://thomasjbradley.github.io/form-validation-helper/index.js"></script>
+  </main>
 
-      <div class="pad-t-1-2">
-        <button class="btn" type="submit">Send</button>
-      </div>
-    </form>
-  </section>
-
-  <script src="https://thomasjbradley.github.io/form-validation-helper/index.js"></script>
-
-  <footer class="grid grid-middle footer">
-    <nav class="unit xs-1 s-1 m-1 l-2-3 island push-2 relative" id="nav" role="navigation">
+  <footer class="grid grid-middle footer" role="contentinfo">
+    <nav class="unit xs-1 s-1 m-1 l-2-3 island relative" id="nav-footer" role="navigation">
       <ul class="grid list-group text-center">
-        <li class="drop-footer relative unit xs-1-2 s-1-2 m-1-2 l-1-4">
-          <a class="drop-btn-footer utter-1-2 pad-t-1-4 pad-b-1-4" href="javascript:void(0)">Home</a>
-          <div class="drop-content-footer absolute zindex-1">
-            <a href="#">Happy Tails</a>
-            <a href="#">Our Mission</a>
-            <a href="#">Contact Us</a>
-          </div>
+        <li class="unit xs-1-2 s-1-2 m-1-2 l-1-4">
+          <a class="gutter-1-2 pad-t-1-4 pad-b-1-4" href="#">Home</a>
+          <a class="gutter-1-2 pad-t-1-4 pad-b-1-4 milli" href="#">Happy Tails</a>
+          <a class="gutter-1-2 pad-t-1-4 pad-b-1-4 milli" href="#">Our Mission</a>
+          <a class="gutter-1-2 pad-t-1-4 pad-b-1-4 milli" href="#">Contact Us</a>
         </li>
         <li class="unit xs-1-2 s-1-2 m-1-2 l-1-4"><a class="gutter-1-2 pad-t-1-4 pad-b-1-4" href="#">Blog</a></li>
         <li class="unit xs-1-2 s-1-2 m-1-2 l-1-4"><a class="gutter-1-2 pad-t-1-4 pad-b-1-4" href="#adopt">Adopt</a></li>
         <li class="unit xs-1-2 s-1-2 m-1-2 l-1-4"><a class="gutter-1-2 pad-t-1-4 pad-b-1-4" href="#application">Application</a></li>
       </ul>
     </nav>
-    <div class="unit xs-1 s-1 m-1 l-1-3 push-2 text-center">
-      <a class="gutter-1-2" href="#">
-        <i class="icon icon-footer i-48">
+    <div class="unit xs-1 s-1 m-1 l-1-3 push text-center">
+      <a class="gutter-1-2 social" href="#">
+        <i class="icon icon-footer i-32">
           <svg><use class="facebook" xlink:href="../../images/icons.svg#facebook"/></svg>
         </i>
       </a>
-      <a class="gutter-1-2" href="#">
+      <a class="gutter-1-2 social" href="#">
         <i class="icon icon-footer i-48">
           <svg><use class="twitter" xlink:href="../../images/icons.svg#twitter"/></svg>
         </i>
       </a>
+      <a class="gutter-1-2 social" href="#">
+        <i class="icon icon-footer i-48">
+          <svg><use class="instagram" xlink:href="../../images/icons.svg#instagram"/></svg>
+        </i>
+      </a>
     </div>
     <div class="island copyright unit xs-1 s-1 m-1 l-1 relative">
-      <small>©Loyal Rescue. All right reserved.</small>
+      <small class="milli">© Loyal Rescue. All right reserved.</small>
     </div>
   </footer>
 
 </body>
+
 </html>

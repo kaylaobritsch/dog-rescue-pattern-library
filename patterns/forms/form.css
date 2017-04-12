@@ -18,6 +18,10 @@ fieldset {
   font-weight: 500;
 }
 
+.contact-legend {
+  color: var(--color-primary);
+}
+
 input,
 select {
   border: solid 4px var(--color-neutral-light-grey);
