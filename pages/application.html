@@ -1,0 +1,509 @@
+<!DOCTYPE html>
+<html lang="en-ca">
+<head>
+  <meta charset="utf-8">
+  <title>Loyal Rescue Application</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <link href="../common/modules.css" rel="stylesheet">
+  <link href="../common/grid.css" rel="stylesheet">
+  <link href="../common/type.css" rel="stylesheet">
+  <link href="../common/theme.css" rel="stylesheet">
+  <link href="../patterns/buttons/buttons.css" rel="stylesheet">
+  <link href="../patterns/footer/footer.css" rel="stylesheet">
+  <link href="../patterns/header/header.css" rel="stylesheet">
+  <link href="../patterns/forms/form.css" rel="stylesheet">
+  <link href="../patterns/intro-section/intro-section.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Fira+Sans:300,300i,400,400i,500,500i,600,600i" rel="stylesheet">
+</head>
+<body>
+  <ul class="skip-links">
+    <li><a href="#main">Jump to main content</a></li>
+    <li><a href="#nav">Jump to navigation</a></li>
+    <li><a href="#steps">Jump to adoption steps</a></li>
+    <li><a href="#dogs">Jump to adoptable dogs</a></li>
+  </ul>
+
+  <header class="masthead grid grid-middle gutter pad-t-1-2 pad-b-1-2 header">
+    <h1 class="giga unit xs-1 s-1 m-1 l-1-3 push-0">
+      <a class="logo" href="home.html">
+        <i class="icon i-64">
+          <img src="../images/logo-64.svg" alt="Loyal Rescue logo">
+        </i><span class="gutter-1-2">Loyal Rescue</span>
+      </a>
+    </h1>
+
+    <nav class="unit xs-1 s-1 m-1 l-2-3 island-1-2 relative" id="nav" role="navigation">
+      <ul class="grid list-group text-center">
+        <li class="drop relative unit xs-1-2 s-1-2 m-1-2 l-1-4">
+          <a class="drop-btn gutter-1-2 pad-t-1-4 pad-b-1-4" href="home.html">Home</a>
+          <div class="drop-content absolute zindex-1">
+            <a href="home.html#tails">Happy Tails</a>
+            <a href="home.html#mission">Our Mission</a>
+            <a href="home.html#contact">Contact Us</a>
+          </div>
+        </li>
+        <li class="unit xs-1-2 s-1-2 m-1-2 l-1-4"><a class="gutter-1-2 pad-t-1-4 pad-b-1-4" href="#">Blog</a></li>
+        <li class="unit xs-1-2 s-1-2 m-1-2 l-1-4"><a class="gutter-1-2 pad-t-1-4 pad-b-1-4" href="adopt.html">Adopt</a></li>
+        <li class="unit xs-1-2 s-1-2 m-1-2 l-1-4"><a class="gutter-1-2 pad-t-1-4 pad-b-1-4" href="application.html">Application</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="island">
+    <section class="wrapper island basic-form">
+      <h2 class="push-1-2">Application</h2>
+      <p class="push-1-2">This information is used to consider you for a phone interview.</p>
+      <p class="push-2">Please note at this time adoption is only available to Canadian residents.</p>
+
+      <form class="grid" method="POST" novalidate action="https://formspree.io/obri0205@algonquincollege.com">
+        <div class="unit xs-1 s-1 m-1 l-1 error-message error-message-highlighted push" role="alert" aria-live="assertive">
+          <h3 class="push-0 tera warning text-center pad-t pad-b gutter">There was an error with the highlighted fields below</h3>
+        </div>
+
+        <fieldset class="w-1 push-2">
+          <legend class="unit xs-1 tera main-legend push-1-2">Personal Information</legend>
+
+          <h3 class="unit xs-1 s-1 m-1-5 l-1-5 giga">Dog's Info</h3>
+          <div class="unit xs-1 s-1 m-2-5 push-1-2 gutter-1-4">
+            <label class="milli" for="dog-name">Dog's name</label>
+            <input class="push-1-2" id="dog-name" name="dog name" required aria-describedby="dog-name-error">
+            <p class="error-message micro island-1-4 push-0" id="dog-name-error">
+              <i class="icon i-24"><svg><use xlink:href="../../images/icons.svg#warning" /></svg></i>
+              <span class="icon-label">Provide the name of the dog</span>
+            </p>
+          </div>
+
+          <div class="unit xs-1 s-1 m-2-5 l-2-5 push-1-2 gutter-1-4">
+            <label class="milli" for="adopt-num">Adoption number</label>
+            <input class="push-1-2" type="number" name="adoption-number" id="adopt-num" required aria-describedby="adopt-num-error">
+            <p class="error-message micro island-1-4 push-0" id="adopt-num-error">
+              <i class="icon i-24"><svg><use xlink:href="../../images/icons.svg#warning" /></svg></i>
+              <span class="icon-label">Provide the dog's adoption number</span>
+            </p>
+          </div>
+
+          <h3 class="unit xs-1 s-1 m-1-5 l-1-5 giga">About You</h3>
+
+          <div class="unit xs-1 s-1 m-3-5 l-3-5 push-1-2 gutter-1-4">
+            <label class="milli" for="name">Full name</label>
+            <input class="push-1-2" id="name" name="full-name" required aria-describedby="name-error">
+            <p class="error-message micro island-1-4 push-0" id="name-error">
+              <i class="icon i-24"><svg><use xlink:href="../../images/icons.svg#warning" /></svg></i>
+              <span class="icon-label">Provide your full name</span>
+            </p>
+          </div>
+
+          <div class="unit xs-1 s-1 m-1-5 l-1-5 push-1-2 gutter-1-4">
+            <label class="milli" for="age">Age</label>
+            <input class="push-1-2" type="number" name="age" id="age" min="18" required aria-describedby="age-error">
+            <p class="error-message micro island-1-4 push-0" id="age-error">
+              <i class="icon i-24"><svg><use xlink:href="../../images/icons.svg#warning" /></svg></i>
+              <span class="icon-label">Must be over 18</span>
+            </p>
+          </div>
+
+          <div class="unit xs-1 s-1 m-1-5 l-1-5">
+          </div>
+
+          <fieldset class="unit xs-1 s-1 m-2-5 l-2-5 push-1-2 gutter-1-4">
+            <legend class="milli push-1-2 not-bold">Are you employed?</legend>
+            <input class="push-1-2" type="radio" name="employed" id="yes-employed" required aria-describedby="employed-error">
+            <label for="yes-employed">Yes</label>
+            <input class="push-1-2" type="radio" name="employed" id="no-employed" required aria-describedby="employed-error">
+            <label for="no-employed" class="gutter-1-2">No</label>
+            <p class="error-message micro island-1-4 push-0" id="employed-error">
+              <i class="icon i-24"><svg><use xlink:href="../../images/icons.svg#warning" /></svg></i>
+              <span class="icon-label">Select yes if you are employed</span>
+            </p>
+          </fieldset>
+
+          <div class="unit xs-1 s-1 m-2-5 l-2-5 push-1-2 gutter-1-4">
+            <label class="milli" for="job-title">If yes, your job title <em class="flag-optional micro normal">(optional)</em></label>
+            <input class="push-1-2" id="job-title" name="job-title">
+          </div>
+
+          <h3 class="unit xs-1 s-1 m-1-5 giga">Contact</h3>
+
+          <div class="unit xs-1 s-1 m-2-5 l-2-5 push-1-2 gutter-1-4">
+            <label class="milli" for="phone">Primary phone</label>
+            <input class="push-1-2" type="tel" name="primary-phone" id="phone" required aria-describedby="phone-error">
+            <p class="error-message micro island-1-4 push-0" id="phone-error">
+              <i class="icon i-24"><svg><use xlink:href="../../images/icons.svg#warning" /></svg></i>
+              <span class="icon-label">Provide your phone number</span>
+            </p>
+          </div>
+
+          <div class="unit xs-1 s-1 m-2-5 l-2-5 push-1-2 gutter-1-4">
+            <label class="milli" for="email">E-mail address</label>
+            <input class="push-1-2" type="email" name="e-mail" id="email" required aria-describedby="email-error">
+            <p class="error-message micro island-1-4 push-0" id="email-error">
+              <i class="icon i-24"><svg><use xlink:href="../../images/icons.svg#warning" /></svg></i>
+              <span class="icon-label">Provide your e-mail address</span>
+            </p>
+          </div>
+
+          <div class="unit xs-1 s-1 m-1-5 l-1-5">
+          </div>
+
+          <div class="unit xs-1 s-1 m-2-5 l-2-5 push-1-2 gutter-1-4">
+            <label class="milli" for="work-phone">Work phone <em class="flag-optional micro normal">(optional)</em></label>
+            <input class="push-1-2" type="tel" id="work-phone" name="work-phone">
+          </div>
+
+          <fieldset class="unit xs-1 s-1 m-2-5 l-2-5 push-1-2 gutter-1-4">
+            <legend class="milli push-1-2 not-bold">Can we call you at work? <em class="flag-optional micro normal">(optional)</em></legend>
+            <input class="push-1-2" type="radio" name="work-call" id="yes-work">
+            <label for="yes-work">Yes</label>
+            <input class="push-1-2" type="radio" name="work-call" id="no-work">
+            <label for="no-work" class="gutter-1-2">No</label>
+          </fieldset>
+
+          <h3 class="unit xs-1 s-1 m-1-5 l-1-5 giga">Address</h3>
+
+          <div class="unit xs-1 s-1 m-2-5 l-2-5 push-1-2 gutter-1-4">
+            <label class="milli" for="apart-num">Apartment number <em class="flag-optional micro normal">(optional)</em></label>
+            <input class="push-1-2" name="apartment-number" id="apart-num">
+          </div>
+
+          <div class="unit xs-1 s-1 m-2-5 l-2-5 push-1-2 gutter-1-4">
+            <label class="milli" for="street">Street address</label>
+            <input class="push-1-2" type="tel" name="street-address" id="street" required aria-describedby="street-error">
+            <p class="error-message micro island-1-4 push-0" id="street-error">
+              <i class="icon i-24"><svg><use xlink:href="../../images/icons.svg#warning" /></svg></i>
+              <span class="icon-label">Provide your street address</span>
+            </p>
+          </div>
+
+          <div class="unit xs-1 s-1 m-1-5 l-1-5">
+          </div>
+
+          <fieldset class="unit xs-1 s-1 m-1-5 l-1-5 gutter-1-4">
+            <label class="milli" for="province">Province</label>
+            <select class="push-1-2" name="province" id="province">
+              <option value="AB">AB</option>
+              <option value="BC">BC</option>
+              <option value="MB">MB</option>
+              <option value="NB">NB</option>
+              <option value="NL">NL</option>
+              <option value="NS">NS</option>
+              <option value="NT">NT</option>
+              <option value="NU">NU</option>
+              <option value="ON">ON</option>
+              <option value="PE">PE</option>
+              <option value="QC">QC</option>
+              <option value="SK">SK</option>
+              <option value="YT">YT</option>
+            </select>
+          </fieldset>
+
+          <div class="unit xs-1 s-1 m-2-5 l-2-5 push-1-2 gutter-1-4">
+            <label class="milli" for="city">City</label>
+            <input class="push-1-2" name="city-address" id="city" required aria-describedby="city-error">
+            <p class="error-message milli island-1-4 push-0" id="city-error">
+              <i class="icon i-24"><svg><use xlink:href="../../images/icons.svg#warning" /></svg></i>
+              <span class="icon-label">Which city do you live in?</span>
+            </p>
+          </div>
+
+          <div class="unit xs-1 s-1 m-1-5 l-1-5 gutter-1-4">
+            <label class="milli" for="postal">Postal code</label>
+            <input class="push-1-2" name="postal-code" id="postal" pattern="[A-Za-z][0-9][A-Za-z] ?[0-9][A-Za-z][0-9]" required aria-describedby="postal-error">
+            <p class="error-message micro island-1-4 push-0" id="postal-error">
+              <i class="icon i-24"><svg><use xlink:href="../../images/icons.svg#warning" /></svg></i>
+              <span class="icon-label">Provide your postal code</span>
+            </p>
+          </div>
+        </fieldset>
+
+        <fieldset class="w-1 push-2">
+          <legend class="unit xs-1 tera main-legend push-1-2">Lifestyle</legend>
+          <h3 class="unit xs-1 s-1 m-1-5 giga">Environment</h3>
+
+          <fieldset class="unit xs-1 s-1 m-2-5 l-2-5 gutter-1-4">
+            <label class="milli" for="house">Type of house</label>
+            <select class="push-1-2" name="house" id="house" required aria-describedby="house-error">
+              <option value="house">House</option>
+              <option value="semi-detach">Semi Detach</option>
+              <option value="townhouse">Townhouse</option>
+              <option value="condo">Condo</option>
+              <option value="apartment">Apartment</option>
+              <option value="mobile-home">Mobile Home</option>
+              <option value="other">Other</option>
+            </select>
+            <p class="error-message micro island-1-4 push-0" id="house-error">
+              <i class="icon i-24"><svg><use xlink:href="../../images/icons.svg#warning" /></svg></i>
+              <span class="icon-label">Select your house type?</span>
+            </p>
+          </fieldset>
+
+          <fieldset class="unit xs-1 s-1 m-2-5 l-2-5 push-1-2 gutter-1-4">
+            <legend class="milli push-1-2 not-bold">Rent or own?</legend>
+            <input class="push-1-2" type="radio" name="rent-own" id="rent" required aria-describedby="rent-error">
+            <label for="rent">Rent</label>
+            <input class="push-1-2" type="radio" name="rent-own" id="own">
+            <label for="own" class="gutter-1-2">Own</label>
+            <p class="error-message micro island-1-4 push-0" id="rent-error">
+              <i class="icon i-24"><svg><use xlink:href="../../images/icons.svg#warning" /></svg></i>
+              <span class="icon-label">Do you rent or own?</span>
+            </p>
+          </fieldset>
+
+          <div class="unit xs-1 s-1 m-1-5 l-1-5">
+          </div>
+
+          <fieldset class="unit xs-1 s-1 m-2-5 l-2-5 push-1-2 gutter-1-4">
+            <legend class="milli push-1-2 not-bold">Rural or urban?</legend>
+            <input class="push-1-2" type="radio" name="rural-urban" id="rural" required aria-describedby="rural-error">
+            <label for="rural">Rural</label>
+            <input class="push-1-2" type="radio" name="rural-urban" id="urban">
+            <label for="urban" class="gutter-1-2">Urban</label>
+            <p class="error-message micro island-1-4 push-0" id="rural-error">
+              <i class="icon i-24"><svg><use xlink:href="../../images/icons.svg#warning" /></svg></i>
+              <span class="icon-label">Do you live in a rural or urban area?</span>
+            </p>
+          </fieldset>
+
+          <div class="unit xs-1 s-1 m-2-5 l-2-5 push-1-2 gutter-1-4">
+            <label class="milli" for="footage">Square footage <em class="flag-optional micro normal">(optional)</em></label>
+            <input class="push-1-2" type="number" id="footage" name="footage">
+          </div>
+
+          <div class="unit xs-1 s-1 m-1-5 l-1-5">
+          </div>
+
+          <fieldset class="unit xs-1 s-1 m-2-5 l-2-5 gutter-1-4">
+            <label class="milli" for="yard">Yard size</label>
+            <select class="push-1-2" name="yard" id="yard" required aria-describedby="yard-error">
+              <option value=""></option>
+              <option value="none">None</option>
+              <option value="small">Small</option>
+              <option value="medium">Medium</option>
+              <option value="large">Large</option>
+            </select>
+            <p class="error-message micro island-1-4 push-0" id="yard-error">
+              <i class="icon i-24"><svg><use xlink:href="../../images/icons.svg#warning" /></svg></i>
+              <span class="icon-label">What is your yard size?</span>
+            </p>
+          </fieldset>
+
+          <fieldset class="unit xs-1 s-1 m-2-5 l-2-5 push-1-2 gutter-1-4">
+            <legend class="milli push-1-2 not-bold">Is your yard fenced?</legend>
+            <input class="push-1-2" type="radio" name="fenced" id="fence-yes" required aria-describedby="fence-error">
+            <label for="fence-yes">Yes</label>
+            <input class="push-1-2" type="radio" name="fenced" id="fence-no">
+            <label for="fence-no" class="gutter-1-2">No</label>
+            <p class="error-message micro island-1-4 push-0" id="fence-error">
+              <i class="icon i-24"><svg><use xlink:href="../../images/icons.svg#warning" /></svg></i>
+              <span class="icon-label">Is your yard fenced?</span>
+            </p>
+          </fieldset>
+
+        </fieldset>
+
+        <fieldset class="w-1 push-2">
+          <legend class="unit xs-1 tera main-legend push-1-2">Pet Info</legend>
+          <h3 class="unit xs-1 s-1 m-1-5 giga">Other Pets</h3>
+
+          <fieldset class="unit xs-1 s-1 m-2-5 l-2-5 push-1-2 gutter-1-4">
+            <legend class="milli push-1-2 not-bold">Do you currently own a dog?</legend>
+            <input class="push-1-2" type="radio" name="fenced" id="dog-yes" required aria-describedby="dog-error">
+            <label for="dog-yes">Yes</label>
+            <input class="push-1-2" type="radio" name="fenced" id="dog-no">
+            <label for="dog-no" class="gutter-1-2">No</label>
+            <p class="error-message micro island-1-4 push-0" id="dog-error">
+              <i class="icon i-24"><svg><use xlink:href="../../images/icons.svg#warning" /></svg></i>
+              <span class="icon-label">Do you own a dog?</span>
+            </p>
+          </fieldset>
+
+          <div class="unit xs-1 s-1 m-2-5 l-2-5 push-1-2 gutter-1-4">
+            <label class="milli" for="dogs">How many?</label>
+            <input class="push-1-2" type="number" name="dogs" id="dogs" required aria-describedby="dogs-error">
+            <p class="error-message micro island-1-4 push-0" id="dogs-error">
+              <i class="icon i-24"><svg><use xlink:href="../../images/icons.svg#warning" /></svg></i>
+              <span class="icon-label">How many dogs do you own?</span>
+            </p>
+          </div>
+
+          <div class="unit xs-1 s-1 m-1-5 l-1-5">
+          </div>
+
+          <div class="unit xs-1 s-1 m-4-5 l-4-5 push-1-2 gutter-1-4">
+            <label class="milli" for="why-adopt">List any other types of pets you own. <em class="flag-optional micro normal">(optional)</em></label>
+            <textarea class="push-1-2" name="why-adopt" id="why-adopt"></textarea>
+          </div>
+
+          <div class="unit xs-1 s-1 m-1-5 l-1-5">
+          </div>
+
+          <fieldset class="unit xs-1 s-1 m-2-5 l-2-5 push-1-2 gutter-1-4">
+            <legend class="milli push-1-2 not-bold">Are your pets vacinated?</legend>
+            <input class="push-1-2" type="radio" name="vaccinate" id="vacinate-yes" required aria-describedby="vacinate-error">
+            <label for="vacinate-yes">Yes</label>
+            <input class="push-1-2" type="radio" name="vaccinate" id="vacinate-no">
+            <label for="vacinate-no" class="gutter-1-2">No</label>
+            <p class="error-message micro island-1-4 push-0" id="vacinate-error">
+              <i class="icon i-24"><svg><use xlink:href="../../images/icons.svg#warning" /></svg></i>
+              <span class="icon-label">Are all your pets vaccinated?</span>
+            </p>
+          </fieldset>
+
+          <fieldset class="unit xs-1 s-1 m-2-5 l-2-5 push-1-2 gutter-1-4">
+            <legend class="milli push-1-2 not-bold">Spayed or neutered?</legend>
+            <input class="push-1-2" type="radio" name="spayed" id="spayed-yes" required aria-describedby="spayed-error">
+            <label for="spayed-yes">Yes</label>
+            <input class="push-1-2" type="radio" name="spayed" id="spayed-no">
+            <label for="spayed-no" class="gutter-1-2">No</label>
+            <p class="error-message micro island-1-4 push-0" id="spayed-error">
+              <i class="icon i-24"><svg><use xlink:href="../../images/icons.svg#warning" /></svg></i>
+              <span class="icon-label">Are all your pets spayed or neutered?</span>
+            </p>
+          </fieldset>
+
+          <div class="unit xs-1 s-1 m-1-5 l-1-5">
+          </div>
+
+          <fieldset class="unit xs-1 s-1 m-2-5 l-2-5 push-1-2 gutter-1-4">
+            <legend class="milli push-1-2 not-bold">Heartworm prevention?</legend>
+            <input class="push-1-2" type="radio" name="heartworm" id="heartworm-yes" required aria-describedby="heartworm-error">
+            <label for="heartworm-yes">Yes</label>
+            <input class="push-1-2" type="radio" name="heartworm" id="heartworm-no">
+            <label for="heartworm-no" class="gutter-1-2">No</label>
+            <p class="error-message micro island-1-4 push-0" id="spayed-error">
+              <i class="icon i-24"><svg><use xlink:href="../../images/icons.svg#warning" /></svg></i>
+              <span class="icon-label">Do all your pets have heartworm prevention?</span>
+            </p>
+          </fieldset>
+
+          <fieldset class="unit xs-1 s-1 m-2-5 l-2-5 push-1-2 gutter-1-4">
+            <legend class="milli push-1-2 not-bold">Pet insurance?</legend>
+            <input class="push-1-2" type="radio" name="insurance" id="insurance-yes" required aria-describedby="insurance-error">
+            <label for="insurance-yes">Yes</label>
+            <input class="push-1-2" type="radio" name="insurance" id="insurance-no">
+            <label for="insurance-no" class="gutter-1-2">No</label>
+            <p class="error-message micro island-1-4 push-0" id="spayed-error">
+              <i class="icon i-24"><svg><use xlink:href="../../images/icons.svg#warning" /></svg></i>
+              <span class="icon-label">Do you or will you have pet insurance?</span>
+            </p>
+          </fieldset>
+
+          <h3 class="unit xs-1 s-1 m-1-5 giga">Care Plan</h3>
+
+          <div class="unit xs-1 s-1 m-4-5 l-4-5 push-1-2 gutter-1-4">
+            <label class="milli" for="why-adopt">Why do you want to adopt a dog?</label>
+            <textarea class="push-1-2" name="why-adopt" id="why-adopt" required aria-describedby="why-adopt-error"></textarea>
+            <p class="error-message milli island-1-4 push-0" id="why-adopt-error">
+              <i class="icon i-24"><svg><use xlink:href="../../images/icons.svg#warning" /></svg></i>
+              <span class="icon-label">Tell us why you want to adopt</span>
+            </p>
+          </div>
+
+        </fieldset>
+
+
+
+
+        <fieldset class="w-1">
+          <legend class="unit xs-1 tera main-legend push-1-2">Pet Preference</legend>
+          <h3 class="unit xs-1 s-1 m-1-5 giga">Preference</h3>
+
+          <fieldset class="unit xs-1 s-1 m-4-5 l-4-5 push-1-2 gutter-1-4">
+            <legend class="milli push-1-2 not-bold">What size of dog do you prefer? <em class="flag-optional micro normal">(optional)</em></legend>
+            <input class="push-1-2" type="checkbox" name="size" id="toy">
+            <label for="toy">Toy</label>
+            <input class="push-1-2" type="checkbox" name="size" id="small">
+            <label for="small" class="gutter-1-2">Small</label>
+            <input class="push-1-2" type="checkbox" name="size" id="medium">
+            <label for="medium" class="gutter-1-2">Medium</label>
+            <input class="push-1-2" type="checkbox" name="size" id="large">
+            <label for="large" class="gutter-1-2">Large</label>
+          </fieldset>
+
+          <div class="unit xs-1 s-1 m-1-5 l-1-5">
+          </div>
+
+          <div class="unit xs-1 s-1 m-4-5 l-4-5 push-1-2 gutter-1-4">
+            <label class="milli" for="why-adopt">Why do you want to adopt a dog?</label>
+            <textarea class="push-1-2" name="why-adopt" id="why-adopt" required aria-describedby="why-adopt-error"></textarea>
+            <p class="error-message milli island-1-4 push-0" id="why-adopt-error">
+              <i class="icon i-24"><svg><use xlink:href="../../images/icons.svg#warning" /></svg></i>
+              <span class="icon-label">Tell us why you want to adopt</span>
+            </p>
+          </div>
+
+        </fieldset>
+
+        <div class="unit xs-1 s-1 m-1-5 l-1-5">
+        </div>
+
+        <div class="unit xs-1 s-1 m-2-5 l-2-5 push-1-2 gutter-1-4">
+          <label class="milli" for="date">Date</label>
+          <input class="push-1-2" type="date" name="today-date" id="date" required aria-describedby="date-error">
+          <p class="error-message milli island-1-4 push-0" id="date-error">
+            <span class="icon-label">Select todays date</span>
+          </p>
+        </div>
+
+        <fieldset class="unit xs-1 s-1 m-2-5 l-2-5 push-1-2 gutter-1-4">
+          <legend class="milli push-1-2 not-bold">Agreement</legend>
+          <input class="push-1-2" type="radio" name="agreement" id="yes-agreement" required aria-describedby="agreement-error">
+          <label for="yes-agreement">I agree to the above statements</label>
+          <p class="error-message micro island-1-4 push-0" id="agreement-error">
+            <i class="icon i-24"><svg><use xlink:href="../../images/icons.svg#warning" /></svg></i>
+            <span class="icon-label">Please agree to the terms of service</span>
+          </p>
+        </fieldset>
+
+        <div class="unit xs-1 s-1 m-1-5 l-1-5">
+        </div>
+
+        <div class="unit xs-1 s-1 m-1-5 l-1-5 pad-t-1-2">
+          <button class="btn" type="submit">Submit</button>
+        </div>
+
+        <input type="hidden" name="_subject" value="Request to adopt a dog">
+
+      </form>
+    </section>
+  </main>
+
+  <footer class="grid grid-middle footer" role="contentinfo">
+    <nav class="unit xs-1 s-1 m-1 l-2-3 island relative" id="nav-footer" role="navigation">
+      <ul class="grid list-group text-center">
+        <li class="unit xs-1-2 s-1-2 m-1-2 l-1-4">
+          <a class="gutter-1-2 pad-t-1-4 pad-b-1-4" href="home.html">Home</a>
+          <a class="gutter-1-2 pad-t-1-4 pad-b-1-4 milli" href="home.html#tails">Happy Tails</a>
+          <a class="gutter-1-2 pad-t-1-4 pad-b-1-4 milli" href="home.html#mission">Our Mission</a>
+          <a class="gutter-1-2 pad-t-1-4 pad-b-1-4 milli" href="home.html#contact">Contact Us</a>
+        </li>
+        <li class="unit xs-1-2 s-1-2 m-1-2 l-1-4"><a class="gutter-1-2 pad-t-1-4 pad-b-1-4" href="#">Blog</a></li>
+        <li class="unit xs-1-2 s-1-2 m-1-2 l-1-4"><a class="gutter-1-2 pad-t-1-4 pad-b-1-4" href="adopt.html">Adopt</a></li>
+        <li class="unit xs-1-2 s-1-2 m-1-2 l-1-4"><a class="gutter-1-2 pad-t-1-4 pad-b-1-4" href="application.html">Application</a></li>
+      </ul>
+    </nav>
+    <div class="unit xs-1 s-1 m-1 l-1-3 push text-center">
+      <a class="gutter-1-2 social" href="#">
+        <i class="icon icon-footer i-32">
+          <svg><use class="facebook" xlink:href="../../images/icons.svg#facebook"/></svg>
+        </i>
+      </a>
+      <a class="gutter-1-2 social" href="#">
+        <i class="icon icon-footer i-48">
+          <svg><use class="twitter" xlink:href="../../images/icons.svg#twitter"/></svg>
+        </i>
+      </a>
+      <a class="gutter-1-2 social" href="#">
+        <i class="icon icon-footer i-48">
+          <svg><use class="instagram" xlink:href="../../images/icons.svg#instagram"/></svg>
+        </i>
+      </a>
+    </div>
+    <div class="island copyright unit xs-1 s-1 m-1 l-1 relative">
+      <small class="milli">© Loyal Rescue. All right reserved.</small>
+    </div>
+  </footer>
+
+  <script src="https://thomasjbradley.github.io/form-validation-helper/index.js"></script>
+
+</body>
+</html>
