@@ -7,5 +7,8 @@
   font-size: 12rem;
   top: -3rem;
   left: -1rem;
-  z-index: -1;
+}
+
+.pull-quote-section {
+  background-color: white;
 }

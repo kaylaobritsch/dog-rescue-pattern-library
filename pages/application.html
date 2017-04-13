@@ -34,14 +34,7 @@
 
     <nav class="unit xs-1 s-1 m-1 l-2-3 island-1-2 relative" id="nav" role="navigation">
       <ul class="grid list-group text-center">
-        <li class="drop relative unit xs-1-2 s-1-2 m-1-2 l-1-4">
-          <a class="drop-btn gutter-1-2 pad-t-1-4 pad-b-1-4" href="home.html">Home</a>
-          <div class="drop-content absolute zindex-1">
-            <a href="home.html#tails">Happy Tails</a>
-            <a href="home.html#mission">Our Mission</a>
-            <a href="home.html#contact">Contact Us</a>
-          </div>
-        </li>
+        <li class="unit xs-1-2 s-1-2 m-1-2 l-1-4"><a class="gutter-1-2 pad-t-1-4 pad-b-1-4" href="#">Home</a></li>
         <li class="unit xs-1-2 s-1-2 m-1-2 l-1-4"><a class="gutter-1-2 pad-t-1-4 pad-b-1-4" href="#">Blog</a></li>
         <li class="unit xs-1-2 s-1-2 m-1-2 l-1-4"><a class="gutter-1-2 pad-t-1-4 pad-b-1-4" href="adopt.html">Adopt</a></li>
         <li class="unit xs-1-2 s-1-2 m-1-2 l-1-4"><a class="gutter-1-2 pad-t-1-4 pad-b-1-4" href="application.html">Application</a></li>
@@ -400,7 +393,55 @@
 
         </fieldset>
 
+        <fieldset class="w-1 push-2">
+          <legend class="unit xs-1 tera main-legend push-1-2">Contract</legend>
+          <h3 class="unit xs-1 s-1 m-1-5 giga">Behavioral</h3>
+          <fieldset class="unit xs-1 s-1 m-4-5 l-4-5 push-1-2 gutter-1-4">
+            <legend class="milli push-1-2 not-bold">We try to provide as accurate as possible evaluation of the dog before they get adopted. We cannot guarantee that you won't encounter some behavioral problems. <strong>Do you agree to this?</strong></legend>
+            <input class="push-1-2" type="radio" name="behavior" id="behavior-yes" required aria-describedby="behavior-error">
+            <label for="behavior-yes" class="push-1-4">Yes</label>
+            <input class="push-1-2" type="radio" name="behavior" id="behavior-no">
+            <label for="behavior-no" class="gutter-1-2 push-1-4">No</label>
+            <p class="error-message micro island-1-4 push-0" id="behavior-error">
+              <i class="icon i-24"><svg><use xlink:href="../../images/icons.svg#warning" /></svg></i>
+              <span class="icon-label">Please agree to the terms</span>
+            </p>
+          </fieldset>
 
+          <div class="unit xs-1 s-1 m-1-5 l-1-5">
+          </div>
+
+          <fieldset class="unit xs-1 s-1 m-4-5 l-4-5 push-1-2 gutter-1-4">
+            <legend class="milli push-1-2 not-bold">Are you willing to work on these behavioral problems?</legend>
+            <input class="push-1-2" type="radio" name="behavior-work" id="behavior-work-yes" required aria-describedby="behavior-work-error">
+            <label for="behavior-work-yes" class="push-1-4">Yes</label>
+            <input class="push-1-2" type="radio" name="behavior-work" id="behavior-work-no">
+            <label for="behavior-work-no" class="gutter-1-2 push-1-4">No</label>
+            <p class="error-message micro island-1-4 push-0" id="behavior-work-error">
+              <i class="icon i-24"><svg><use xlink:href="../../images/icons.svg#warning" /></svg></i>
+              <span class="icon-label">Please agree to the terms</span>
+            </p>
+          </fieldset>
+
+          <h3 class="unit xs-1 s-1 m-1-5 l-1-5 giga">Reference 1</h3>
+
+          <div class="unit xs-1 s-1 m-2-5 l-2-5 push-1-2 gutter-1-4">
+            <label class="milli" for="phone">Name</label>
+            <input class="push-1-2" type="tel" name="primary-phone" id="phone" required aria-describedby="phone-error">
+            <p class="error-message micro island-1-4 push-0" id="phone-error">
+              <i class="icon i-24"><svg><use xlink:href="../../images/icons.svg#warning" /></svg></i>
+              <span class="icon-label">Provide your phone number</span>
+            </p>
+          </div>
+
+          <div class="unit xs-1 s-1 m-2-5 l-2-5 push-1-2 gutter-1-4">
+            <label class="milli" for="email">E-mail address</label>
+            <input class="push-1-2" type="email" name="e-mail" id="email" required aria-describedby="email-error">
+            <p class="error-message micro island-1-4 push-0" id="email-error">
+              <i class="icon i-24"><svg><use xlink:href="../../images/icons.svg#warning" /></svg></i>
+              <span class="icon-label">Provide your e-mail address</span>
+            </p>
+          </div>
 
 
         <fieldset class="w-1">
@@ -454,6 +495,24 @@
           </p>
         </fieldset>
 
+        <div class="unit xs-1 s-1 m-2-5 l-2-5 push-1-2 gutter-1-4">
+          <label class="milli" for="phone">Primary phone</label>
+          <input class="push-1-2" type="tel" name="primary-phone" id="phone" required aria-describedby="phone-error">
+          <p class="error-message micro island-1-4 push-0" id="phone-error">
+            <i class="icon i-24"><svg><use xlink:href="../../images/icons.svg#warning" /></svg></i>
+            <span class="icon-label">Provide your phone number</span>
+          </p>
+        </div>
+
+        <div class="unit xs-1 s-1 m-2-5 l-2-5 push-1-2 gutter-1-4">
+          <label class="milli" for="email">E-mail address</label>
+          <input class="push-1-2" type="email" name="e-mail" id="email" required aria-describedby="email-error">
+          <p class="error-message micro island-1-4 push-0" id="email-error">
+            <i class="icon i-24"><svg><use xlink:href="../../images/icons.svg#warning" /></svg></i>
+            <span class="icon-label">Provide your e-mail address</span>
+          </p>
+        </div>
+
         <div class="unit xs-1 s-1 m-1-5 l-1-5">
         </div>
 
@@ -469,16 +528,41 @@
 
   <footer class="grid grid-middle footer" role="contentinfo">
     <nav class="unit xs-1 s-1 m-1 l-2-3 island relative" id="nav-footer" role="navigation">
-      <ul class="grid list-group text-center">
-        <li class="unit xs-1-2 s-1-2 m-1-2 l-1-4">
-          <a class="gutter-1-2 pad-t-1-4 pad-b-1-4" href="home.html">Home</a>
-          <a class="gutter-1-2 pad-t-1-4 pad-b-1-4 milli" href="home.html#tails">Happy Tails</a>
-          <a class="gutter-1-2 pad-t-1-4 pad-b-1-4 milli" href="home.html#mission">Our Mission</a>
-          <a class="gutter-1-2 pad-t-1-4 pad-b-1-4 milli" href="home.html#contact">Contact Us</a>
+      <ul class="grid list-group">
+        <li class="unit xs-1 s-1-2 m-1-2 l-1-4 push-1-2">
+          <ul class="list-group">
+            <li><a class="gutter-1-2 pad-t-1-4 pad-b-1-4" href="home.html">Home</a>
+            <li><a class="gutter-1-2 pad-t-1-4 pad-b-1-4 micro" href="home.html#happy-tails">Happy Tails</a></li>
+            <li><a class="gutter-1-2 pad-t-1-4 pad-b-1-4 micro" href="home.html#our-mission">Our Mission</a></li>
+            <li><a class="gutter-1-2 pad-t-1-4 pad-b-1-4 micro" href="home.html#contact-us">Contact Us</a></li>
+          </ul>
         </li>
-        <li class="unit xs-1-2 s-1-2 m-1-2 l-1-4"><a class="gutter-1-2 pad-t-1-4 pad-b-1-4" href="#">Blog</a></li>
-        <li class="unit xs-1-2 s-1-2 m-1-2 l-1-4"><a class="gutter-1-2 pad-t-1-4 pad-b-1-4" href="adopt.html">Adopt</a></li>
-        <li class="unit xs-1-2 s-1-2 m-1-2 l-1-4"><a class="gutter-1-2 pad-t-1-4 pad-b-1-4" href="application.html">Application</a></li>
+        <li class="unit xs-1 s-1-2 m-1-2 l-1-4 push-1-2">
+          <ul class="list-group">
+            <li><a class="gutter-1-2 pad-t-1-4 pad-b-1-4" href="#">Blog</a></li>
+            <li><a class="gutter-1-2 pad-t-1-4 pad-b-1-4 micro" href="#">Process</a></li>
+            <li><a class="gutter-1-2 pad-t-1-4 pad-b-1-4 micro" href="#">Stories</a></li>
+            <li><a class="gutter-1-2 pad-t-1-4 pad-b-1-4 micro" href="#">Events</a></li>
+            <li><a class="gutter-1-2 pad-t-1-4 pad-b-1-4 micro" href="#">FAQ</a></li>
+          </ul>
+        </li>
+        <li class="unit xs-1 s-1-2 m-1-2 l-1-4 push-1-2">
+          <ul class="list-group">
+            <li><a class="gutter-1-2 pad-t-1-4 pad-b-1-4" href="#">Adopt</a></li>
+            <li><a class="gutter-1-2 pad-t-1-4 pad-b-1-4 micro" href="adopt.html#about">About</a></li>
+            <li><a class="gutter-1-2 pad-t-1-4 pad-b-1-4 micro" href="adopt.html#steps">Steps</a></li>
+            <li><a class="gutter-1-2 pad-t-1-4 pad-b-1-4 micro" href="adopt.html#adoptable">Adoptable</a></li>
+          </ul>
+        </li>
+        <li class="unit xs-1 s-1-2 m-1-2 l-1-4 push-1-2">
+          <ul class="list-group">
+            <li><a class="gutter-1-2 pad-t-1-4 pad-b-1-4" href="#">Application</a></li>
+            <li><a class="gutter-1-2 pad-t-1-4 pad-b-1-4 micro" href="applications.html#personal-info">Personal Info</a></li>
+            <li><a class="gutter-1-2 pad-t-1-4 pad-b-1-4 micro" href="applications.html#lifestyle">Lifestyle</a></li>
+            <li><a class="gutter-1-2 pad-t-1-4 pad-b-1-4 micro" href="applications.html#pet-info">Pet Info</a></li>
+            <li><a class="gutter-1-2 pad-t-1-4 pad-b-1-4 micro" href="applications.html#contract">Contract</a></li>
+          </ul>
+        </li>
       </ul>
     </nav>
     <div class="unit xs-1 s-1 m-1 l-1-3 push text-center">

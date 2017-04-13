@@ -40,14 +40,7 @@
 
     <nav class="unit xs-1 s-1 m-1 l-2-3 island-1-2 relative" id="nav" role="navigation">
       <ul class="grid list-group text-center">
-        <li class="drop relative unit xs-1-2 s-1-2 m-1-2 l-1-4">
-          <a class="drop-btn gutter-1-2 pad-t-1-4 pad-b-1-4" href="javascript:void(0)">Home</a>
-          <div class="drop-content absolute zindex-1">
-            <a href="#tails">Happy Tails</a>
-            <a href="#mission">Our Mission</a>
-            <a href="#contact">Contact Us</a>
-          </div>
-        </li>
+        <li class="unit xs-1-2 s-1-2 m-1-2 l-1-4"><a class="gutter-1-2 pad-t-1-4 pad-b-1-4" href="#">Home</a></li>
         <li class="unit xs-1-2 s-1-2 m-1-2 l-1-4"><a class="gutter-1-2 pad-t-1-4 pad-b-1-4" href="#">Blog</a></li>
         <li class="unit xs-1-2 s-1-2 m-1-2 l-1-4"><a class="gutter-1-2 pad-t-1-4 pad-b-1-4" href="adopt.html">Adopt</a></li>
         <li class="unit xs-1-2 s-1-2 m-1-2 l-1-4"><a class="gutter-1-2 pad-t-1-4 pad-b-1-4" href="application.html">Application</a></li>
@@ -71,21 +64,21 @@
   </section>
 
   <main class="island" role="main" id="main">
-    <section class="grid wrapper pull-quote-section island" id="tails">
+    <section class="grid wrapper pull-quote-section island push" id="happy-tails">
       <h2 class="unit xs-1 s-1 m-1 l-1 peta push-1-4 pad-t-1-2">Happy Tails</h2>
 
       <div class="unit xs-1 s-1 m-1-3 relative" id="pull-quote-1">
         <span class="absolute proper-left">“</span>
-        <p class="pull-quote island giga">I adopted Nutmeg 2 years ago. I am so thankful for Loyal Rescue and all the foster families.</p>
+        <p class="pull-quote island giga relative">I adopted Nutmeg 2 years ago. I am so thankful for Loyal Rescue and all the foster families.</p>
       </div>
 
       <div class="unit xs-1 s-1 m-1-3 pad-b gutter-1-2">
-        <img class="img-flex" src="../images/dog-quote-1.jpg" alt="Dog laying on couch">
+        <img class="img-flex" src="../images/dog-quote-1.jpg" alt="Dog laying on couch" aria-details="pull-quote-1">
       </div>
 
       <div class="unit xs-1 s-1 m-1-3 relative" id="pull-quote-2">
         <span class="absolute proper-left">“</span>
-        <p class="pull-quote island giga">Thanks Loyal Rescue for making our family complete.</p>
+        <p class="pull-quote island giga relative">Thanks Loyal Rescue for making our family complete.</p>
       </div>
 
       <div class="unit xs-1 s-1 m-1-3 pad-b gutter-1-2">
@@ -94,7 +87,7 @@
 
       <div class="unit xs-1 s-1 m-1-3 relative" id="pull-quote-3">
         <span class="absolute proper-left">“</span>
-        <p class="pull-quote island giga">Oreo was rescued three years ago. We are so happy that we could rescue him and see him happy.</p>
+        <p class="pull-quote island giga relative">Oreo was rescued three years ago. We are so happy that we could rescue him and see him happy.</p>
       </div>
 
       <div class="unit xs-1 s-1 m-1-3 pad-b gutter-1-2">
@@ -102,28 +95,28 @@
       </div>
     </section>
 
-    <section class="section wrapper island push" id="mission">
+    <section class="section wrapper island push" id="our-mission">
       <div class="section-text gutter max-length push-2">
         <h2 class="peta push-1-4 pad-t-1-2">Our Mission</h2>
         <p class="push-1-2">Our mission is to connect fostered dogs to their forever homes in the Toronto area. For 7 years we have proudly been doing just that.</p>
         <p>Our fosters have opened their hearts and homes to dogs in need of rescue. Loyal Rescue has never operated out of a shelter and as such each dog is viewed in a private home. We are always in desperate need for commited foster families to join our team.</p>
       </div>
       <div class="grid push stats">
-        <div class="unit xs-1-3 s-1-3 m-1-3 l-1-3 text-center">
+        <div class="unit xs-1 s-1 m-1-3 l-1-3 text-center push">
           <i class="icon i-48 push">
             <svg><use class="paw-outline" xlink:href="../../images/icons.svg#paw-outline"/></svg>
           </i>
           <p class="yotta text-center push-1-4 bold">11</p>
           <p class="text-center">adoptable dogs waiting</p>
         </div>
-        <div class="unit xs-1-3 s-1-3 m-1-3 l-1-3 text-center">
+        <div class="unit xs-1 s-1 m-1-3 l-1-3 text-center push">
           <i class="icon i-48 push">
             <svg><use class="heart" xlink:href="../../images/icons.svg#heart"/></svg>
           </i>
           <p class="yotta text-center push-1-4 bold">2,013</p>
           <p class="text-center">dogs adopted so far</p>
         </div>
-        <div class="unit xs-1-3 s-1-3 m-1-3 l-1-3 text-center">
+        <div class="unit xs-1 s-1 m-1-3 l-1-3 text-center push">
           <i class="icon i-48 push">
             <svg><use class="money" xlink:href="../../images/icons.svg#money"/></svg>
           </i>
@@ -133,7 +126,7 @@
       </div>
     </section>
 
-    <section class="wrapper island icon-form" id="contact">
+    <section class="wrapper island icon-form" id="contact-us">
       <div class="max-length">
         <form method="POST" novalidate action="https://formspree.io/obritschk@gmail.com">
           <fieldset>
@@ -190,16 +183,41 @@
 
   <footer class="grid grid-middle footer" role="contentinfo">
     <nav class="unit xs-1 s-1 m-1 l-2-3 island relative" id="nav-footer" role="navigation">
-      <ul class="grid list-group text-center">
-        <li class="unit xs-1-2 s-1-2 m-1-2 l-1-4">
-          <a class="gutter-1-2 pad-t-1-4 pad-b-1-4" href="#">Home</a>
-          <a class="gutter-1-2 pad-t-1-4 pad-b-1-4 milli" href="#tails">Happy Tails</a>
-          <a class="gutter-1-2 pad-t-1-4 pad-b-1-4 milli" href="#mission">Our Mission</a>
-          <a class="gutter-1-2 pad-t-1-4 pad-b-1-4 milli" href="#contact">Contact Us</a>
+      <ul class="grid list-group">
+        <li class="unit xs-1 s-1-2 m-1-2 l-1-4 push-1-2">
+          <ul class="list-group">
+            <li><a class="gutter-1-2 pad-t-1-4 pad-b-1-4" href="home.html">Home</a>
+            <li><a class="gutter-1-2 pad-t-1-4 pad-b-1-4 micro" href="home.html#happy-tails">Happy Tails</a></li>
+            <li><a class="gutter-1-2 pad-t-1-4 pad-b-1-4 micro" href="home.html#our-mission">Our Mission</a></li>
+            <li><a class="gutter-1-2 pad-t-1-4 pad-b-1-4 micro" href="home.html#contact-us">Contact Us</a></li>
+          </ul>
         </li>
-        <li class="unit xs-1-2 s-1-2 m-1-2 l-1-4"><a class="gutter-1-2 pad-t-1-4 pad-b-1-4" href="#">Blog</a></li>
-        <li class="unit xs-1-2 s-1-2 m-1-2 l-1-4"><a class="gutter-1-2 pad-t-1-4 pad-b-1-4" href="adopt.html">Adopt</a></li>
-        <li class="unit xs-1-2 s-1-2 m-1-2 l-1-4"><a class="gutter-1-2 pad-t-1-4 pad-b-1-4" href="application.html">Application</a></li>
+        <li class="unit xs-1 s-1-2 m-1-2 l-1-4 push-1-2">
+          <ul class="list-group">
+            <li><a class="gutter-1-2 pad-t-1-4 pad-b-1-4" href="#">Blog</a></li>
+            <li><a class="gutter-1-2 pad-t-1-4 pad-b-1-4 micro" href="#">Process</a></li>
+            <li><a class="gutter-1-2 pad-t-1-4 pad-b-1-4 micro" href="#">Stories</a></li>
+            <li><a class="gutter-1-2 pad-t-1-4 pad-b-1-4 micro" href="#">Events</a></li>
+            <li><a class="gutter-1-2 pad-t-1-4 pad-b-1-4 micro" href="#">FAQ</a></li>
+          </ul>
+        </li>
+        <li class="unit xs-1 s-1-2 m-1-2 l-1-4 push-1-2">
+          <ul class="list-group">
+            <li><a class="gutter-1-2 pad-t-1-4 pad-b-1-4" href="#">Adopt</a></li>
+            <li><a class="gutter-1-2 pad-t-1-4 pad-b-1-4 micro" href="adopt.html#about">About</a></li>
+            <li><a class="gutter-1-2 pad-t-1-4 pad-b-1-4 micro" href="adopt.html#steps">Steps</a></li>
+            <li><a class="gutter-1-2 pad-t-1-4 pad-b-1-4 micro" href="adopt.html#adoptable">Adoptable</a></li>
+          </ul>
+        </li>
+        <li class="unit xs-1 s-1-2 m-1-2 l-1-4 push-1-2">
+          <ul class="list-group">
+            <li><a class="gutter-1-2 pad-t-1-4 pad-b-1-4" href="#">Application</a></li>
+            <li><a class="gutter-1-2 pad-t-1-4 pad-b-1-4 micro" href="applications.html#personal-info">Personal Info</a></li>
+            <li><a class="gutter-1-2 pad-t-1-4 pad-b-1-4 micro" href="applications.html#lifestyle">Lifestyle</a></li>
+            <li><a class="gutter-1-2 pad-t-1-4 pad-b-1-4 micro" href="applications.html#pet-info">Pet Info</a></li>
+            <li><a class="gutter-1-2 pad-t-1-4 pad-b-1-4 micro" href="applications.html#contract">Contract</a></li>
+          </ul>
+        </li>
       </ul>
     </nav>
     <div class="unit xs-1 s-1 m-1 l-1-3 push text-center">
