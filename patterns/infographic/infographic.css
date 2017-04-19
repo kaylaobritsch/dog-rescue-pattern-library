@@ -51,18 +51,19 @@ svg.animation {
   }
 
   #heart-1 {
-    transition: 700ms;
     transform-origin: center;
   }
 
   #heart-2 {
-    transition: 300ms;
     transform-origin: center;
   }
 
-  #pug:hover #heart-1,
-  #pug:hover #heart-2 {
-    fill: var(--color-accent);
+  .step-1:hover #heart-1,
+  .step-1:hover #heart-2 {
+    animation-name: scale-color;
+    animation-duration: 700ms;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
   }
 
   #ground {
@@ -71,14 +72,48 @@ svg.animation {
 
   .step-2:hover #ground {
     animation-name: scale;
-    animation-duration: 1s;
+    animation-duration: 700ms;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+  }
+
+  .step-2:hover #body,
+  .step-2:hover #wing,
+  .step-2:hover #shadow {
+    animation-name: mover;
+    animation-duration: 700ms;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+  }
+
+  .step-3:hover #heart-window {
+    animation-name: color-secondary;
+    animation-duration: 700ms;
     animation-iteration-count: infinite;
     animation-direction: alternate;
   }
 
   @keyframes scale {
-      from {transform: scale(1)}
-      to {transform: scale(1.25)}
+    from {transform: scale(1)}
+    to {transform: scale(.75)}
   }
 
+  @keyframes color-secondary {
+    from {fill: var(#fff)}
+    to {fill: var(--color-secondary)}
+  }
+
+  @keyframes scale-color {
+    from {
+      transform: scale(1);
+      fill: var(--color-accent)}
+    to {
+      transform: scale(1.25);
+      fill: var(--color-secondary)}
+    }
+
+    @keyframes mover {
+      from {transform: translate(0,0)}
+      to {transform: translate(0, -10px)}
+    }
 }
