@@ -60,6 +60,7 @@
               <li role="presentation"><a class="gutter pad-t-1-4 pad-b-1-4 block" role="tab" aria-controls="modules" href="#modules">Modules</a></li>
               <li role="presentation"><a class="gutter pad-t-1-4 pad-b-1-4 block" role="tab" aria-controls="icons" href="#icons">Icons</a></li>
                 <li role="presentation"><a class="gutter pad-t-1-4 pad-b-1-4 block" role="tab" aria-controls="banner" href="#banner">Banner</a></li>
+                <li role="presentation"><a class="gutter pad-t-1-4 pad-b-1-4 block" role="tab" aria-controls="blog-section" href="#blog-section">Blog section</a></li>
                 <li role="presentation"><a class="gutter pad-t-1-4 pad-b-1-4 block" role="tab" aria-controls="buttons" href="#buttons">Buttons</a></li>
                 <li role="presentation"><a class="gutter pad-t-1-4 pad-b-1-4 block" role="tab" aria-controls="card-section" href="#card-section">Card section</a></li>
                 <li role="presentation"><a class="gutter pad-t-1-4 pad-b-1-4 block" role="tab" aria-controls="cards" href="#cards">Cards</a></li>
@@ -730,6 +731,84 @@
 
 </section>
 
+        <section class="pattern" id="blog-section" role="tabpanel" hidden aria-hidden="true" style="">
+  <div class="pattern-toolbar gutter pad-t-1-4 pad-b-1-8 relative" style="">
+    <h2 class="pattern-name peta push-1-4">Blog section</h2>
+        <ul class="list-group-inline gutter absolute pin-cr">
+            <li>
+              <button class="center-contents-vertical pattern-tool-btn pattern-code-btn" title="Show code" aria-label="Show code" aria-pressed="false" aria-controls="blog-section-blog-section-code-sample">
+                <i class="icon i-18">
+                  <svg><use xlink:href="#icon-code"></use></svg>
+                </i>
+              </button>
+            </li>
+            <li>
+              <a class="center-contents-vertical pattern-tool-btn pattern-pop-btn" href="patterns/blog-section/blog-section.html" target="_blank" title="Open pattern in a new tab" aria-label="Open pattern in a new tab">
+                <i class="icon i-18">
+                  <svg><use xlink:href="#icon-pop-out"></use></svg>
+                </i>
+              </a>
+            </li>
+        </ul>
+  </div>
+
+
+  
+
+    <div class="pattern-details" id="blog-section-blog-section" style="">
+
+      <div class="pattern-examples pad-t-1-2 pad-b-1-2">
+        <div class="gutter-2 pad-t-1-2 pad-b-1-2">
+          <div class="resizeable-pattern relative" style="">
+            <iframe data-src="patterns/blog-section/blog-section.html" scrolling="no" onload="resizeIframe(this)" ></iframe>
+              <div class="resizeable-pattern-length">
+                <div class="resize-handle resize-handle-left" style="">
+                  <i class="icon i-18">
+                    <svg><use xlink:href="#icon-resize-handle" /></svg>
+                  </i>
+                </div>
+                <div class="resize-handle resize-handle-right" style="">
+                  <i class="icon i-18">
+                    <svg><use xlink:href="#icon-resize-handle" /></svg>
+                  </i>
+                </div>
+              </div>
+          </div>
+        </div>
+
+          <div class="pattern-code-wrap gutter pad-t-1-2 pad-b-1-2" hidden aria-hidden="true" id="blog-section-blog-section-code-sample" tabindex="-1">
+            <div class="pattern-code relative milli island-1-2" style="">
+              <button class="center-contents-vertical pattern-tool-btn pattern-copy-btn absolute pin-tr" title="Copy code" aria-label="Copy code" data-clipboard-target="#blog-section-blog-section-code-sample-copy-chunk" hidden>
+                <i class="icon i-18">
+                  <svg><use xlink:href="#icon-copy"></use></svg>
+                </i>
+              </button>
+              <code><pre id="blog-section-blog-section-code-sample-copy-chunk">&lt;section class="blog max-length island"&gt;
+  &lt;h1 class="main-header">Blog&lt;/h1>
+  &lt;div class="blog-post">
+    &lt;input type="checkbox" class="read-more-state" id="post">
+
+    &lt;small class="not-bold">April 2, 2017 4:36AM&lt;/small>
+    &lt;h2 class="tera push-1-4 pad-t-1-2"> Fundraiser&lt;/h2>
+    &lt;div class="read-more-wrapper push-1-2">Loyal Rescue has been taking on more dogs than ever. As such we have much more medical bills to pay for all these poor dogs.
+      &lt;span class="read-more-target"> Loyal Rescue has parterned with Natural Leather Wraps to raise money this month. Until the end of the month Natural Leather Wraps will donate 5% of the profit made to Loyal Rescue. Remember these make a great Mothers Day gift!
+            &lt;figure>
+              &lt;img class="pad-t-1-2 img-flex" src="../../images/blog-leather-wraps.jpg" alt="">
+                &lt;figcaption class="text-center img-caption">Natural Leather Wraps come in red, blue and grey!&lt;/figcaption>
+            &lt;/figure>
+        &lt;/span>
+    &lt;/div>
+    &lt;label for="post" class="read-more-btn">&lt;/label>
+  &lt;/div>
+&lt;/section>
+</pre></code>
+            </div>
+          </div>
+      </div>
+    </div>
+
+</section>
+
         <section class="pattern" id="buttons" role="tabpanel" hidden aria-hidden="true" style="">
   <div class="pattern-toolbar gutter pad-t-1-4 pad-b-1-8 relative" style="">
     <h2 class="pattern-name peta push-1-4">Buttons</h2>
@@ -827,7 +906,7 @@
   </div>
 
     <div class="pattern-desc milli island" style="">
-      <div class="max-length"><p>The card section is how multiple cards will be displayed.</p>
+      <div class="max-length"><p>The card section is how multiple cards are displayed.</p>
 </div>
     </div>
 
@@ -2076,7 +2155,7 @@
   </div>
 
     <div class="pattern-desc milli island" style="">
-      <div class="max-length"><p>This section is at the beginning of the pages as an intro.</p>
+      <div class="max-length"><p>The intro section is at the top of the web page introducing the content below.</p>
 </div>
     </div>
 
@@ -2113,7 +2192,7 @@
               <code><pre id="intro-section-intro-section-code-sample-copy-chunk">&lt;section class="grid intro-section" id="about"&gt;
   &lt;div class="wrapper">
     &lt;div class="intro-text island max-width">
-      &lt;h2 class="unit xs-1 s-1 m-1 l-1 adopt-header peta">Adopt&lt;/h2>
+      &lt;h1 class="unit xs-1 s-1 m-1 l-1 main-header peta">Adopt&lt;/h1>
       &lt;p class="unit xs-1 s-1 m-2-3 l-2-3">Currently we have 11 dogs up for adoption&#x2014;waiting for their forever homes. Loyal Rescue will do all we can to help you find your perfect match.&lt;/p>
       &lt;div class="unit xs-1 s-1 m-1-3 l-1-3">
       &lt;/div>

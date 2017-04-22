@@ -24,7 +24,7 @@ fieldset {
 }
 
 .contact-legend {
-  color: var(--color-primary);
+  color: var(--color-accent);
 }
 
 input,

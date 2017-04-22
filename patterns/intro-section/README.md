@@ -1,1 +1,1 @@
-This section is at the beginning of the pages as an intro.
+The intro section is at the top of the web page introducing the content below.

@@ -20,27 +20,27 @@ p {
 /* Headings */
 
 h1 {
-  color: #fff;
-  font-weight: 600;
-}
-
-h2 {
   color: var(--color-primary);
   font-weight: 600;
 }
 
-h3 {
+h2 {
   color: var(--color-accent);
   font-weight: 500;
 }
 
-h4 {
+h3 {
   color: var(--color-neutral-dark-grey);
   font-weight: 400;
 }
 
+h4 {
+    font-weight: 400;
+}
+
 h5 {
-  font-weight: 400;
+  color: var(--color-neutral-light-grey);
+  font-weight: 300;
 }
 
 h6 {

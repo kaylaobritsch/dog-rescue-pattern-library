@@ -1,1 +1,1 @@
-The card section is how multiple cards will be displayed.
+The card section is how multiple cards are displayed.
