@@ -35,6 +35,10 @@
   text-decoration: none;
 }
 
+#current {
+  color: var(--color-secondary);
+}
+
 .header nav a:focus {
   color: var(--color-secondary);
 }
