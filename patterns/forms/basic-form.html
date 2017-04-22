@@ -13,21 +13,17 @@
   <link href="https://fonts.googleapis.com/css?family=Fira+Sans:300,400,700" rel="stylesheet">
 </head>
 <body>
-  <section class="wrapper island">
-    <h1 class="yotta push-1-2">Application</h1>
-    <p class="push-1-2">This information is used to consider you for a phone interview.</p>
-    <p class="push-2">Please note at this time adoption is only available to Canadian residents.</p>
-
-    <form class="basic-form grid" method="POST" novalidate action="https://formspree.io/obri0205@algonquincollege.com">
-      <div class="unit xs-1 s-1 m-1 l-1 error-message error-message-highlighted push" role="alert" aria-live="assertive">
-        <h3 class="push-0 tera warning text-center pad-t pad-b gutter">There was an error with the highlighted fields below</h3>
+  <section class="wrapper island basic-form">
+    <form class="grid" method="POST" novalidate action="https://formspree.io/obri0205@algonquincollege.com">
+      <div class="unit xs-1 s-1 m-1 l-1 error-message error-message-highlighted push" role="alert" aria-live="assertive" tabindex="-1">
+        <h4 class="push-0 tera warning text-center pad-t pad-b gutter">There was an error with the highlighted fields below</h4>
       </div>
 
-      <fieldset class="w-1">
-        <legend class="unit xs-1 exa main-legend">Personal Information</legend>
+      <fieldset class="w-1 push-2" id="personal-info">
+        <legend class="unit xs-1 tera main-legend push">Personal Information</legend>
 
-        <h3 class="unit xs-1 s-1 m-1-5 l-1-5 giga">Dog's Info</h3>
-        <div class="unit xs-1 s-1 m-2-5 push-1-2 gutter-1-4">
+        <h3 class="unit xs-1 s-1 m-1-5 l-1-5 mega">Dog's Info</h3>
+        <div class="unit xs-1 s-1 m-2-5 push gutter-1-4">
           <label class="milli" for="dog-name">Dog's name</label>
           <input id="dog-name" name="dog name" required aria-describedby="dog-name-error">
           <p class="error-message micro island-1-4 push-0" id="dog-name-error">
@@ -36,7 +32,7 @@
           </p>
         </div>
 
-        <div class="unit xs-1 s-1 m-2-5 l-2-5 push-1-2 gutter-1-4">
+        <div class="unit xs-1 s-1 m-2-5 l-2-5 push gutter-1-4">
           <label class="milli" for="adopt-num">Adoption number</label>
           <input type="number" name="adoption-number" id="adopt-num" required aria-describedby="adopt-num-error">
           <p class="error-message micro island-1-4 push-0" id="adopt-num-error">
@@ -45,9 +41,9 @@
           </p>
         </div>
 
-        <h3 class="unit xs-1 s-1 m-1-5 l-1-5 giga">About You</h3>
+        <h3 class="unit xs-1 s-1 m-1-5 l-1-5 mega">About You</h3>
 
-        <div class="unit xs-1 s-1 m-3-5 l-3-5 push-1-2 gutter-1-4">
+        <div class="unit xs-1 s-1 m-3-5 l-3-5 push gutter-1-4">
           <label class="milli" for="name">Full name</label>
           <input id="name" name="full-name" required aria-describedby="name-error">
           <p class="error-message micro island-1-4 push-0" id="name-error">
@@ -56,7 +52,7 @@
           </p>
         </div>
 
-        <div class="unit xs-1 s-1 m-1-5 l-1-5 push-1-2 gutter-1-4">
+        <div class="unit xs-1 s-1 m-1-5 l-1-5 push gutter-1-4">
           <label class="milli" for="age">Age</label>
           <input type="number" name="age" id="age" min="18" required aria-describedby="age-error">
           <p class="error-message micro island-1-4 push-0" id="age-error">
@@ -68,8 +64,8 @@
         <div class="unit xs-1 s-1 m-1-5 l-1-5">
         </div>
 
-        <fieldset class="unit xs-1 s-1 m-2-5 l-2-5 push-1-2 gutter-1-4">
-          <legend class="milli push-1-2 not-bold">Are you employed?</legend>
+        <fieldset class="unit xs-1 s-1 m-2-5 l-2-5 push gutter-1-4">
+          <legend class="milli not-bold push-1-2">Are you employed?</legend>
           <input type="radio" name="employed" id="yes-employed" required aria-describedby="employed-error">
           <label for="yes-employed">Yes</label>
           <input type="radio" name="employed" id="no-employed" required aria-describedby="employed-error">
@@ -80,14 +76,14 @@
           </p>
         </fieldset>
 
-        <div class="unit xs-1 s-1 m-2-5 l-2-5 push-1-2 gutter-1-4">
+        <div class="unit xs-1 s-1 m-2-5 l-2-5 push gutter-1-4">
           <label class="milli" for="job-title">If yes, your job title <em class="flag-optional micro normal">(optional)</em></label>
           <input id="job-title" name="job-title">
         </div>
 
-        <h3 class="unit xs-1 s-1 m-1-5 giga">Contact</h3>
+        <h3 class="unit xs-1 s-1 m-1-5 mega">Contact</h3>
 
-        <div class="unit xs-1 s-1 m-2-5 l-2-5 push-1-2 gutter-1-4">
+        <div class="unit xs-1 s-1 m-2-5 l-2-5 push gutter-1-4">
           <label class="milli" for="phone">Primary phone</label>
           <input type="tel" name="primary-phone" id="phone" required aria-describedby="phone-error">
           <p class="error-message micro island-1-4 push-0" id="phone-error">
@@ -96,7 +92,7 @@
           </p>
         </div>
 
-        <div class="unit xs-1 s-1 m-2-5 l-2-5 push-1-2 gutter-1-4">
+        <div class="unit xs-1 s-1 m-2-5 l-2-5 push gutter-1-4">
           <label class="milli" for="email">E-mail address</label>
           <input type="email" name="e-mail" id="email" required aria-describedby="email-error">
           <p class="error-message micro island-1-4 push-0" id="email-error">
@@ -108,27 +104,27 @@
         <div class="unit xs-1 s-1 m-1-5 l-1-5">
         </div>
 
-        <div class="unit xs-1 s-1 m-2-5 l-2-5 push-1-2 gutter-1-4">
+        <div class="unit xs-1 s-1 m-2-5 l-2-5 push gutter-1-4">
           <label class="milli" for="work-phone">Work phone <em class="flag-optional micro normal">(optional)</em></label>
           <input type="tel" id="work-phone" name="work-phone">
         </div>
 
-        <fieldset class="unit xs-1 s-1 m-2-5 l-2-5 push-1-2 gutter-1-4">
-          <legend class="milli push-1-2 not-bold">Can we call you at work? <em class="flag-optional micro normal">(optional)</em></legend>
+        <fieldset class="unit xs-1 s-1 m-2-5 l-2-5 push gutter-1-4">
+          <legend class="milli not-bold push-1-2">Can we call you at work? <em class="flag-optional micro normal">(optional)</em></legend>
           <input type="radio" name="work-call" id="yes-work">
           <label for="yes-work">Yes</label>
           <input type="radio" name="work-call" id="no-work">
           <label for="no-work" class="gutter-1-2">No</label>
         </fieldset>
 
-        <h3 class="unit xs-1 s-1 m-1-5 l-1-5 giga">Address</h3>
+        <h3 class="unit xs-1 s-1 m-1-5 l-1-5 mega">Address</h3>
 
-        <div class="unit xs-1 s-1 m-2-5 l-2-5 push-1-2 gutter-1-4">
+        <div class="unit xs-1 s-1 m-2-5 l-2-5 push gutter-1-4">
           <label class="milli" for="apart-num">Apartment number <em class="flag-optional micro normal">(optional)</em></label>
           <input name="apartment-number" id="apart-num">
         </div>
 
-        <div class="unit xs-1 s-1 m-2-5 l-2-5 push-1-2 gutter-1-4">
+        <div class="unit xs-1 s-1 m-2-5 l-2-5 push gutter-1-4">
           <label class="milli" for="street">Street address</label>
           <input type="tel" name="street-address" id="street" required aria-describedby="street-error">
           <p class="error-message micro island-1-4 push-0" id="street-error">
@@ -140,9 +136,9 @@
         <div class="unit xs-1 s-1 m-1-5 l-1-5">
         </div>
 
-        <fieldset class="unit xs-1 s-1 m-1-5 l-1-5 gutter-1-4">
+        <fieldset class="unit xs-1 s-1 m-1-5 l-1-5 push gutter-1-4">
           <label class="milli" for="province">Province</label>
-          <select name="province" id="province">
+          <select class="push-1-2" name="province" id="province">
             <option value="AB">AB</option>
             <option value="BC">BC</option>
             <option value="MB">MB</option>
@@ -159,7 +155,7 @@
           </select>
         </fieldset>
 
-        <div class="unit xs-1 s-1 m-2-5 l-2-5 push-1-2 gutter-1-4">
+        <div class="unit xs-1 s-1 m-2-5 l-2-5 push gutter-1-4">
           <label class="milli" for="city">City</label>
           <input name="city-address" id="city" required aria-describedby="city-error">
           <p class="error-message milli island-1-4 push-0" id="city-error">
@@ -168,7 +164,7 @@
           </p>
         </div>
 
-        <div class="unit xs-1 s-1 m-1-5 l-1-5 push-1-2 gutter-1-4">
+        <div class="unit xs-1 s-1 m-1-5 l-1-5 push gutter-1-4">
           <label class="milli" for="postal">Postal code</label>
           <input name="postal-code" id="postal" pattern="[A-Za-z][0-9][A-Za-z] ?[0-9][A-Za-z][0-9]" required aria-describedby="postal-error">
           <p class="error-message micro island-1-4 push-0" id="postal-error">
@@ -178,11 +174,97 @@
         </div>
       </fieldset>
 
-      <fieldset class="w-1">
-        <legend class="unit xs-1 exa main-legend">Pet Preference</legend>
-        <h3 class="unit xs-1 s-1 m-1-5 giga">Preference</h3>
+      <fieldset class="w-1 push-2" id="lifestyle">
+        <legend class="unit xs-1 tera main-legend push">Lifestyle</legend>
+        <h3 class="unit xs-1 s-1 m-1-5 mega">Environment</h3>
 
-        <fieldset class="unit xs-1 s-1 m-4-5 l-4-5 push-1-2 gutter-1-4">
+        <fieldset class="unit xs-1 s-1 m-2-5 l-2-5 push gutter-1-4">
+          <label class="milli" for="house">Type of house</label>
+          <select name="house" id="house" required aria-describedby="house-error">
+            <option value="">Select One</option>
+            <option value="house">House</option>
+            <option value="semi-detach">Semi Detach</option>
+            <option value="townhouse">Townhouse</option>
+            <option value="condo">Condo</option>
+            <option value="apartment">Apartment</option>
+            <option value="mobile-home">Mobile Home</option>
+            <option value="other">Other</option>
+          </select>
+          <p class="error-message micro island-1-4 push-0" id="house-error">
+            <i class="icon i-24"><svg><use xlink:href="../../images/icons.svg#warning" /></svg></i>
+            <span class="icon-label">Select your house type?</span>
+          </p>
+        </fieldset>
+
+        <fieldset class="unit xs-1 s-1 m-2-5 l-2-5 push gutter-1-4">
+          <legend class="milli not-bold push-1-2">Rent or own?</legend>
+          <input type="radio" name="rent-own" id="rent" required aria-describedby="rent-error">
+          <label for="rent">Rent</label>
+          <input type="radio" name="rent-own" id="own">
+          <label for="own" class="gutter-1-2">Own</label>
+          <p class="error-message micro island-1-4 push-0" id="rent-error">
+            <i class="icon i-24"><svg><use xlink:href="../../images/icons.svg#warning" /></svg></i>
+            <span class="icon-label">Do you rent or own?</span>
+          </p>
+        </fieldset>
+
+        <div class="unit xs-1 s-1 m-1-5 l-1-5">
+        </div>
+
+        <fieldset class="unit xs-1 s-1 m-2-5 l-2-5 push gutter-1-4">
+          <legend class="milli not-bold push-1-2">Rural or urban?</legend>
+          <input type="radio" name="rural-urban" id="rural" required aria-describedby="rural-error">
+          <label for="rural">Rural</label>
+          <input type="radio" name="rural-urban" id="urban">
+          <label for="urban" class="gutter-1-2">Urban</label>
+          <p class="error-message micro island-1-4 push-0" id="rural-error">
+            <i class="icon i-24"><svg><use xlink:href="../../images/icons.svg#warning" /></svg></i>
+            <span class="icon-label">Do you live in a rural or urban area?</span>
+          </p>
+        </fieldset>
+
+        <div class="unit xs-1 s-1 m-2-5 l-2-5 push gutter-1-4">
+          <label class="milli" for="footage">Square footage <em class="flag-optional micro normal">(optional)</em></label>
+          <input type="number" id="footage" name="footage">
+        </div>
+
+        <div class="unit xs-1 s-1 m-1-5 l-1-5">
+        </div>
+
+        <fieldset class="unit xs-1 s-1 m-2-5 l-2-5 push gutter-1-4">
+          <label class="milli" for="yard">Yard size</label>
+          <select name="yard" id="yard" required aria-describedby="yard-error">
+            <option value="">Select One</option>
+            <option value="none">None</option>
+            <option value="small">Small</option>
+            <option value="medium">Medium</option>
+            <option value="large">Large</option>
+          </select>
+          <p class="error-message micro island-1-4 push-0" id="yard-error">
+            <i class="icon i-24"><svg><use xlink:href="../../images/icons.svg#warning" /></svg></i>
+            <span class="icon-label">What is your yard size?</span>
+          </p>
+        </fieldset>
+
+        <fieldset class="unit xs-1 s-1 m-2-5 l-2-5 push gutter-1-4">
+          <legend class="milli not-bold push-1-2">Is your yard fenced?</legend>
+          <input type="radio" name="fenced" id="fence-yes" required aria-describedby="fence-error">
+          <label for="fence-yes">Yes</label>
+          <input type="radio" name="fenced" id="fence-no">
+          <label for="fence-no" class="gutter-1-2">No</label>
+          <p class="error-message micro island-1-4 push-0" id="fence-error">
+            <i class="icon i-24"><svg><use xlink:href="../../images/icons.svg#warning" /></svg></i>
+            <span class="icon-label">Is your yard fenced?</span>
+          </p>
+        </fieldset>
+
+      </fieldset>
+
+      <fieldset class="w-1">
+        <legend class="unit xs-1 tera main-legend push">Pet Preference</legend>
+        <h3 class="unit xs-1 s-1 m-1-5 mega">Preference</h3>
+
+        <fieldset class="unit xs-1 s-1 m-4-5 l-4-5 push gutter-1-4">
           <legend class="milli push-1-2 not-bold">What size of dog do you prefer? <em class="flag-optional micro normal">(optional)</em></legend>
           <input type="checkbox" name="size" id="toy">
           <label for="toy">Toy</label>
@@ -197,7 +279,7 @@
         <div class="unit xs-1 s-1 m-1-5 l-1-5">
         </div>
 
-        <div class="unit xs-1 s-1 m-4-5 l-4-5 push-1-2 gutter-1-4">
+        <div class="unit xs-1 s-1 m-4-5 l-4-5 push gutter-1-4">
           <label class="milli" for="why-adopt">Why do you want to adopt a dog?</label>
           <textarea name="why-adopt" id="why-adopt" required aria-describedby="why-adopt-error"></textarea>
           <p class="error-message milli island-1-4 push-0" id="why-adopt-error">
@@ -211,7 +293,7 @@
       <div class="unit xs-1 s-1 m-1-5 l-1-5">
       </div>
 
-      <div class="unit xs-1 s-1 m-2-5 l-2-5 push-1-2 gutter-1-4">
+      <div class="unit xs-1 s-1 m-2-5 l-2-5 push gutter-1-4">
         <label class="milli" for="date">Date</label>
         <input type="date" name="today-date" id="date" required aria-describedby="date-error">
         <p class="error-message milli island-1-4 push-0" id="date-error">
@@ -219,15 +301,25 @@
         </p>
       </div>
 
-      <fieldset class="unit xs-1 s-1 m-2-5 l-2-5 push-1-2 gutter-1-4">
-        <legend class="milli push-1-2 not-bold">Agreement</legend>
-        <input type="radio" name="agreement" id="yes-agreement" required aria-describedby="agreement-error">
-        <label for="yes-agreement">I agree to the above statements</label>
-        <p class="error-message micro island-1-4 push-0" id="agreement-error">
+      <div class="unit xs-1 s-1 m-2-5 l-2-5">
+      </div>
+
+      <h3 class="unit xs-1 s-1 m-1-5 mega">Agreement</h3>
+
+      <div class="unit xs-1 s-1 m-4-5 l-4-5 push gutter-1-4">
+        <div class="milli not-bold push">
+          <p class="push-1-2">I certify that all the information provided is correct and true with nothing of relevence being omitted. I realize that my application may be denied if I have provied false or misleading information.</p>
+          <p class="push-1-2">I grant my permission for Loyal Rescue to contact my references and vet.</p>
+          <p class="push-1-2">I am aware the home visits are mandatory prior to and after adoption on a random basis.</p>
+          <p class="push-1-2">I am financially and physically able to care for a dog.</p>
+        </div>
+        <input type="radio" name="behavior" id="info-yes" required aria-describedby="info-error">
+        <label for="info-yes" class="push-1-4"><strong>I agree to the above statements and am older than 18</strong></label>
+        <p class="error-message micro island-1-4 push-0" id="info-error">
           <i class="icon i-24"><svg><use xlink:href="../../images/icons.svg#warning" /></svg></i>
-          <span class="icon-label">Please agree to the terms of service</span>
+          <span class="icon-label">Please agree to the terms</span>
         </p>
-      </fieldset>
+      </div>
 
       <div class="unit xs-1 s-1 m-1-5 l-1-5">
       </div>

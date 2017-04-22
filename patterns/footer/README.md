@@ -1,1 +1,1 @@
-The footer pattern is used on the bottom of every Loyal Rescue webpage. The header features the main website navigation and social media links.
+The footer pattern is used on the bottom of every Loyal Rescue webpage. The footer features all the main navigation links and social media links. The website and company copyright is found at the bottom of the footer.

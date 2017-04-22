@@ -674,7 +674,7 @@
   </div>
 
     <div class="pattern-desc milli island" style="">
-      <div class="max-length"><p>The banner is featured on the home page to grab the viewer&#39;s attention. The banner directs to the dog adoption page.</p>
+      <div class="max-length"><p>The banner is featured on the home page to grab the viewer&#39;s attention. The button on the banner directs to the dog adoption page.</p>
 </div>
     </div>
 
@@ -708,14 +708,14 @@
                   <svg><use xlink:href="#icon-copy"></use></svg>
                 </i>
               </button>
-              <code><pre id="banner-banner-code-sample-copy-chunk">&lt;section&gt;
+              <code><pre id="banner-banner-code-sample-copy-chunk">&lt;section role="banner"&gt;
   &lt;div class="relative">
     &lt;div>
-      &lt;img class="img-flex" src="../../images/banner.jpg" alt="">
+      &lt;img class="img-flex" src="../../images/banner.jpg" alt="Loyal Rescue banner">
     &lt;/div>
-    &lt;div class="info absolute w-1 text-center">
+    &lt;div class="info w-1 text-center" id="banner">
       &lt;h2 class="yotta push-1-2 pad-t banner-heading">Rescuing Dogs in Need&lt;/h2>
-      &lt;p class="push banner-text">Connecting foster dogs with their forever homes in the Toronto area.&lt;/p>
+      &lt;p class="push banner-text giga">Connecting foster dogs with their forever homes in the Toronto area.&lt;/p>
       &lt;div>
         &lt;a class="btn btn-reverse push" href="#">Adopt Now&lt;/a>
       &lt;/div>
@@ -752,11 +752,11 @@
   </div>
 
     <div class="pattern-desc milli island" style="">
-      <div class="max-length"><p>These buttons are use the primary colour to bring unity to the whole website. Each has it&#39;s own purpose:</p>
+      <div class="max-length"><p>These buttons use the primary colour to bring unity to the whole website. Each button has its own purpose:</p>
 <ul>
-<li>The regular button is for use on any white background.</li>
-<li>The reverse button is for use on an image or dark background. Specifically this will be used for the banner.</li>
-<li>The icon button is for use on the cards showcasing the adoptable dogs.</li>
+<li>The regular button is for use on any light background.</li>
+<li>The reverse button is for use on an image or dark background. Specifically to be used on the banner.</li>
+<li>The icon button is for use on the cards featuring each adoptable dogs.</li>
 </ul>
 <p>These are mixed with typografier classes to create buttons of all different sizes.</p>
 </div>
@@ -827,7 +827,7 @@
   </div>
 
     <div class="pattern-desc milli island" style="">
-      <div class="max-length"><p>This card section is how multiple cards will be displayed in the website.</p>
+      <div class="max-length"><p>The card section is how multiple cards will be displayed.</p>
 </div>
     </div>
 
@@ -861,245 +861,246 @@
                   <svg><use xlink:href="#icon-copy"></use></svg>
                 </i>
               </button>
-              <code><pre id="card-section-card-section-code-sample-copy-chunk">&lt;section class="grid island-1-2 card-section"&gt;
-
-  &lt;div class="island-1-2 unit xs-1 s-1 m-1-2 l-1-3">
-    &lt;div class="card">
-      &lt;div class="img">
-        &lt;img class="img-flex relative" alt="winston" src="../../images/card-winston.jpg">
-      &lt;/div>
-      &lt;div class="island-1-2">
-        &lt;h3 class="push-1-8 tera">Winston&lt;/h3>
-        &lt;h4 class="push-1-2 mega">#4563&lt;/h4>
-        &lt;p class="push-0">Golden Retriever&lt;/p>
-        &lt;p class="push">Puppy | Male&lt;/p>
-        &lt;div class="text-center">
-          &lt;a class="btn btn-icon relative" href="#">
-            &lt;i class="icon i-18 gutter absolute">
-                &lt;svg>&lt;use class="paw" xlink:href="../../images/icons.svg#paw"/>&lt;/svg>
-              &lt;/i>
-            &lt;span class="icon-label">Adopt Me&lt;/span>
-          &lt;/a>
+              <code><pre id="card-section-card-section-code-sample-copy-chunk">&lt;section class="grid island-1-2 card-section" id="adoptable"&gt;
+  &lt;div class="wrapper">
+    &lt;div class="island-1-2 unit xs-1 s-1 m-1-2 l-1-3">
+      &lt;div class="card">
+        &lt;div class="img">
+          &lt;img class="img-flex relative" alt="winston" src="../../images/card-winston.jpg" aria-details="winston">
+        &lt;/div>
+        &lt;div class="island-1-2" id="winston">
+          &lt;h3 class="push-1-8 tera">Winston&lt;/h3>
+          &lt;h4 class="push-1-2 mega">#4563&lt;/h4>
+          &lt;p class="push-0">Golden Retriever&lt;/p>
+          &lt;p class="push">Puppy | Male&lt;/p>
+          &lt;div class="text-center">
+            &lt;a class="btn btn-icon relative" href="#">
+              &lt;i class="icon i-18 gutter absolute">
+                  &lt;svg>&lt;use class="paw" xlink:href="../../images/icons.svg#paw"/>&lt;/svg>
+                &lt;/i>
+              &lt;span class="icon-label">Adopt Me&lt;/span>
+            &lt;/a>
+          &lt;/div>
         &lt;/div>
       &lt;/div>
     &lt;/div>
-  &lt;/div>
 
-  &lt;div class="island-1-2 unit xs-1 s-1 m-1-2 l-1-3">
-    &lt;div class="card">
-      &lt;div class="img">
-        &lt;img class="img-flex relative" alt="winston" src="../../images/card-oliver.jpg">
-      &lt;/div>
-      &lt;div class="island-1-2">
-        &lt;h3 class="push-1-8 tera">Oliver&lt;/h3>
-        &lt;h4 class="push-1-2 mega">#4564&lt;/h4>
-        &lt;p class="push-0">Dachshund&lt;/p>
-        &lt;p class="push">Adult | Male&lt;/p>
-        &lt;div class="text-center">
-          &lt;a class="btn btn-icon relative" href="#">
-            &lt;i class="icon i-18 gutter absolute">
-                &lt;svg>&lt;use class="paw" xlink:href="../../images/icons.svg#paw"/>&lt;/svg>
-              &lt;/i>
-            &lt;span class="icon-label">Adopt Me&lt;/span>
-          &lt;/a>
+    &lt;div class="island-1-2 unit xs-1 s-1 m-1-2 l-1-3">
+      &lt;div class="card">
+        &lt;div class="img">
+          &lt;img class="img-flex relative" alt="oliver" src="../../images/card-oliver.jpg" aria-details="oliver">
+        &lt;/div>
+        &lt;div class="island-1-2" id="oliver">
+          &lt;h3 class="push-1-8 tera">Oliver&lt;/h3>
+          &lt;h4 class="push-1-2 mega">#4564&lt;/h4>
+          &lt;p class="push-0">Dachshund&lt;/p>
+          &lt;p class="push">Adult | Male&lt;/p>
+          &lt;div class="text-center">
+            &lt;a class="btn btn-icon relative" href="#">
+              &lt;i class="icon i-18 gutter absolute">
+                  &lt;svg>&lt;use class="paw" xlink:href="../../images/icons.svg#paw"/>&lt;/svg>
+                &lt;/i>
+              &lt;span class="icon-label">Adopt Me&lt;/span>
+            &lt;/a>
+          &lt;/div>
         &lt;/div>
       &lt;/div>
     &lt;/div>
-  &lt;/div>
 
-  &lt;div class="island-1-2 unit xs-1 s-1 m-1-2 l-1-3">
-    &lt;div class="card">
-      &lt;div class="img">
-        &lt;img class="img-flex relative" alt="winston" src="../../images/card-princess.jpg">
-      &lt;/div>
-      &lt;div class="island-1-2">
-        &lt;h3 class="push-1-8 tera">Princess&lt;/h3>
-        &lt;h4 class="push-1-2 mega">#4565&lt;/h4>
-        &lt;p class="push-0">Dachshund&lt;/p>
-        &lt;p class="push">Puppy | Female&lt;/p>
-        &lt;div class="text-center">
-          &lt;a class="btn btn-icon relative" href="#">
-            &lt;i class="icon i-18 gutter absolute">
-                &lt;svg>&lt;use class="paw" xlink:href="../../images/icons.svg#paw"/>&lt;/svg>
-              &lt;/i>
-            &lt;span class="icon-label">Adopt Me&lt;/span>
-          &lt;/a>
+    &lt;div class="island-1-2 unit xs-1 s-1 m-1-2 l-1-3">
+      &lt;div class="card">
+        &lt;div class="img">
+          &lt;img class="img-flex relative" alt="princess" src="../../images/card-princess.jpg" aria-details="princess">
+        &lt;/div>
+        &lt;div class="island-1-2" id="princess">
+          &lt;h3 class="push-1-8 tera">Princess&lt;/h3>
+          &lt;h4 class="push-1-2 mega">#4565&lt;/h4>
+          &lt;p class="push-0">Dachshund&lt;/p>
+          &lt;p class="push">Puppy | Female&lt;/p>
+          &lt;div class="text-center">
+            &lt;a class="btn btn-icon relative" href="#">
+              &lt;i class="icon i-18 gutter absolute">
+                  &lt;svg>&lt;use class="paw" xlink:href="../../images/icons.svg#paw"/>&lt;/svg>
+                &lt;/i>
+              &lt;span class="icon-label">Adopt Me&lt;/span>
+            &lt;/a>
+          &lt;/div>
         &lt;/div>
       &lt;/div>
     &lt;/div>
-  &lt;/div>
 
-  &lt;div class="island-1-2 unit xs-1 s-1 m-1-2 l-1-3">
-    &lt;div class="card">
-      &lt;div class="img">
-        &lt;img class="img-flex relative" alt="teddy" src="../../images/card-teddy.jpg">
-      &lt;/div>
-      &lt;div class="island-1-2">
-        &lt;h3 class="push-1-8 tera">Teddy&lt;/h3>
-        &lt;h4 class="push-1-2 mega">#4566&lt;/h4>
-        &lt;p class="push-0">King Charles Spaniel&lt;/p>
-        &lt;p class="push">Adult | Male&lt;/p>
-        &lt;div class="text-center">
-          &lt;a class="btn btn-icon relative" href="#">
-            &lt;i class="icon i-18 gutter absolute">
-                &lt;svg>&lt;use class="paw" xlink:href="../../images/icons.svg#paw"/>&lt;/svg>
-              &lt;/i>
-            &lt;span class="icon-label">Adopt Me&lt;/span>
-          &lt;/a>
+    &lt;div class="island-1-2 unit xs-1 s-1 m-1-2 l-1-3">
+      &lt;div class="card">
+        &lt;div class="img">
+          &lt;img class="img-flex relative" alt="teddy" src="../../images/card-teddy.jpg" aria-details="teddy">
+        &lt;/div>
+        &lt;div class="island-1-2" id="teddy">
+          &lt;h3 class="push-1-8 tera">Teddy&lt;/h3>
+          &lt;h4 class="push-1-2 mega">#4566&lt;/h4>
+          &lt;p class="push-0">King Charles Spaniel&lt;/p>
+          &lt;p class="push">Adult | Male&lt;/p>
+          &lt;div class="text-center">
+            &lt;a class="btn btn-icon relative" href="#">
+              &lt;i class="icon i-18 gutter absolute">
+                  &lt;svg>&lt;use class="paw" xlink:href="../../images/icons.svg#paw"/>&lt;/svg>
+                &lt;/i>
+              &lt;span class="icon-label">Adopt Me&lt;/span>
+            &lt;/a>
+          &lt;/div>
         &lt;/div>
       &lt;/div>
     &lt;/div>
-  &lt;/div>
 
-  &lt;div class="island-1-2 unit xs-1 s-1 m-1-2 l-1-3">
-    &lt;div class="card">
-      &lt;div class="img">
-        &lt;img class="img-flex relative" alt="lily" src="../../images/card-lily.jpg">
-      &lt;/div>
-      &lt;div class="island-1-2">
-        &lt;h3 class="push-1-8 tera">Lily&lt;/h3>
-        &lt;h4 class="push-1-2 mega">#4567&lt;/h4>
-        &lt;p class="push-0">Borzoi&lt;/p>
-        &lt;p class="push">Adult | Female&lt;/p>
-        &lt;div class="text-center">
-          &lt;a class="btn btn-icon relative" href="#">
-            &lt;i class="icon i-18 gutter absolute">
-                &lt;svg>&lt;use class="paw" xlink:href="../../images/icons.svg#paw"/>&lt;/svg>
-              &lt;/i>
-            &lt;span class="icon-label">Adopt Me&lt;/span>
-          &lt;/a>
+    &lt;div class="island-1-2 unit xs-1 s-1 m-1-2 l-1-3">
+      &lt;div class="card">
+        &lt;div class="img">
+          &lt;img class="img-flex relative" alt="lily" src="../../images/card-lily.jpg" aria-details="lily">
+        &lt;/div>
+        &lt;div class="island-1-2" id="lily">
+          &lt;h3 class="push-1-8 tera">Lily&lt;/h3>
+          &lt;h4 class="push-1-2 mega">#4567&lt;/h4>
+          &lt;p class="push-0">Borzoi&lt;/p>
+          &lt;p class="push">Adult | Female&lt;/p>
+          &lt;div class="text-center">
+            &lt;a class="btn btn-icon relative" href="#">
+              &lt;i class="icon i-18 gutter absolute">
+                  &lt;svg>&lt;use class="paw" xlink:href="../images/icons.svg#paw"/>&lt;/svg>
+                &lt;/i>
+              &lt;span class="icon-label">Adopt Me&lt;/span>
+            &lt;/a>
+          &lt;/div>
         &lt;/div>
       &lt;/div>
     &lt;/div>
-  &lt;/div>
 
-  &lt;div class="island-1-2 unit xs-1 s-1 m-1-2 l-1-3">
-    &lt;div class="card">
-      &lt;div class="img">
-        &lt;img class="img-flex relative" alt="zoe" src="../../images/card-zoe.jpg">
-      &lt;/div>
-      &lt;div class="island-1-2">
-        &lt;h3 class="push-1-8 tera">Zoe&lt;/h3>
-        &lt;h4 class="push-1-2 mega">#4568&lt;/h4>
-        &lt;p class="push-0">Yorkshire Terrier&lt;/p>
-        &lt;p class="push">Puppy | Female&lt;/p>
-        &lt;div class="text-center">
-          &lt;a class="btn btn-icon relative" href="#">
-            &lt;i class="icon i-18 gutter absolute">
-                &lt;svg>&lt;use class="paw" xlink:href="../../images/icons.svg#paw"/>&lt;/svg>
-              &lt;/i>
-            &lt;span class="icon-label">Adopt Me&lt;/span>
-          &lt;/a>
+    &lt;div class="island-1-2 unit xs-1 s-1 m-1-2 l-1-3">
+      &lt;div class="card">
+        &lt;div class="img">
+          &lt;img class="img-flex relative" alt="zoe" src="../../images/card-zoe.jpg" aria-details="zoe">
+        &lt;/div>
+        &lt;div class="island-1-2" id="zoe">
+          &lt;h3 class="push-1-8 tera">Zoe&lt;/h3>
+          &lt;h4 class="push-1-2 mega">#4568&lt;/h4>
+          &lt;p class="push-0">Yorkshire Terrier&lt;/p>
+          &lt;p class="push">Puppy | Female&lt;/p>
+          &lt;div class="text-center">
+            &lt;a class="btn btn-icon relative" href="#">
+              &lt;i class="icon i-18 gutter absolute">
+                  &lt;svg>&lt;use class="paw" xlink:href="../images/icons.svg#paw"/>&lt;/svg>
+                &lt;/i>
+              &lt;span class="icon-label">Adopt Me&lt;/span>
+            &lt;/a>
+          &lt;/div>
         &lt;/div>
       &lt;/div>
     &lt;/div>
-  &lt;/div>
 
-  &lt;div class="island-1-2 unit xs-1 s-1 m-1-2 l-1-3">
-    &lt;div class="card">
-      &lt;div class="img">
-        &lt;img class="img-flex relative" alt="lucy" src="../../images/card-lucy.jpg">
-      &lt;/div>
-      &lt;div class="island-1-2">
-        &lt;h3 class="push-1-8 tera">Lucy&lt;/h3>
-        &lt;h4 class="push-1-2 mega">#4569&lt;/h4>
-        &lt;p class="push-0">Pug&lt;/p>
-        &lt;p class="push">Adult | Female&lt;/p>
-        &lt;div class="text-center">
-          &lt;a class="btn btn-icon relative" href="#">
-            &lt;i class="icon i-18 gutter absolute">
-                &lt;svg>&lt;use class="paw" xlink:href="../../images/icons.svg#paw"/>&lt;/svg>
-              &lt;/i>
-            &lt;span class="icon-label">Adopt Me&lt;/span>
-          &lt;/a>
+    &lt;div class="island-1-2 unit xs-1 s-1 m-1-2 l-1-3">
+      &lt;div class="card">
+        &lt;div class="img">
+          &lt;img class="img-flex relative" alt="lucy" src="../../images/card-lucy.jpg" aria-details="lucy">
+        &lt;/div>
+        &lt;div class="island-1-2">
+          &lt;h3 class="push-1-8 tera">Lucy&lt;/h3>
+          &lt;h4 class="push-1-2 mega">#4569&lt;/h4>
+          &lt;p class="push-0">Pug&lt;/p>
+          &lt;p class="push">Adult | Female&lt;/p>
+          &lt;div class="text-center">
+            &lt;a class="btn btn-icon relative" href="#">
+              &lt;i class="icon i-18 gutter absolute">
+                  &lt;svg>&lt;use class="paw" xlink:href="../images/icons.svg#paw"/>&lt;/svg>
+                &lt;/i>
+              &lt;span class="icon-label">Adopt Me&lt;/span>
+            &lt;/a>
+          &lt;/div>
         &lt;/div>
       &lt;/div>
     &lt;/div>
-  &lt;/div>
 
-  &lt;div class="island-1-2 unit xs-1 s-1 m-1-2 l-1-3">
-    &lt;div class="card">
-      &lt;div class="img">
-        &lt;img class="img-flex relative" alt="copper" src="../../images/card-copper.jpg">
-      &lt;/div>
-      &lt;div class="island-1-2">
-        &lt;h3 class="push-1-8 tera">Copper&lt;/h3>
-        &lt;h4 class="push-1-2 mega">#4570&lt;/h4>
-        &lt;p class="push-0">Dalmatian&lt;/p>
-        &lt;p class="push">Adult | Male&lt;/p>
-        &lt;div class="text-center">
-          &lt;a class="btn btn-icon relative" href="#">
-            &lt;i class="icon i-18 gutter absolute">
-                &lt;svg>&lt;use class="paw" xlink:href="../../images/icons.svg#paw"/>&lt;/svg>
-              &lt;/i>
-            &lt;span class="icon-label">Adopt Me&lt;/span>
-          &lt;/a>
+    &lt;div class="island-1-2 unit xs-1 s-1 m-1-2 l-1-3">
+      &lt;div class="card">
+        &lt;div class="img">
+          &lt;img class="img-flex relative" alt="copper" src="../../images/card-copper.jpg" aria-details="copper">
+        &lt;/div>
+        &lt;div class="island-1-2" id="copper">
+          &lt;h3 class="push-1-8 tera">Copper&lt;/h3>
+          &lt;h4 class="push-1-2 mega">#4570&lt;/h4>
+          &lt;p class="push-0">Dalmatian&lt;/p>
+          &lt;p class="push">Adult | Male&lt;/p>
+          &lt;div class="text-center">
+            &lt;a class="btn btn-icon relative" href="#">
+              &lt;i class="icon i-18 gutter absolute">
+                  &lt;svg>&lt;use class="paw" xlink:href="../../images/icons.svg#paw"/>&lt;/svg>
+                &lt;/i>
+              &lt;span class="icon-label">Adopt Me&lt;/span>
+            &lt;/a>
+          &lt;/div>
         &lt;/div>
       &lt;/div>
     &lt;/div>
-  &lt;/div>
 
-  &lt;div class="island-1-2 unit xs-1 s-1 m-1-2 l-1-3">
-    &lt;div class="card">
-      &lt;div class="img">
-        &lt;img class="img-flex relative" alt="riley" src="../../images/card-riley.jpg">
-      &lt;/div>
-      &lt;div class="island-1-2">
-        &lt;h3 class="push-1-8 tera">Riley&lt;/h3>
-        &lt;h4 class="push-1-2 mega">#4571&lt;/h4>
-        &lt;p class="push-0">Chihauhua&lt;/p>
-        &lt;p class="push">Senior | Male&lt;/p>
-        &lt;div class="text-center">
-          &lt;a class="btn btn-icon relative" href="#">
-            &lt;i class="icon i-18 gutter absolute">
-                &lt;svg>&lt;use class="paw" xlink:href="../../images/icons.svg#paw"/>&lt;/svg>
-              &lt;/i>
-            &lt;span class="icon-label">Adopt Me&lt;/span>
-          &lt;/a>
+    &lt;div class="island-1-2 unit xs-1 s-1 m-1-2 l-1-3">
+      &lt;div class="card">
+        &lt;div class="img">
+          &lt;img class="img-flex relative" alt="riley" src="../../images/card-riley.jpg" aria-details="riley">
+        &lt;/div>
+        &lt;div class="island-1-2" id="riley">
+          &lt;h3 class="push-1-8 tera">Riley&lt;/h3>
+          &lt;h4 class="push-1-2 mega">#4571&lt;/h4>
+          &lt;p class="push-0">Chihauhua&lt;/p>
+          &lt;p class="push">Senior | Male&lt;/p>
+          &lt;div class="text-center">
+            &lt;a class="btn btn-icon relative" href="#">
+              &lt;i class="icon i-18 gutter absolute">
+                  &lt;svg>&lt;use class="paw" xlink:href="../../images/icons.svg#paw"/>&lt;/svg>
+                &lt;/i>
+              &lt;span class="icon-label">Adopt Me&lt;/span>
+            &lt;/a>
+          &lt;/div>
         &lt;/div>
       &lt;/div>
     &lt;/div>
-  &lt;/div>
 
-  &lt;div class="island-1-2 unit xs-1 s-1 m-1-2 l-1-3">
-    &lt;div class="card">
-      &lt;div class="img">
-        &lt;img class="img-flex relative" alt="bear" src="../../images/card-bear.jpg">
-      &lt;/div>
-      &lt;div class="island-1-2">
-        &lt;h3 class="push-1-8 tera">Bear&lt;/h3>
-        &lt;h4 class="push-1-2 mega">#4572&lt;/h4>
-        &lt;p class="push-0">Bernese Mountain Dog&lt;/p>
-        &lt;p class="push">Adult | Male&lt;/p>
-        &lt;div class="text-center">
-          &lt;a class="btn btn-icon relative" href="#">
-            &lt;i class="icon i-18 gutter absolute">
-                &lt;svg>&lt;use class="paw" xlink:href="../../images/icons.svg#paw"/>&lt;/svg>
-              &lt;/i>
-            &lt;span class="icon-label">Adopt Me&lt;/span>
-          &lt;/a>
+    &lt;div class="island-1-2 unit xs-1 s-1 m-1-2 l-1-3">
+      &lt;div class="card">
+        &lt;div class="img">
+          &lt;img class="img-flex relative" alt="bear" src="../../images/card-bear.jpg" aria-details="bear">
+        &lt;/div>
+        &lt;div class="island-1-2" id="bear">
+          &lt;h3 class="push-1-8 tera">Bear&lt;/h3>
+          &lt;h4 class="push-1-2 mega">#4572&lt;/h4>
+          &lt;p class="push-0">Bernese Mountain Dog&lt;/p>
+          &lt;p class="push">Adult | Male&lt;/p>
+          &lt;div class="text-center">
+            &lt;a class="btn btn-icon relative" href="#">
+              &lt;i class="icon i-18 gutter absolute">
+                  &lt;svg>&lt;use class="paw" xlink:href="../../images/icons.svg#paw"/>&lt;/svg>
+                &lt;/i>
+              &lt;span class="icon-label">Adopt Me&lt;/span>
+            &lt;/a>
+          &lt;/div>
         &lt;/div>
       &lt;/div>
     &lt;/div>
-  &lt;/div>
 
-  &lt;div class="island-1-2 unit xs-1 s-1 m-1-2 l-1-3">
-    &lt;div class="card">
-      &lt;div class="img">
-        &lt;img class="img-flex relative" alt="lucky" src="../../images/card-lucky.jpg">
-      &lt;/div>
-      &lt;div class="island-1-2">
-        &lt;h3 class="push-1-8 tera">Lucky&lt;/h3>
-        &lt;h4 class="push-1-2 mega">#4573&lt;/h4>
-        &lt;p class="push-0">Jack Russel&lt;/p>
-        &lt;p class="push">Adult | Male&lt;/p>
-        &lt;div class="text-center">
-          &lt;a class="btn btn-icon relative" href="#">
-            &lt;i class="icon i-18 gutter absolute">
-                &lt;svg>&lt;use class="paw" xlink:href="../../images/icons.svg#paw"/>&lt;/svg>
-              &lt;/i>
-            &lt;span class="icon-label">Adopt Me&lt;/span>
-          &lt;/a>
+    &lt;div class="island-1-2 unit xs-1 s-1 m-1-2 l-1-3">
+      &lt;div class="card">
+        &lt;div class="img">
+          &lt;img class="img-flex relative" alt="lucky" src="../../images/card-lucky.jpg" aria-details="lucky">
+        &lt;/div>
+        &lt;div class="island-1-2" id="lucky">
+          &lt;h3 class="push-1-8 tera">Lucky&lt;/h3>
+          &lt;h4 class="push-1-2 mega">#4573&lt;/h4>
+          &lt;p class="push-0">Jack Russel&lt;/p>
+          &lt;p class="push">Adult | Male&lt;/p>
+          &lt;div class="text-center">
+            &lt;a class="btn btn-icon relative" href="#">
+              &lt;i class="icon i-18 gutter absolute">
+                  &lt;svg>&lt;use class="paw" xlink:href="../../images/icons.svg#paw"/>&lt;/svg>
+                &lt;/i>
+              &lt;span class="icon-label">Adopt Me&lt;/span>
+            &lt;/a>
+          &lt;/div>
         &lt;/div>
       &lt;/div>
     &lt;/div>
@@ -1135,7 +1136,7 @@
   </div>
 
     <div class="pattern-desc milli island" style="background-color:rgba(255,255,255,.05); border-color:rgba(255,255,255,.05); color:rgba(255,255,255,.9);">
-      <div class="max-length"><p>The cards provide a way to highlight and group important information.</p>
+      <div class="max-length"><p>The cards provide a way to highlight and group important information. Notice how the edges of the card are rounded to appear soft and welcoming.</p>
 </div>
     </div>
 
@@ -1218,7 +1219,7 @@
   </div>
 
     <div class="pattern-desc milli island" style="">
-      <div class="max-length"><p>The footer pattern is used on the bottom of every Loyal Rescue webpage. The header features the main website navigation and social media links.</p>
+      <div class="max-length"><p>The footer pattern is used on the bottom of every Loyal Rescue webpage. The footer features all the main navigation links and social media links. The website and company copyright is found at the bottom of the footer.</p>
 </div>
     </div>
 
@@ -1252,41 +1253,70 @@
                   <svg><use xlink:href="#icon-copy"></use></svg>
                 </i>
               </button>
-              <code><pre id="footer-footer-code-sample-copy-chunk">&lt;footer class="grid grid-middle footer"&gt;
-  &lt;nav class="unit xs-1 s-1 m-1 l-2-3 island push-2 relative" id="nav" role="navigation">
-    &lt;ul class="grid list-group text-center">
-      &lt;li class="drop-footer relative unit xs-1-2 s-1-2 m-1-2 l-1-4">
-        &lt;a class="drop-btn-footer utter-1-2 pad-t-1-4 pad-b-1-4">Home&lt;/a>
-        &lt;div class="drop-content-footer absolute zindex-1">
-          &lt;a href="#">Happy Tails&lt;/a>
-          &lt;a href="#">Our Mission&lt;/a>
-          &lt;a href="#">Contact Us&lt;/a>
-        &lt;/div>
+              <code><pre id="footer-footer-code-sample-copy-chunk">&lt;footer class="grid grid-middle footer" role="contentinfo"&gt;
+  &lt;nav class="unit xs-1 s-1 m-1 l-2-3 island relative" id="nav-footer" role="navigation">
+    &lt;ul class="grid list-group">
+      &lt;li class="unit xs-1 s-1-2 m-1-2 l-1-4 push-1-2">
+        &lt;ul class="list-group">
+          &lt;li>&lt;a class="gutter-1-2 pad-t-1-4 pad-b-1-4" href="home.html">Home&lt;/a>&lt;/li>
+          &lt;li>&lt;a class="gutter-1-2 pad-t-1-4 pad-b-1-4 micro" href="home.html#happy-tails">Happy Tails&lt;/a>&lt;/li>
+          &lt;li>&lt;a class="gutter-1-2 pad-t-1-4 pad-b-1-4 micro" href="home.html#our-mission">Our Mission&lt;/a>&lt;/li>
+          &lt;li>&lt;a class="gutter-1-2 pad-t-1-4 pad-b-1-4 micro" href="home.html#contact-us">Contact Us&lt;/a>&lt;/li>
+        &lt;/ul>
       &lt;/li>
-      &lt;li class="unit xs-1-2 s-1-2 m-1-2 l-1-4">&lt;a class="gutter-1-2 pad-t-1-4 pad-b-1-4" href="#">Blog&lt;/a>&lt;/li>
-      &lt;li class="unit xs-1-2 s-1-2 m-1-2 l-1-4">&lt;a class="gutter-1-2 pad-t-1-4 pad-b-1-4" href="#adopt">Adopt&lt;/a>&lt;/li>
-      &lt;li class="unit xs-1-2 s-1-2 m-1-2 l-1-4">&lt;a class="gutter-1-2 pad-t-1-4 pad-b-1-4" href="#application">Application&lt;/a>&lt;/li>
+      &lt;li class="unit xs-1 s-1-2 m-1-2 l-1-4 push-1-2">
+        &lt;ul class="list-group">
+          &lt;li>&lt;a class="gutter-1-2 pad-t-1-4 pad-b-1-4" href="#">Blog&lt;/a>&lt;/li>
+          &lt;li>&lt;a class="gutter-1-2 pad-t-1-4 pad-b-1-4 micro" href="#">Process&lt;/a>&lt;/li>
+          &lt;li>&lt;a class="gutter-1-2 pad-t-1-4 pad-b-1-4 micro" href="#">Stories&lt;/a>&lt;/li>
+          &lt;li>&lt;a class="gutter-1-2 pad-t-1-4 pad-b-1-4 micro" href="#">Events&lt;/a>&lt;/li>
+          &lt;li>&lt;a class="gutter-1-2 pad-t-1-4 pad-b-1-4 micro" href="#">FAQ&lt;/a>&lt;/li>
+        &lt;/ul>
+      &lt;/li>
+      &lt;li class="unit xs-1 s-1-2 m-1-2 l-1-4 push-1-2">
+        &lt;ul class="list-group">
+          &lt;li>&lt;a class="gutter-1-2 pad-t-1-4 pad-b-1-4" href="#">Adopt&lt;/a>&lt;/li>
+          &lt;li>&lt;a class="gutter-1-2 pad-t-1-4 pad-b-1-4 micro" href="adopt.html#about">About&lt;/a>&lt;/li>
+          &lt;li>&lt;a class="gutter-1-2 pad-t-1-4 pad-b-1-4 micro" href="adopt.html#steps">Steps&lt;/a>&lt;/li>
+          &lt;li>&lt;a class="gutter-1-2 pad-t-1-4 pad-b-1-4 micro" href="adopt.html#adoptable">Adoptable&lt;/a>&lt;/li>
+        &lt;/ul>
+      &lt;/li>
+      &lt;li class="unit xs-1 s-1-2 m-1-2 l-1-4 push-1-2">
+        &lt;ul class="list-group">
+          &lt;li>&lt;a class="gutter-1-2 pad-t-1-4 pad-b-1-4" href="#">Application&lt;/a>&lt;/li>
+          &lt;li>&lt;a class="gutter-1-2 pad-t-1-4 pad-b-1-4 micro" href="application.html#personal-info">Personal Info&lt;/a>&lt;/li>
+          &lt;li>&lt;a class="gutter-1-2 pad-t-1-4 pad-b-1-4 micro" href="application.html#lifestyle">Lifestyle&lt;/a>&lt;/li>
+          &lt;li>&lt;a class="gutter-1-2 pad-t-1-4 pad-b-1-4 micro" href="application.html#pet-info">Pet Info&lt;/a>&lt;/li>
+          &lt;li>&lt;a class="gutter-1-2 pad-t-1-4 pad-b-1-4 micro" href="application.html#contract">Contract&lt;/a>&lt;/li>
+        &lt;/ul>
+      &lt;/li>
     &lt;/ul>
   &lt;/nav>
-  &lt;div class="unit xs-1 s-1 m-1 l-1-3 push-2 text-center">
-    &lt;a class="gutter-1-2 social" href="#">
-      &lt;i class="icon icon-footer i-48">
-          &lt;svg>&lt;use class="facebook" xlink:href="../../images/icons.svg#facebook"/>&lt;/svg>
-        &lt;/i>
-    &lt;/a>
-    &lt;a class="gutter-1-2 social" href="#">
-      &lt;i class="icon icon-footer i-48">
-          &lt;svg>&lt;use class="twitter" xlink:href="../../images/icons.svg#twitter"/>&lt;/svg>
-        &lt;/i>
-    &lt;/a>
-    &lt;a class="gutter-1-2 social" href="#">
-      &lt;i class="icon icon-footer i-48">
-          &lt;svg>&lt;use class="instagram" xlink:href="../../images/icons.svg#instagram"/>&lt;/svg>
-        &lt;/i>
-    &lt;/a>
+  &lt;div class="unit xs-1 s-1 m-1 l-1-3 push text-center">
+    &lt;div class="facebook-icon inline">
+      &lt;a class="gutter-1-2 social" href="#">
+        &lt;i class="icon icon-footer i-32">
+            &lt;svg>&lt;use class="facebook" xlink:href="../../images/icons.svg#facebook"/>&lt;/svg>
+          &lt;/i>
+      &lt;/a>
+    &lt;/div>
+    &lt;div class="twitter-icon inline">
+      &lt;a class="gutter-1-2 social" href="#">
+        &lt;i class="icon icon-footer i-48">
+            &lt;svg>&lt;use class="twitter" xlink:href="../../images/icons.svg#twitter"/>&lt;/svg>
+          &lt;/i>
+      &lt;/a>
+    &lt;/div>
+    &lt;div class="instagram-icon inline">
+      &lt;a class="gutter-1-2 social" href="#">
+        &lt;i class="icon icon-footer i-48">
+            &lt;svg>&lt;use class="instagram" xlink:href="../../images/icons.svg#instagram"/>&lt;/svg>
+          &lt;/i>
+      &lt;/a>
+    &lt;/div>
   &lt;/div>
   &lt;div class="island copyright unit xs-1 s-1 m-1 l-1 relative">
-    &lt;small>&#xA9; Loyal Rescue. All right reserved.&lt;/small>
+    &lt;small class="milli">&#xA9; Loyal Rescue. All right reserved.&lt;/small>
   &lt;/div>
 &lt;/footer>
 </pre></code>
@@ -1309,10 +1339,10 @@
   </div>
 
     <div class="pattern-desc milli island" >
-      <div class="max-length"><p>These forms are used to gather information from the users.</p>
+      <div class="max-length"><p>These forms are used to gather information from potential dog adopters.</p>
 <ul>
-<li>The basic form is simple and easy to understand. This is used to create the form to begin the process of adopting a dog.</li>
-<li>The icon form gathers the name, e-mail of the user and a comment/question. It is decorated more then the basic form because it is short.</li>
+<li>The basic form is simple and easy to understand. The basic form is used on the application page to begin the process of adopting a dog.</li>
+<li>The icon form gathers the name, e-mail of the user and a comment/question on the home page. It is decorated more then the basic form because it is small. It can be used for any small form.</li>
 </ul>
 </div>
     </div>
@@ -1366,21 +1396,17 @@
                   <svg><use xlink:href="#icon-copy"></use></svg>
                 </i>
               </button>
-              <code><pre id="forms-basic-form-code-sample-copy-chunk">&lt;section class="wrapper island"&gt;
-  &lt;h1 class="yotta push-1-2">Application&lt;/h1>
-  &lt;p class="push-1-2">This information is used to consider you for a phone interview.&lt;/p>
-  &lt;p class="push-2">Please note at this time adoption is only available to Canadian residents.&lt;/p>
-
-  &lt;form class="basic-form grid" method="POST" novalidate="" action="https://formspree.io/obri0205@algonquincollege.com">
-    &lt;div class="unit xs-1 s-1 m-1 l-1 error-message error-message-highlighted push" role="alert" aria-live="assertive">
-      &lt;h3 class="push-0 tera warning text-center pad-t pad-b gutter">There was an error with the highlighted fields below&lt;/h3>
+              <code><pre id="forms-basic-form-code-sample-copy-chunk">&lt;section class="wrapper island basic-form"&gt;
+  &lt;form class="grid" method="POST" novalidate="" action="https://formspree.io/obri0205@algonquincollege.com">
+    &lt;div class="unit xs-1 s-1 m-1 l-1 error-message error-message-highlighted push" role="alert" aria-live="assertive" tabindex="-1">
+      &lt;h4 class="push-0 tera warning text-center pad-t pad-b gutter">There was an error with the highlighted fields below&lt;/h4>
     &lt;/div>
 
-    &lt;fieldset class="w-1">
-      &lt;legend class="unit xs-1 exa main-legend">Personal Information&lt;/legend>
+    &lt;fieldset class="w-1 push-2" id="personal-info">
+      &lt;legend class="unit xs-1 tera main-legend push">Personal Information&lt;/legend>
 
-      &lt;h3 class="unit xs-1 s-1 m-1-5 l-1-5 giga">Dog&apos;s Info&lt;/h3>
-      &lt;div class="unit xs-1 s-1 m-2-5 push-1-2 gutter-1-4">
+      &lt;h3 class="unit xs-1 s-1 m-1-5 l-1-5 mega">Dog&apos;s Info&lt;/h3>
+      &lt;div class="unit xs-1 s-1 m-2-5 push gutter-1-4">
         &lt;label class="milli" for="dog-name">Dog&apos;s name&lt;/label>
         &lt;input id="dog-name" name="dog name" required aria-describedby="dog-name-error">
         &lt;p class="error-message micro island-1-4 push-0" id="dog-name-error">
@@ -1389,7 +1415,7 @@
         &lt;/p>
       &lt;/div>
 
-      &lt;div class="unit xs-1 s-1 m-2-5 l-2-5 push-1-2 gutter-1-4">
+      &lt;div class="unit xs-1 s-1 m-2-5 l-2-5 push gutter-1-4">
         &lt;label class="milli" for="adopt-num">Adoption number&lt;/label>
         &lt;input type="number" name="adoption-number" id="adopt-num" required aria-describedby="adopt-num-error">
         &lt;p class="error-message micro island-1-4 push-0" id="adopt-num-error">
@@ -1398,9 +1424,9 @@
         &lt;/p>
       &lt;/div>
 
-      &lt;h3 class="unit xs-1 s-1 m-1-5 l-1-5 giga">About You&lt;/h3>
+      &lt;h3 class="unit xs-1 s-1 m-1-5 l-1-5 mega">About You&lt;/h3>
 
-      &lt;div class="unit xs-1 s-1 m-3-5 l-3-5 push-1-2 gutter-1-4">
+      &lt;div class="unit xs-1 s-1 m-3-5 l-3-5 push gutter-1-4">
         &lt;label class="milli" for="name">Full name&lt;/label>
         &lt;input id="name" name="full-name" required aria-describedby="name-error">
         &lt;p class="error-message micro island-1-4 push-0" id="name-error">
@@ -1409,7 +1435,7 @@
         &lt;/p>
       &lt;/div>
 
-      &lt;div class="unit xs-1 s-1 m-1-5 l-1-5 push-1-2 gutter-1-4">
+      &lt;div class="unit xs-1 s-1 m-1-5 l-1-5 push gutter-1-4">
         &lt;label class="milli" for="age">Age&lt;/label>
         &lt;input type="number" name="age" id="age" min="18" required aria-describedby="age-error">
         &lt;p class="error-message micro island-1-4 push-0" id="age-error">
@@ -1421,8 +1447,8 @@
       &lt;div class="unit xs-1 s-1 m-1-5 l-1-5">
       &lt;/div>
 
-      &lt;fieldset class="unit xs-1 s-1 m-2-5 l-2-5 push-1-2 gutter-1-4">
-        &lt;legend class="milli push-1-2 not-bold">Are you employed?&lt;/legend>
+      &lt;fieldset class="unit xs-1 s-1 m-2-5 l-2-5 push gutter-1-4">
+        &lt;legend class="milli not-bold push-1-2">Are you employed?&lt;/legend>
         &lt;input type="radio" name="employed" id="yes-employed" required aria-describedby="employed-error">
         &lt;label for="yes-employed">Yes&lt;/label>
         &lt;input type="radio" name="employed" id="no-employed" required aria-describedby="employed-error">
@@ -1433,14 +1459,14 @@
         &lt;/p>
       &lt;/fieldset>
 
-      &lt;div class="unit xs-1 s-1 m-2-5 l-2-5 push-1-2 gutter-1-4">
+      &lt;div class="unit xs-1 s-1 m-2-5 l-2-5 push gutter-1-4">
         &lt;label class="milli" for="job-title">If yes, your job title &lt;em class="flag-optional micro normal">(optional)&lt;/em>&lt;/label>
         &lt;input id="job-title" name="job-title">
       &lt;/div>
 
-      &lt;h3 class="unit xs-1 s-1 m-1-5 giga">Contact&lt;/h3>
+      &lt;h3 class="unit xs-1 s-1 m-1-5 mega">Contact&lt;/h3>
 
-      &lt;div class="unit xs-1 s-1 m-2-5 l-2-5 push-1-2 gutter-1-4">
+      &lt;div class="unit xs-1 s-1 m-2-5 l-2-5 push gutter-1-4">
         &lt;label class="milli" for="phone">Primary phone&lt;/label>
         &lt;input type="tel" name="primary-phone" id="phone" required aria-describedby="phone-error">
         &lt;p class="error-message micro island-1-4 push-0" id="phone-error">
@@ -1449,7 +1475,7 @@
         &lt;/p>
       &lt;/div>
 
-      &lt;div class="unit xs-1 s-1 m-2-5 l-2-5 push-1-2 gutter-1-4">
+      &lt;div class="unit xs-1 s-1 m-2-5 l-2-5 push gutter-1-4">
         &lt;label class="milli" for="email">E-mail address&lt;/label>
         &lt;input type="email" name="e-mail" id="email" required aria-describedby="email-error">
         &lt;p class="error-message micro island-1-4 push-0" id="email-error">
@@ -1461,27 +1487,27 @@
       &lt;div class="unit xs-1 s-1 m-1-5 l-1-5">
       &lt;/div>
 
-      &lt;div class="unit xs-1 s-1 m-2-5 l-2-5 push-1-2 gutter-1-4">
+      &lt;div class="unit xs-1 s-1 m-2-5 l-2-5 push gutter-1-4">
         &lt;label class="milli" for="work-phone">Work phone &lt;em class="flag-optional micro normal">(optional)&lt;/em>&lt;/label>
         &lt;input type="tel" id="work-phone" name="work-phone">
       &lt;/div>
 
-      &lt;fieldset class="unit xs-1 s-1 m-2-5 l-2-5 push-1-2 gutter-1-4">
-        &lt;legend class="milli push-1-2 not-bold">Can we call you at work? &lt;em class="flag-optional micro normal">(optional)&lt;/em>&lt;/legend>
+      &lt;fieldset class="unit xs-1 s-1 m-2-5 l-2-5 push gutter-1-4">
+        &lt;legend class="milli not-bold push-1-2">Can we call you at work? &lt;em class="flag-optional micro normal">(optional)&lt;/em>&lt;/legend>
         &lt;input type="radio" name="work-call" id="yes-work">
         &lt;label for="yes-work">Yes&lt;/label>
         &lt;input type="radio" name="work-call" id="no-work">
         &lt;label for="no-work" class="gutter-1-2">No&lt;/label>
       &lt;/fieldset>
 
-      &lt;h3 class="unit xs-1 s-1 m-1-5 l-1-5 giga">Address&lt;/h3>
+      &lt;h3 class="unit xs-1 s-1 m-1-5 l-1-5 mega">Address&lt;/h3>
 
-      &lt;div class="unit xs-1 s-1 m-2-5 l-2-5 push-1-2 gutter-1-4">
+      &lt;div class="unit xs-1 s-1 m-2-5 l-2-5 push gutter-1-4">
         &lt;label class="milli" for="apart-num">Apartment number &lt;em class="flag-optional micro normal">(optional)&lt;/em>&lt;/label>
         &lt;input name="apartment-number" id="apart-num">
       &lt;/div>
 
-      &lt;div class="unit xs-1 s-1 m-2-5 l-2-5 push-1-2 gutter-1-4">
+      &lt;div class="unit xs-1 s-1 m-2-5 l-2-5 push gutter-1-4">
         &lt;label class="milli" for="street">Street address&lt;/label>
         &lt;input type="tel" name="street-address" id="street" required aria-describedby="street-error">
         &lt;p class="error-message micro island-1-4 push-0" id="street-error">
@@ -1493,9 +1519,9 @@
       &lt;div class="unit xs-1 s-1 m-1-5 l-1-5">
       &lt;/div>
 
-      &lt;fieldset class="unit xs-1 s-1 m-1-5 l-1-5 gutter-1-4">
+      &lt;fieldset class="unit xs-1 s-1 m-1-5 l-1-5 push gutter-1-4">
         &lt;label class="milli" for="province">Province&lt;/label>
-        &lt;select name="province" id="province">
+        &lt;select class="push-1-2" name="province" id="province">
           &lt;option value="AB">AB&lt;/option>
           &lt;option value="BC">BC&lt;/option>
           &lt;option value="MB">MB&lt;/option>
@@ -1512,7 +1538,7 @@
         &lt;/select>
       &lt;/fieldset>
 
-      &lt;div class="unit xs-1 s-1 m-2-5 l-2-5 push-1-2 gutter-1-4">
+      &lt;div class="unit xs-1 s-1 m-2-5 l-2-5 push gutter-1-4">
         &lt;label class="milli" for="city">City&lt;/label>
         &lt;input name="city-address" id="city" required aria-describedby="city-error">
         &lt;p class="error-message milli island-1-4 push-0" id="city-error">
@@ -1521,7 +1547,7 @@
         &lt;/p>
       &lt;/div>
 
-      &lt;div class="unit xs-1 s-1 m-1-5 l-1-5 push-1-2 gutter-1-4">
+      &lt;div class="unit xs-1 s-1 m-1-5 l-1-5 push gutter-1-4">
         &lt;label class="milli" for="postal">Postal code&lt;/label>
         &lt;input name="postal-code" id="postal" pattern="[A-Za-z][0-9][A-Za-z] ?[0-9][A-Za-z][0-9]" required aria-describedby="postal-error">
         &lt;p class="error-message micro island-1-4 push-0" id="postal-error">
@@ -1531,11 +1557,97 @@
       &lt;/div>
     &lt;/fieldset>
 
-    &lt;fieldset class="w-1">
-      &lt;legend class="unit xs-1 exa main-legend">Pet Preference&lt;/legend>
-      &lt;h3 class="unit xs-1 s-1 m-1-5 giga">Preference&lt;/h3>
+    &lt;fieldset class="w-1 push-2" id="lifestyle">
+      &lt;legend class="unit xs-1 tera main-legend push">Lifestyle&lt;/legend>
+      &lt;h3 class="unit xs-1 s-1 m-1-5 mega">Environment&lt;/h3>
 
-      &lt;fieldset class="unit xs-1 s-1 m-4-5 l-4-5 push-1-2 gutter-1-4">
+      &lt;fieldset class="unit xs-1 s-1 m-2-5 l-2-5 push gutter-1-4">
+        &lt;label class="milli" for="house">Type of house&lt;/label>
+        &lt;select name="house" id="house" required aria-describedby="house-error">
+          &lt;option value="">Select One&lt;/option>
+          &lt;option value="house">House&lt;/option>
+          &lt;option value="semi-detach">Semi Detach&lt;/option>
+          &lt;option value="townhouse">Townhouse&lt;/option>
+          &lt;option value="condo">Condo&lt;/option>
+          &lt;option value="apartment">Apartment&lt;/option>
+          &lt;option value="mobile-home">Mobile Home&lt;/option>
+          &lt;option value="other">Other&lt;/option>
+        &lt;/select>
+        &lt;p class="error-message micro island-1-4 push-0" id="house-error">
+          &lt;i class="icon i-24">&lt;svg>&lt;use xlink:href="../../images/icons.svg#warning"/>&lt;/svg>&lt;/i>
+          &lt;span class="icon-label">Select your house type?&lt;/span>
+        &lt;/p>
+      &lt;/fieldset>
+
+      &lt;fieldset class="unit xs-1 s-1 m-2-5 l-2-5 push gutter-1-4">
+        &lt;legend class="milli not-bold push-1-2">Rent or own?&lt;/legend>
+        &lt;input type="radio" name="rent-own" id="rent" required aria-describedby="rent-error">
+        &lt;label for="rent">Rent&lt;/label>
+        &lt;input type="radio" name="rent-own" id="own">
+        &lt;label for="own" class="gutter-1-2">Own&lt;/label>
+        &lt;p class="error-message micro island-1-4 push-0" id="rent-error">
+          &lt;i class="icon i-24">&lt;svg>&lt;use xlink:href="../../images/icons.svg#warning"/>&lt;/svg>&lt;/i>
+          &lt;span class="icon-label">Do you rent or own?&lt;/span>
+        &lt;/p>
+      &lt;/fieldset>
+
+      &lt;div class="unit xs-1 s-1 m-1-5 l-1-5">
+      &lt;/div>
+
+      &lt;fieldset class="unit xs-1 s-1 m-2-5 l-2-5 push gutter-1-4">
+        &lt;legend class="milli not-bold push-1-2">Rural or urban?&lt;/legend>
+        &lt;input type="radio" name="rural-urban" id="rural" required aria-describedby="rural-error">
+        &lt;label for="rural">Rural&lt;/label>
+        &lt;input type="radio" name="rural-urban" id="urban">
+        &lt;label for="urban" class="gutter-1-2">Urban&lt;/label>
+        &lt;p class="error-message micro island-1-4 push-0" id="rural-error">
+          &lt;i class="icon i-24">&lt;svg>&lt;use xlink:href="../../images/icons.svg#warning"/>&lt;/svg>&lt;/i>
+          &lt;span class="icon-label">Do you live in a rural or urban area?&lt;/span>
+        &lt;/p>
+      &lt;/fieldset>
+
+      &lt;div class="unit xs-1 s-1 m-2-5 l-2-5 push gutter-1-4">
+        &lt;label class="milli" for="footage">Square footage &lt;em class="flag-optional micro normal">(optional)&lt;/em>&lt;/label>
+        &lt;input type="number" id="footage" name="footage">
+      &lt;/div>
+
+      &lt;div class="unit xs-1 s-1 m-1-5 l-1-5">
+      &lt;/div>
+
+      &lt;fieldset class="unit xs-1 s-1 m-2-5 l-2-5 push gutter-1-4">
+        &lt;label class="milli" for="yard">Yard size&lt;/label>
+        &lt;select name="yard" id="yard" required aria-describedby="yard-error">
+          &lt;option value="">Select One&lt;/option>
+          &lt;option value="none">None&lt;/option>
+          &lt;option value="small">Small&lt;/option>
+          &lt;option value="medium">Medium&lt;/option>
+          &lt;option value="large">Large&lt;/option>
+        &lt;/select>
+        &lt;p class="error-message micro island-1-4 push-0" id="yard-error">
+          &lt;i class="icon i-24">&lt;svg>&lt;use xlink:href="../../images/icons.svg#warning"/>&lt;/svg>&lt;/i>
+          &lt;span class="icon-label">What is your yard size?&lt;/span>
+        &lt;/p>
+      &lt;/fieldset>
+
+      &lt;fieldset class="unit xs-1 s-1 m-2-5 l-2-5 push gutter-1-4">
+        &lt;legend class="milli not-bold push-1-2">Is your yard fenced?&lt;/legend>
+        &lt;input type="radio" name="fenced" id="fence-yes" required aria-describedby="fence-error">
+        &lt;label for="fence-yes">Yes&lt;/label>
+        &lt;input type="radio" name="fenced" id="fence-no">
+        &lt;label for="fence-no" class="gutter-1-2">No&lt;/label>
+        &lt;p class="error-message micro island-1-4 push-0" id="fence-error">
+          &lt;i class="icon i-24">&lt;svg>&lt;use xlink:href="../../images/icons.svg#warning"/>&lt;/svg>&lt;/i>
+          &lt;span class="icon-label">Is your yard fenced?&lt;/span>
+        &lt;/p>
+      &lt;/fieldset>
+
+    &lt;/fieldset>
+
+    &lt;fieldset class="w-1">
+      &lt;legend class="unit xs-1 tera main-legend push">Pet Preference&lt;/legend>
+      &lt;h3 class="unit xs-1 s-1 m-1-5 mega">Preference&lt;/h3>
+
+      &lt;fieldset class="unit xs-1 s-1 m-4-5 l-4-5 push gutter-1-4">
         &lt;legend class="milli push-1-2 not-bold">What size of dog do you prefer? &lt;em class="flag-optional micro normal">(optional)&lt;/em>&lt;/legend>
         &lt;input type="checkbox" name="size" id="toy">
         &lt;label for="toy">Toy&lt;/label>
@@ -1550,7 +1662,7 @@
       &lt;div class="unit xs-1 s-1 m-1-5 l-1-5">
       &lt;/div>
 
-      &lt;div class="unit xs-1 s-1 m-4-5 l-4-5 push-1-2 gutter-1-4">
+      &lt;div class="unit xs-1 s-1 m-4-5 l-4-5 push gutter-1-4">
         &lt;label class="milli" for="why-adopt">Why do you want to adopt a dog?&lt;/label>
         &lt;textarea name="why-adopt" id="why-adopt" required aria-describedby="why-adopt-error">&lt;/textarea>
         &lt;p class="error-message milli island-1-4 push-0" id="why-adopt-error">
@@ -1564,7 +1676,7 @@
     &lt;div class="unit xs-1 s-1 m-1-5 l-1-5">
     &lt;/div>
 
-    &lt;div class="unit xs-1 s-1 m-2-5 l-2-5 push-1-2 gutter-1-4">
+    &lt;div class="unit xs-1 s-1 m-2-5 l-2-5 push gutter-1-4">
       &lt;label class="milli" for="date">Date&lt;/label>
       &lt;input type="date" name="today-date" id="date" required aria-describedby="date-error">
       &lt;p class="error-message milli island-1-4 push-0" id="date-error">
@@ -1572,15 +1684,25 @@
       &lt;/p>
     &lt;/div>
 
-    &lt;fieldset class="unit xs-1 s-1 m-2-5 l-2-5 push-1-2 gutter-1-4">
-      &lt;legend class="milli push-1-2 not-bold">Agreement&lt;/legend>
-      &lt;input type="radio" name="agreement" id="yes-agreement" required aria-describedby="agreement-error">
-      &lt;label for="yes-agreement">I agree to the above statements&lt;/label>
-      &lt;p class="error-message micro island-1-4 push-0" id="agreement-error">
+    &lt;div class="unit xs-1 s-1 m-2-5 l-2-5">
+    &lt;/div>
+
+    &lt;h3 class="unit xs-1 s-1 m-1-5 mega">Agreement&lt;/h3>
+
+    &lt;div class="unit xs-1 s-1 m-4-5 l-4-5 push gutter-1-4">
+      &lt;div class="milli not-bold push">
+        &lt;p class="push-1-2">I certify that all the information provided is correct and true with nothing of relevence being omitted. I realize that my application may be denied if I have provied false or misleading information.&lt;/p>
+        &lt;p class="push-1-2">I grant my permission for Loyal Rescue to contact my references and vet.&lt;/p>
+        &lt;p class="push-1-2">I am aware the home visits are mandatory prior to and after adoption on a random basis.&lt;/p>
+        &lt;p class="push-1-2">I am financially and physically able to care for a dog.&lt;/p>
+      &lt;/div>
+      &lt;input type="radio" name="behavior" id="info-yes" required aria-describedby="info-error">
+      &lt;label for="info-yes" class="push-1-4">&lt;strong>I agree to the above statements and am older than 18&lt;/strong>&lt;/label>
+      &lt;p class="error-message micro island-1-4 push-0" id="info-error">
         &lt;i class="icon i-24">&lt;svg>&lt;use xlink:href="../../images/icons.svg#warning"/>&lt;/svg>&lt;/i>
-        &lt;span class="icon-label">Please agree to the terms of service&lt;/span>
+        &lt;span class="icon-label">Please agree to the terms&lt;/span>
       &lt;/p>
-    &lt;/fieldset>
+    &lt;/div>
 
     &lt;div class="unit xs-1 s-1 m-1-5 l-1-5">
     &lt;/div>
@@ -1645,50 +1767,58 @@
                   <svg><use xlink:href="#icon-copy"></use></svg>
                 </i>
               </button>
-              <code><pre id="forms-icon-form-code-sample-copy-chunk">&lt;section class="max-length island icon-form"&gt;
-  &lt;h2 class="push-1-2 exa">Contact Us&lt;/h2>
-  &lt;form method="post" novalidate="">
-    &lt;div class="error-message error-message-highlighted push" role="alert" aria-live="assertive">
-      &lt;h3 class="push-0 tera warning text-center pad-t pad-b gutter">There was an error with the highlighted fields below&lt;/h3>
-    &lt;/div>
-
-    &lt;div class="push-1-2">
-      &lt;label class="mega" for="name">Full Name&lt;/label>
-      &lt;div class="relative">
-        &lt;input id="name" required aria-describedby="name-error">
-        &lt;p class="error-message milli pad-t-1-4 push-1-2" id="name-error">Please provide a full name&lt;/p>
-        &lt;div class="form-background absolute pin-top-left">
-          &lt;i class="icon i-24 absolute pin-center island-1-2">&lt;svg>&lt;use xlink:href="../../images/icons.svg#person"/>&lt;/svg>&lt;/i>
+              <code><pre id="forms-icon-form-code-sample-copy-chunk">&lt;section class="wrapper island icon-form push-2" id="contact-us"&gt;
+  &lt;div class="max-length">
+    &lt;form method="POST" novalidate="" action="https://formspree.io/obritschk@gmail.com">
+      &lt;fieldset>
+        &lt;legend class="peta push-1-4 pad-t-1-2 contact-legend">Contact Us&lt;/legend>
+        &lt;div class="error-message error-message-highlighted push" role="alert" aria-live="assertive">
+          &lt;h3 class="push-0 tera warning text-center pad-t pad-b gutter">There was an error with the highlighted fields below&lt;/h3>
         &lt;/div>
-      &lt;/div>
-    &lt;/div>
 
-    &lt;div class="push-1-2">
-      &lt;label class="mega" for="email">Email&lt;/label>
-      &lt;div class="relative">
-        &lt;input id="email" required aria-describedby="email-error">
-        &lt;p class="error-message milli pad-t-1-4 push-1-2" id="email-error">Please provide a proper e-mail&lt;/p>
-        &lt;div class="form-background absolute pin-top-left">
-          &lt;i class="icon i-24 absolute pin-center island-1-2">&lt;svg>&lt;use xlink:href="../../images/icons.svg#mail"/>&lt;/svg>&lt;/i>
+        &lt;div class="push-1-2">
+          &lt;label class="mega" for="name">Full Name&lt;/label>
+          &lt;div class="relative">
+            &lt;input id="name" required aria-describedby="name-error">
+            &lt;p class="error-message milli pad-t-1-4 push-1-2" id="name-error">Please provide a full name&lt;/p>
+            &lt;div class="form-background absolute pin-top-left">
+              &lt;i class="icon i-24 absolute pin-center island-1-2">&lt;svg>&lt;use xlink:href="../../images/icons.svg#person"/>&lt;/svg>&lt;/i>
+            &lt;/div>
+          &lt;/div>
         &lt;/div>
-      &lt;/div>
-    &lt;/div>
 
-    &lt;div class="push-1-2">
-      &lt;label class="mega" for="question">Questions or comments?&lt;/label>
-      &lt;div class="relative">
-        &lt;textarea name="question" id="question" required aria-describedby="question-error">&lt;/textarea>
-        &lt;p class="error-message milli pad-t-1-4 push-1-2" id="question-error">Please tell us your comment&lt;/p>
-        &lt;div class="form-background form-background-question absolute pin-top-left">
-          &lt;i class="icon i-24 absolute pin-center island-1-2">&lt;svg>&lt;use xlink:href="../../images/icons.svg#question"/>&lt;/svg>&lt;/i>
+        &lt;div class="push-1-2">
+          &lt;label class="mega" for="email">Email&lt;/label>
+          &lt;div class="relative">
+            &lt;input id="email" required aria-describedby="email-error">
+            &lt;p class="error-message milli pad-t-1-4 push-1-2" id="email-error">Please provide a proper e-mail&lt;/p>
+            &lt;div class="form-background absolute pin-top-left">
+              &lt;i class="icon i-24 absolute pin-center island-1-2">&lt;svg>&lt;use xlink:href="../../images/icons.svg#mail"/>&lt;/svg>&lt;/i>
+            &lt;/div>
+          &lt;/div>
         &lt;/div>
-      &lt;/div>
-    &lt;/div>
 
-    &lt;div class="pad-t-1-2">
-      &lt;button class="btn" type="submit">Send&lt;/button>
-    &lt;/div>
-  &lt;/form>
+        &lt;div class="push-1-2">
+          &lt;label class="mega" for="question">Questions or comments?&lt;/label>
+          &lt;div class="relative">
+            &lt;textarea name="question" id="question" required aria-describedby="question-error">&lt;/textarea>
+            &lt;p class="error-message milli pad-t-1-4 push-1-2" id="question-error">Please tell us your comment&lt;/p>
+            &lt;div class="form-background form-background-question absolute pin-top-left">
+              &lt;i class="icon i-24 absolute pin-center island-1-2">&lt;svg>&lt;use xlink:href="../../images/icons.svg#question"/>&lt;/svg>&lt;/i>
+            &lt;/div>
+          &lt;/div>
+        &lt;/div>
+
+        &lt;div>
+          &lt;input type="hidden" name="_subject" value="Contact">
+        &lt;/div>
+
+        &lt;div class="pad-t-1-2">
+          &lt;button class="btn" type="submit">Send&lt;/button>
+        &lt;/div>
+      &lt;/fieldset>
+    &lt;/form>
+  &lt;/div>
 &lt;/section>
 </pre></code>
             </div>
@@ -1720,7 +1850,7 @@
   </div>
 
     <div class="pattern-desc milli island" style="">
-      <div class="max-length"><p>The header pattern is used on the top of every Loyal Rescue webpage. The header features the main website navigation.</p>
+      <div class="max-length"><p>The header pattern is used on the top of every Loyal Rescue webpage. The header features the main website navigation and the Loyal Rescue logo.</p>
 </div>
     </div>
 
@@ -1754,25 +1884,21 @@
                   <svg><use xlink:href="#icon-copy"></use></svg>
                 </i>
               </button>
-              <code><pre id="header-header-code-sample-copy-chunk">&lt;header class="masthead grid grid-middle island header"&gt;
-  &lt;h1 class="giga unit xs-1 s-1 m-1 l-1-3 push-0">
-      &lt;i class="icon i-64">
-        &lt;img src="../images/logo-64.svg" alt="">
-      &lt;/i>&lt;span class="gutter-1-2">Loyal Rescue&lt;/span>
+              <code><pre id="header-header-code-sample-copy-chunk">&lt;header class="masthead grid grid-middle gutter pad-t-1-2 pad-b-1-2 header"&gt;
+  &lt;h1 class="mega unit xs-1 s-1 m-1 l-1-3 push-0">
+      &lt;a class="logo" href="home.html">
+        &lt;i class="icon i-64">
+          &lt;img src="../../images/logo-64.svg" alt="Loyal Rescue logo">
+        &lt;/i>&lt;span class="gutter-1-2">Loyal Rescue&lt;/span>
+      &lt;/a>
     &lt;/h1>
+
   &lt;nav class="unit xs-1 s-1 m-1 l-2-3 island-1-2 relative" id="nav" role="navigation">
     &lt;ul class="grid list-group text-center">
-      &lt;li class="drop relative unit xs-1-2 s-1-2 m-1-2 l-1-4">
-        &lt;a class="drop-btn utter-1-2 pad-t-1-4 pad-b-1-4">Home&lt;/a>
-        &lt;div class="drop-content absolute zindex-1">
-          &lt;a href="#">Happy Tails&lt;/a>
-          &lt;a href="#">Our Mission&lt;/a>
-          &lt;a href="#">Contact Us&lt;/a>
-        &lt;/div>
-      &lt;/li>
+      &lt;li class="unit xs-1-2 s-1-2 m-1-2 l-1-4">&lt;a class="gutter-1-2 pad-t-1-4 pad-b-1-4" href="#">Home&lt;/a>&lt;/li>
       &lt;li class="unit xs-1-2 s-1-2 m-1-2 l-1-4">&lt;a class="gutter-1-2 pad-t-1-4 pad-b-1-4" href="#">Blog&lt;/a>&lt;/li>
-      &lt;li class="unit xs-1-2 s-1-2 m-1-2 l-1-4">&lt;a class="gutter-1-2 pad-t-1-4 pad-b-1-4" href="#adopt">Adopt&lt;/a>&lt;/li>
-      &lt;li class="unit xs-1-2 s-1-2 m-1-2 l-1-4">&lt;a class="gutter-1-2 pad-t-1-4 pad-b-1-4" href="#application">Application&lt;/a>&lt;/li>
+      &lt;li class="unit xs-1-2 s-1-2 m-1-2 l-1-4">&lt;a class="gutter-1-2 pad-t-1-4 pad-b-1-4" href="adopt.html">Adopt&lt;/a>&lt;/li>
+      &lt;li class="unit xs-1-2 s-1-2 m-1-2 l-1-4">&lt;a class="gutter-1-2 pad-t-1-4 pad-b-1-4" href="application.html">Application&lt;/a>&lt;/li>
     &lt;/ul>
   &lt;/nav>
 &lt;/header>
@@ -1806,7 +1932,7 @@
   </div>
 
     <div class="pattern-desc milli island" style="">
-      <div class="max-length"><p>This infographic is used on the adoptable dog page to educate viewers with the adoption steps.</p>
+      <div class="max-length"><p>The infographic is used on the adoptable dog page to educate viewers about the adoption steps. Simple animations are used to make the infographic more exciting.</p>
 </div>
     </div>
 
@@ -1840,86 +1966,86 @@
                   <svg><use xlink:href="#icon-copy"></use></svg>
                 </i>
               </button>
-              <code><pre id="infographic-infographic-code-sample-copy-chunk">&lt;section class="grid island wrapper-infographic infographic"&gt;
-
-  &lt;div class="unit xs-1 s-1-2 step-1 ">
-    &lt;div class="pad-t-1-2">
-      &lt;h2 class="push-1-2 tera">Step 1&lt;/h2>
-      &lt;p class="milli">Find your forever pet&lt;/p>
-    &lt;/div>
-    &lt;div class="image push-2">
-      &lt;svg class="animation" width="96" height="96" viewbox="0 0 96 96">
-        &lt;g id="pug">
-          &lt;g id="face">
-            &lt;rect width="66.7" height="60.37" x="14.6" y="24.9" fill="#cbcaca" rx="6.8" ry="6.8" />
-            &lt;rect width="36.3" height="8.09" x="29.9" y="79.6" fill="#06386e" rx="2.4" ry="2.4" />
-            &lt;circle cx="48" cy="90.5" r="4.4" fill="#f0a979" />
-            &lt;path fill="#06386e" d="M21.3 25a6.7 6.7 0 0 0-6.7 6.7v16L35.5 25z" />
-            &lt;path fill="#06386e" d="M74.7 25a6.7 6.7 0 0 1 6.7 6.7v16L60.5 25z" />
-            &lt;circle cx="31.7" cy="47.5" r="5.6" fill="#06386e" />
-            &lt;circle cx="64.4" cy="47.5" r="5.6" fill="#06386e" />
-            &lt;path fill="#fff" d="M35 47c-.5 1-.8-.4-1.8-.9s-2.3.1-1.8-.9A2 2 0 0 1 35 47z" />
-            &lt;path fill="#fff" d="M67.9 47c-.5 1-.8-.4-1.8-.9s-2.3.1-1.8-.9a2 2 0 1 1 3.6 1.8z" />
-            &lt;path fill="#06386e" d="M48.8 61.5c.6 4.3 4.8 5.3 7.2 5.5a1.5 1.5 0 0 1 1.2 1.9c-3 9.3-15.3 9.3-18.5 0A1.4 1.4 0 0 1 40 67c2.5-.2 6.6-1.1 7.2-5.5" />
-            &lt;line x1="48" x2="48" y1="31.7" y2="48" fill="none" stroke="#06386e" stroke-linecap="round" stroke-miterlimit="10" stroke-width="1.52" />
-            &lt;circle cx="48" cy="57.1" r="5.4" fill="#06386e" />
-            &lt;path fill="none" stroke="#06386e" stroke-linecap="round" stroke-miterlimit="10" stroke-width="1.52" d="M54 29.7a5.9 5.9 0 1 1-11.8 0" />
-            &lt;path fill="none" stroke="#fff" stroke-linecap="round" stroke-miterlimit="10" stroke-width="1.14" d="M51 58.2c0-1.3-1.3-2.3-3-2.3s-3 1-3 2.3" />
-            &lt;path fill="none" stroke="#06386e" stroke-linecap="round" stroke-miterlimit="10" stroke-width="3.03" d="M69.5 62.5c0-8-9.6-14.5-21.5-14.5s-21.4 6.5-21.4 14.5" />
-            &lt;line x1="48.1" x2="48.1" y1="55.9" y2="62.4" fill="none" stroke="#fff" stroke-linecap="round" stroke-miterlimit="10" stroke-width="1.14" />
-            &lt;circle cx="33.5" cy="83.5" r="1.8" fill="#fff" />
-            &lt;circle cx="62.3" cy="83.5" r="1.8" fill="#fff" />
-            &lt;circle cx="40.7" cy="83.5" r="1.8" fill="#fff" />
-            &lt;circle cx="47.9" cy="83.5" r="1.8" fill="#fff" />
-            &lt;circle cx="55.1" cy="83.5" r="1.8" fill="#fff" />
-            &lt;path fill="#ff739d" d="M51.9 68.4v5.8A3.9 3.9 0 0 1 48 78a3.9 3.9 0 0 1-3.9-3.9v-5.7" />
+              <code><pre id="infographic-infographic-code-sample-copy-chunk">&lt;div class="text-center infographic-section" id="steps"&gt;
+  &lt;section class="grid island wrapper-infographic infographic" id="steps">
+    &lt;div class="unit xs-1 s-1-2 step-1">
+      &lt;div class="pad-t-1-2">
+        &lt;h2 class="push-1-2 tera">Step 1&lt;/h2>
+        &lt;p class="milli">Find your forever pet&lt;/p>
+      &lt;/div>
+      &lt;div class="image push-2">
+        &lt;svg class="animation" width="96" height="96" viewbox="0 0 96 96">
+          &lt;g id="pug">
+            &lt;g id="face">
+              &lt;rect width="64.9" height="58.68" x="15.6" y="26.9" fill="#cbcaca" rx="6.6" ry="6.6" />
+              &lt;rect width="35.3" height="7.86" x="30.4" y="80" fill="#06386e" rx="2.3" ry="2.3" />
+              &lt;circle cx="48" cy="90.6" r="4.3" fill="#f0a979" />
+              &lt;path fill="#06386e" d="M22.1 26.9a6.5 6.5 0 0 0-6.5 6.5V49l20.2-22.1z" />
+              &lt;path fill="#06386e" d="M73.9 26.9a6.5 6.5 0 0 1 6.5 6.5V49L60.2 26.9z" />
+              &lt;circle cx="32.2" cy="48.9" r="5.4" fill="#06386e" />
+              &lt;circle cx="63.9" cy="48.9" r="5.4" fill="#06386e" />
+              &lt;path fill="#fff" d="M35.4 48.3c-.5.9-.8-.4-1.7-.9s-2.2.1-1.7-.9a1.9 1.9 0 1 1 3.4 1.8z" />
+              &lt;path fill="#fff" d="M67.4 48.3c-.5.9-.8-.4-1.7-.9s-2.2.1-1.7-.9a1.9 1.9 0 1 1 3.4 1.8z" />
+              &lt;path fill="#06386e" d="M48.8 62.4c.6 4.2 4.6 5.2 7 5.3a1.4 1.4 0 0 1 1.2 1.9c-2.9 9.1-14.9 9.1-18 0a1.4 1.4 0 0 1 1.2-1.9c2.4-.2 6.5-1.1 7-5.3" />
+              &lt;line x1="48" x2="48" y1="33.4" y2="49.3" fill="none" stroke="#06386e" stroke-linecap="round" stroke-miterlimit="10" stroke-width="1.47" />
+              &lt;circle cx="48" cy="58.1" r="5.2" fill="#06386e" />
+              &lt;path fill="none" stroke="#06386e" stroke-linecap="round" stroke-miterlimit="10" stroke-width="1.47" d="M53.8 31.5a5.7 5.7 0 1 1-11.5 0" />
+              &lt;path fill="none" stroke="#fff" stroke-linecap="round" stroke-miterlimit="10" stroke-width="1.11" d="M50.9 59.3c0-1.2-1.3-2.3-2.9-2.3s-2.9 1-2.9 2.3" />
+              &lt;path fill="none" stroke="#06386e" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2.95" d="M68.9 63.4c0-7.8-9.3-14.1-20.9-14.1s-20.8 6.3-20.8 14.1" />
+              &lt;line x1="48.1" x2="48.1" y1="57" y2="63.3" fill="none" stroke="#fff" stroke-linecap="round" stroke-miterlimit="10" stroke-width="1.11" />
+              &lt;circle cx="33.9" cy="83.8" r="1.7" fill="#fff" />
+              &lt;circle cx="61.9" cy="83.8" r="1.7" fill="#fff" />
+              &lt;circle cx="40.9" cy="83.8" r="1.7" fill="#fff" />
+              &lt;circle cx="47.9" cy="83.8" r="1.7" fill="#fff" />
+              &lt;circle cx="54.9" cy="83.8" r="1.7" fill="#fff" />
+              &lt;path fill="#ff739d" d="M51.8 69.1v5.6a3.8 3.8 0 0 1-3.8 3.8 3.8 3.8 0 0 1-3.8-3.8v-5.6" />
+            &lt;/g>
+            &lt;path id="heart-2" fill="#f0a979" d="M13.7 10.8l-.4.2a4 4 0 0 0-1.7 3 .3.3 0 0 1-.4.2 4 4 0 0 0-3.4-.3l-.4.2c-1.7 1.3-2.3 2.8-.7 5.2s6 3.2 9.3 3.8c1.4-3 3.3-6.6 2.3-9.7s-2.6-3.3-4.6-2.6z" />
+            &lt;path id="heart-1" fill="#f0a979" d="M35.8 3.7h-.4a4 4 0 0 0-2.8 2 .3.3 0 0 1-.4 0 4 4 0 0 0-3-1.7h-.4c-2.1.5-3.3 1.6-2.8 4.4s4.1 5.4 6.9 7.3c2.5-2.2 5.8-4.6 6.1-7.9S38 4 35.8 3.7z" />
           &lt;/g>
-          &lt;path id="heart-2" fill="#5cdb94" d="M16.9 7.3l-.4.2a4.1 4.1 0 0 0-1.8 3.1.3.3 0 0 1-.4.2 4.1 4.1 0 0 0-3.5-.3l-.4.2C8.6 12 8 13.6 9.7 16s6.1 3.3 9.5 3.9c1.5-3.1 3.4-6.8 2.4-10S19 6.7 16.9 7.3z" />
-          &lt;path id="heart-1" fill="#5cdb94" d="M35.6 1.1h-.4a4.1 4.1 0 0 0-2.9 2.1.3.3 0 0 1-.4 0 4.1 4.1 0 0 0-3.1-1.8h-.4c-2.2.5-3.4 1.7-2.8 4.5s4.2 5.5 7.1 7.5c2.6-2.2 5.9-4.8 6.3-8.1s-1.2-3.9-3.4-4.2z" />
-        &lt;/g>
-      &lt;/svg>
+        &lt;/svg>
+      &lt;/div>
     &lt;/div>
-  &lt;/div>
 
-  &lt;div class="unit xs-1 s-1-2 step-3">
-    &lt;div class="pad-t-1-2">
-      &lt;h2 class="push-1-2 tera">Step 3&lt;/h2>
-      &lt;p class="milli">Bring them to their new home&lt;/p>
+    &lt;div class="unit xs-1 s-1-2 step-3">
+      &lt;div class="pad-t-1-2">
+        &lt;h2 class="push-1-2 tera">Step 3&lt;/h2>
+        &lt;p class="milli">Bring them home&lt;/p>
+      &lt;/div>
+      &lt;div class="unit image push-2">
+        &lt;svg id="house" width="96" height="96" viewbox="0 0 96 96">
+          &lt;path id="roof" fill="#f0a979" d="M87.7 38.6L56.5 16.7a2.7 2.7 0 0 0-2.8-.2L29.4 28.3v-4.7a1 1 0 0 0-1-1h-6.1a1 1 0 0 0-1 1v8.6L8.7 38.3a2.7 2.7 0 0 0 1.2 5.2l1.2-.3 43.6-21.1L84.5 43a2.7 2.7 0 0 0 3.1-4.5z" />
+          &lt;circle id="smoke-3" cx="22.1" cy="16.2" r="3.2" fill="#06386e" />
+          &lt;circle id="smoke-2" cx="27.8" cy="11.6" r="2.6" fill="#06386e" />
+          &lt;circle id="smoke-1" cx="23.1" cy="5" r="2.1" fill="#06386e" />
+          &lt;path fill="#06386e" d="M54.7 28.1L16.1 46.8v39.8a6.5 6.5 0 0 0 6.5 6.5h5.8V71.8a11.1 11.1 0 0 1 22.3 0v21.4h22.7a6.5 6.5 0 0 0 6.5-6.5V45.8z" />
+          &lt;path id="heart-window" fill="#fff" d="M68.6 49.8c-.8 4.2-5.1 7.1-8.5 9.8-3.4-2.7-7.7-5.7-8.3-10s1.1-5.1 3.9-5.5h.6a5.1 5.1 0 0 1 3.7 2.4.3.3 0 0 0 .6 0 5.1 5.1 0 0 1 3.8-2.4h.6c2.6.6 4.1 2.1 3.6 5.7z" />
+        &lt;/svg>
+      &lt;/div>
     &lt;/div>
-    &lt;div class="unit image push-2">
-      &lt;svg id="house" width="96" height="96" viewbox="0 0 96 96">
-        &lt;path id="roof" fill="#f0a979" d="M87.7 38.6L56.5 16.7a2.7 2.7 0 0 0-2.8-.2L29.4 28.3v-4.7a1 1 0 0 0-1-1h-6.1a1 1 0 0 0-1 1v8.6L8.7 38.3a2.7 2.7 0 0 0 1.2 5.2l1.2-.3 43.6-21.1L84.5 43a2.7 2.7 0 0 0 3.1-4.5z" />
-        &lt;circle id="smoke-3" cx="22.1" cy="16.2" r="3.2" fill="#06386e" />
-        &lt;circle id="smoke-2" cx="27.8" cy="11.6" r="2.6" fill="#06386e" />
-        &lt;circle id="smoke-1" cx="23.1" cy="5" r="2.1" fill="#06386e" />
-        &lt;path id="house-2" fill="#06386e" d="M54.7 28.1L16.1 46.8v39.8a6.5 6.5 0 0 0 6.5 6.5h5.8V71.8a11.1 11.1 0 0 1 22.3 0v21.4h22.7a6.5 6.5 0 0 0 6.5-6.5V45.8zm13.9 21.7c-.8 4.2-5.1 7.1-8.5 9.8-3.4-2.7-7.7-5.7-8.3-10s1.1-5.1 3.9-5.5h.6a5.1 5.1 0 0 1 3.7 2.4.3.3 0 0 0 .6 0 5.1 5.1 0 0 1 3.8-2.4h.6c2.6.6 4.1 2.1 3.6 5.7z" data-name="house" />
-      &lt;/svg>
-    &lt;/div>
-  &lt;/div>
 
-  &lt;div class="dots unit xs-1 push">
-    &lt;img class="img-flex" src="../../images/dots.png" alt="">
-  &lt;/div>
-
-  &lt;div class="unit xs-1 step-2">
-    &lt;div class="pad-t-1-2">
-      &lt;h2 class="push-1-2 tera">Step 2&lt;/h2>
-      &lt;p class="milli">Send your application&lt;/p>
+    &lt;div class="dots unit xs-1 push">
+      &lt;img class="img-flex" src="../../images/dots.png" alt="">
     &lt;/div>
-    &lt;div class="unit image push-2">
-      &lt;svg width="80" height="80" viewbox="0 0 96 96">
-        &lt;g id="airplane">
-          &lt;g id="plane">
-            &lt;path id="body" fill="#06386e" d="M27.7 48.9l22 22a2.2 2.2 0 0 0 3.5-.4L90.7 6.8a2.2 2.2 0 0 0-2.4-3.3L6.4 24.4a2.2 2.2 0 0 0-1 3.7l12.3 12.3 51.7-23.5z" />
-            &lt;polygon id="wing" fill="#cbcaca" points="17.7 65.2 27.7 48.9 69.4 16.9 17.7 40.4 17.7 65.2" />
-            &lt;polygon id="shadow" fill="#585858" points="37.6 58.8 17.7 65.2 27.7 48.9 37.6 58.8" />
-            &lt;ellipse id="ground" cx="32.5" cy="88.4" fill="#cbcaca" rx="24.5" ry="5.4" />
+
+    &lt;div class="unit xs-1 step-2">
+      &lt;div class="pad-t-1-2">
+        &lt;h2 class="push-1-2 tera">Step 2&lt;/h2>
+        &lt;p class="milli">Send your application&lt;/p>
+      &lt;/div>
+      &lt;div class="unit image push">
+        &lt;svg width="96" height="96" viewbox="0 0 96 96">
+          &lt;g id="airplane">
+            &lt;path id="body" fill="#06386e" d="M32.8 44.2l16.6 16.5a1.7 1.7 0 0 0 2.6-.3l28.3-48a1.7 1.7 0 0 0-1.8-2.5L16.8 25.7a1.7 1.7 0 0 0-.8 2.8l9.3 9.3 39-17.8z" />
+            &lt;polygon id="wing" fill="#cbcaca" points="25.3 56.4 32.8 44.2 64.3 20 25.3 37.8 25.3 56.4" />
+            &lt;polygon id="shadow" fill="#585858" points="40.3 51.6 25.3 56.4 32.8 44.2 40.3 51.6" />
+            &lt;ellipse id="ground" cx="48" cy="88.4" fill="#cbcaca" rx="24.5" ry="5.4" />
           &lt;/g>
-        &lt;/g>
-      &lt;/svg>
+        &lt;/svg>
+      &lt;/div>
     &lt;/div>
-  &lt;/div>
-&lt;/section>
+  &lt;/section>
+&lt;/div>
 </pre></code>
             </div>
           </div>
@@ -1984,11 +2110,13 @@
                   <svg><use xlink:href="#icon-copy"></use></svg>
                 </i>
               </button>
-              <code><pre id="intro-section-intro-section-code-sample-copy-chunk">&lt;section class="grid"&gt;
-  &lt;div class="intro-text wrapper pad-t-1-2 gutter-1-2">
-    &lt;h2 class="unit xs-1 s-1 m-1 l-1">Adopt&lt;/h2>
-    &lt;p class="unit xs-1 s-1 m-2-3 l-2-3">Currently we have 11 dogs up for adoption&#x2014;waiting for their forever homes. Loyal Rescue will do all we can to help you match with their dog.&lt;/p>
-    &lt;div class="unit xs-1 s-1 m-1-3 l-1-3">
+              <code><pre id="intro-section-intro-section-code-sample-copy-chunk">&lt;section class="grid intro-section" id="about"&gt;
+  &lt;div class="wrapper">
+    &lt;div class="intro-text island max-width">
+      &lt;h2 class="unit xs-1 s-1 m-1 l-1 adopt-header peta">Adopt&lt;/h2>
+      &lt;p class="unit xs-1 s-1 m-2-3 l-2-3">Currently we have 11 dogs up for adoption&#x2014;waiting for their forever homes. Loyal Rescue will do all we can to help you find your perfect match.&lt;/p>
+      &lt;div class="unit xs-1 s-1 m-1-3 l-1-3">
+      &lt;/div>
     &lt;/div>
   &lt;/div>
 &lt;/section>
@@ -2022,7 +2150,7 @@
   </div>
 
     <div class="pattern-desc milli island" style="">
-      <div class="max-length"><p>This section features pull quotes from happy dog adoption stories. This section is called happy tails.</p>
+      <div class="max-length"><p>The Happy Tails sections features quotes from happy dog adoption stories. To support the quotes images are shown of a dog growing up.</p>
 </div>
     </div>
 
@@ -2056,34 +2184,34 @@
                   <svg><use xlink:href="#icon-copy"></use></svg>
                 </i>
               </button>
-              <code><pre id="pull-quote-section-pull-quote-section-code-sample-copy-chunk">&lt;section class="wrapper pad-t-2 gutter-1-2 pull-quote-section grid"&gt;
-  &lt;h2 class="unit xs-1 s-1 m-1 l-1 zetta">Happy Tails&lt;/h2>
+              <code><pre id="pull-quote-section-pull-quote-section-code-sample-copy-chunk">&lt;section class="grid wrapper pull-quote-section island push-2" id="happy-tails"&gt;
+  &lt;h2 class="unit xs-1 s-1 m-1 l-1 peta push-1-4 pad-t-1-2">Happy Tails&lt;/h2>
 
-  &lt;div class="unit xs-1 s-1 m-1-3 relative">
+  &lt;div class="unit xs-1 s-1 m-1-3 relative" id="pull-quote-1">
     &lt;span class="absolute proper-left">&#x201C;&lt;/span>
-    &lt;p class="pull-quote island giga">I adopted Nutmeg 2 years ago. I am so thankful for Loyal Rescue and all the foster families.&lt;/p>
+    &lt;p class="pull-quote island giga relative">I adopted Nutmeg 2 years ago. I am so thankful for Loyal Rescue and all the foster families.&lt;/p>
   &lt;/div>
 
-  &lt;div class="unit xs-1 s-1 m-1-3 pad-b gutter">
-    &lt;img class="img-flex" src="../../images/dog-quote-1.jpg" alt="">
+  &lt;div class="unit xs-1 s-1 m-1-3 pad-b gutter-1-2">
+    &lt;img class="img-flex" src="../../images/dog-quote-1.jpg" alt="Dog laying on couch" aria-details="pull-quote-1">
   &lt;/div>
 
-  &lt;div class="unit xs-1 s-1 m-1-3 relative">
+  &lt;div class="unit xs-1 s-1 m-1-3 relative" id="pull-quote-2">
     &lt;span class="absolute proper-left">&#x201C;&lt;/span>
-    &lt;p class="pull-quote island giga">Thanks Loyal Rescue for making our family complete.&lt;/p>
+    &lt;p class="pull-quote island giga relative">Thanks Loyal Rescue for making our family complete.&lt;/p>
   &lt;/div>
 
-  &lt;div class="unit xs-1 s-1 m-1-3 pad-b gutter">
-    &lt;img class="img-flex" src="../../images/dog-quote-5.jpg" alt="">
+  &lt;div class="unit xs-1 s-1 m-1-3 pad-b gutter-1-2">
+    &lt;img class="img-flex" src="../../images/dog-quote-2.jpg" alt="Dog holding rope" aria-details="pull-quote-2">
   &lt;/div>
 
-  &lt;div class="unit xs-1 s-1 m-1-3 relative">
+  &lt;div class="unit xs-1 s-1 m-1-3 relative" id="pull-quote-3">
     &lt;span class="absolute proper-left">&#x201C;&lt;/span>
-    &lt;p class="pull-quote island giga">Oreo was rescued three years ago. We are so happy that we could rescue him and see him happy.&lt;/p>
+    &lt;p class="pull-quote island giga relative">Oreo was rescued three years ago. We are so happy that we could rescue him and see him happy.&lt;/p>
   &lt;/div>
 
-  &lt;div class="unit xs-1 s-1 m-1-3 pad-b gutter">
-    &lt;img class="img-flex" src="../../images/dog-quote-4.jpg" alt="">
+  &lt;div class="unit xs-1 s-1 m-1-3 pad-b gutter-1-2">
+    &lt;img class="img-flex" src="../../images/dog-quote-3.jpg" alt="Dog on beach" aria-details="pull-quote-3">
   &lt;/div>
 &lt;/section>
 </pre></code>
@@ -2116,7 +2244,7 @@
   </div>
 
     <div class="pattern-desc milli island" style="">
-      <div class="max-length"><p>This section is used on the homepage to display the mission of Loyal Rescue.</p>
+      <div class="max-length"><p>This section is used on the home page to display the mission of Loyal Rescue. A simple infographic shows how many dogs are waiting, how many dogs have been adopted and how much money has been donated this month.</p>
 </div>
     </div>
 
@@ -2150,11 +2278,36 @@
                   <svg><use xlink:href="#icon-copy"></use></svg>
                 </i>
               </button>
-              <code><pre id="section-section-code-sample-copy-chunk">&lt;section class="section wrapper pad-t-1-2 gutter-1-2"&gt;
-  &lt;div class="section-text gutter">
-    &lt;h2 class="zetta push-1-4 pad-t-1-2">Our Mission&lt;/h2>
-    &lt;p class="push-1-2">Our mission is to connect fostered dogs to their forever homes in the Toronto area. And for 7 years we have proudly been doing just that.&lt;/p>
-    &lt;p>Our fosters have opened their hearts and homes to dogs in need of rescue. Loyal Rescue has never operated out of a shelter and as such each dog is viewed in a private home. We are always in desperate need for commited foster families to join our team.&lt;/p>
+              <code><pre id="section-section-code-sample-copy-chunk">&lt;section class="section island push" id="our-mission"&gt;
+  &lt;div class="wrapper">
+    &lt;div class="section-text max-length push-2">
+      &lt;h2 class="peta push-1-4 pad-t-1-2">Our Mission&lt;/h2>
+      &lt;p class="push-1-2">Our mission is to connect fostered dogs to their forever homes in the Toronto area. For 7 years we have proudly been doing just that.&lt;/p>
+      &lt;p>Our fosters have opened their hearts and homes to dogs in need of rescue. Loyal Rescue has never operated out of a shelter and as such each dog is viewed in a private home. We are always in desperate need for commited foster families to join our team.&lt;/p>
+    &lt;/div>
+    &lt;div class="grid push stats">
+      &lt;div class="unit xs-1 s-1 m-1-3 l-1-3 text-center push">
+        &lt;i class="icon i-48 push">
+            &lt;svg>&lt;use class="paw-outline" xlink:href="../../images/icons.svg#paw-outline"/>&lt;/svg>
+          &lt;/i>
+        &lt;p class="yotta text-center push-1-4 bold">11&lt;/p>
+        &lt;p class="text-center">adoptable dogs waiting&lt;/p>
+      &lt;/div>
+      &lt;div class="unit xs-1 s-1 m-1-3 l-1-3 text-center push">
+        &lt;i class="icon i-48 push">
+            &lt;svg>&lt;use class="heart" xlink:href="../../images/icons.svg#heart"/>&lt;/svg>
+          &lt;/i>
+        &lt;p class="yotta text-center push-1-4 bold">2,013&lt;/p>
+        &lt;p class="text-center">dogs adopted so far&lt;/p>
+      &lt;/div>
+      &lt;div class="unit xs-1 s-1 m-1-3 l-1-3 text-center push">
+        &lt;i class="icon i-48 push">
+            &lt;svg>&lt;use class="money" xlink:href="../../images/icons.svg#money"/>&lt;/svg>
+          &lt;/i>
+        &lt;p class="yotta text-center push-1-4 bold">$1,045&lt;/p>
+        &lt;p class="text-center">donated this month&lt;/p>
+      &lt;/div>
+    &lt;/div>
   &lt;/div>
 &lt;/section>
 </pre></code>

@@ -6,4 +6,4 @@ basic-card:
   width: 300
 ---
 
-The cards provide a way to highlight and group important information.
+The cards provide a way to highlight and group important information. Notice how the edges of the card are rounded to appear soft and welcoming.

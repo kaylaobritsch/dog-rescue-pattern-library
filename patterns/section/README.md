@@ -1,1 +1,1 @@
-This section is used on the homepage to display the mission of Loyal Rescue.
+This section is used on the home page to display the mission of Loyal Rescue. A simple infographic shows how many dogs are waiting, how many dogs have been adopted and how much money has been donated this month.

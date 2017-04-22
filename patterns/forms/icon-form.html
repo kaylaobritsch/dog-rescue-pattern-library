@@ -13,50 +13,58 @@
   <link href="https://fonts.googleapis.com/css?family=Fira+Sans:300,400,700" rel="stylesheet">
 </head>
 <body>
-  <section class="max-length island icon-form">
-    <h2 class="push-1-2 exa">Contact Us</h2>
-    <form method="post" novalidate>
-      <div class="error-message error-message-highlighted push" role="alert" aria-live="assertive">
-        <h3 class="push-0 tera warning text-center pad-t pad-b gutter">There was an error with the highlighted fields below</h3>
-      </div>
-
-      <div class="push-1-2">
-        <label class="mega" for="name">Full Name</label>
-        <div class="relative">
-          <input id="name" required aria-describedby="name-error">
-          <p class="error-message milli pad-t-1-4 push-1-2" id="name-error">Please provide a full name</p>
-          <div class="form-background absolute pin-top-left">
-            <i class="icon i-24 absolute pin-center island-1-2"><svg><use xlink:href="../../images/icons.svg#person" /></svg></i>
+  <section class="wrapper island icon-form push-2" id="contact-us">
+    <div class="max-length">
+      <form method="POST" novalidate action="https://formspree.io/obritschk@gmail.com">
+        <fieldset>
+          <legend class="peta push-1-4 pad-t-1-2 contact-legend">Contact Us</legend>
+          <div class="error-message error-message-highlighted push" role="alert" aria-live="assertive">
+            <h3 class="push-0 tera warning text-center pad-t pad-b gutter">There was an error with the highlighted fields below</h3>
           </div>
-        </div>
-      </div>
 
-      <div class="push-1-2">
-        <label class="mega" for="email">Email</label>
-        <div class="relative">
-          <input id="email" required aria-describedby="email-error">
-          <p class="error-message milli pad-t-1-4 push-1-2" id="email-error">Please provide a proper e-mail</p>
-          <div class="form-background absolute pin-top-left">
-            <i class="icon i-24 absolute pin-center island-1-2"><svg><use xlink:href="../../images/icons.svg#mail" /></svg></i>
+          <div class="push-1-2">
+            <label class="mega" for="name">Full Name</label>
+            <div class="relative">
+              <input id="name" required aria-describedby="name-error">
+              <p class="error-message milli pad-t-1-4 push-1-2" id="name-error">Please provide a full name</p>
+              <div class="form-background absolute pin-top-left">
+                <i class="icon i-24 absolute pin-center island-1-2"><svg><use xlink:href="../../images/icons.svg#person" /></svg></i>
+              </div>
+            </div>
           </div>
-        </div>
-      </div>
 
-      <div class="push-1-2">
-        <label class="mega" for="question">Questions or comments?</label>
-        <div class="relative">
-          <textarea name="question" id="question" required aria-describedby="question-error"></textarea>
-          <p class="error-message milli pad-t-1-4 push-1-2" id="question-error">Please tell us your comment</p>
-          <div class="form-background form-background-question absolute pin-top-left">
-            <i class="icon i-24 absolute pin-center island-1-2"><svg><use xlink:href="../../images/icons.svg#question" /></svg></i>
+          <div class="push-1-2">
+            <label class="mega" for="email">Email</label>
+            <div class="relative">
+              <input id="email" required aria-describedby="email-error">
+              <p class="error-message milli pad-t-1-4 push-1-2" id="email-error">Please provide a proper e-mail</p>
+              <div class="form-background absolute pin-top-left">
+                <i class="icon i-24 absolute pin-center island-1-2"><svg><use xlink:href="../../images/icons.svg#mail" /></svg></i>
+              </div>
+            </div>
           </div>
-        </div>
-      </div>
 
-      <div class="pad-t-1-2">
-        <button class="btn" type="submit">Send</button>
-      </div>
-    </form>
+          <div class="push-1-2">
+            <label class="mega" for="question">Questions or comments?</label>
+            <div class="relative">
+              <textarea name="question" id="question" required aria-describedby="question-error"></textarea>
+              <p class="error-message milli pad-t-1-4 push-1-2" id="question-error">Please tell us your comment</p>
+              <div class="form-background form-background-question absolute pin-top-left">
+                <i class="icon i-24 absolute pin-center island-1-2"><svg><use xlink:href="../../images/icons.svg#question" /></svg></i>
+              </div>
+            </div>
+          </div>
+
+          <div>
+            <input type="hidden" name="_subject" value="Contact">
+          </div>
+
+          <div class="pad-t-1-2">
+            <button class="btn" type="submit">Send</button>
+          </div>
+        </fieldset>
+      </form>
+    </div>
   </section>
 
   <script src="https://thomasjbradley.github.io/form-validation-helper/index.js"></script>

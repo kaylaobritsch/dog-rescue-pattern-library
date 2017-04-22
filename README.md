@@ -16,7 +16,7 @@ fonts:
 
 colors:
   primary: |
-    This dark blue is friendly and calm. This colour invites viewers to continue browsing the website. Use this colour in large areas such as headings, headers and footers.
+    The dark blue is friendly and invites viewers to continue browsing the website. Use this colour in large areas such as headers, footers and headings.
 
   secondary: |
     The secondary colour is harmonious to the primary colour but is a bold choice. This colour is used in the logo, footers and medium areas of colour.

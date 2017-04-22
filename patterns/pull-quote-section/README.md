@@ -1,1 +1,1 @@
-This section features pull quotes from happy dog adoption stories. This section is called happy tails.
+The Happy Tails sections features quotes from happy dog adoption stories. To support the quotes images are shown of a dog growing up.
