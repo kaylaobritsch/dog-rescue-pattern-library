@@ -50,7 +50,7 @@
 
       <form class="grid" method="POST" novalidate action="https://formspree.io/obri0205@algonquincollege.com">
         <div class="unit xs-1 s-1 m-1 l-1 error-message error-message-highlighted push" role="alert" aria-live="assertive" tabindex="-1">
-          <h4 class="push-0 tera warning text-center pad-t pad-b gutter">There was an error with the highlighted fields below</h4>
+          <h2 class="push-0 tera warning text-center pad-t pad-b gutter">There was an error with the highlighted fields below</h2>
         </div>
 
         <fieldset class="w-1 push-2" id="personal-info">
@@ -637,16 +637,17 @@
   </footer>
 
   <script src="https://thomasjbradley.github.io/form-validation-helper/index.js"></script>
+  <!--
   <script>
     var message = document.querySelector(".error-message-highlighted");
-    var form = document.querySelector ("form");
-    form.addEventListener ("submit", function(e){
+    var form = document.querySelector("form");
+    form.addEventListener("submit", function(e) {
       if (!this.checkValidity()) {
-      message.focus();
-      e.preventDefault();
-    }
-    });
+        message.focus();
+        e.preventDefault();
+      }
+    })
   </script>
-
+  -->
 </body>
 </html>

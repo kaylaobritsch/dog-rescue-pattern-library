@@ -15,11 +15,11 @@
   opacity: 0;
   max-height: 0;
   font-size: 0;
-  transition: 100ms ease;
+  transition: 125ms ease;
 }
 
 .read-more-target img {
-  height: 0rem;
+  height: 0;
 }
 
 .img-caption {
@@ -40,11 +40,11 @@
   height: auto;
 }
 
-.read-more-state ~ .read-more-btn:before {
+.read-more-state ~ .read-more-btn::before {
   content: "SHOW MORE";
 }
 
-.read-more-state:checked ~ .read-more-btn:before {
+.read-more-state:checked ~ .read-more-btn::before {
   content: "SHOW LESS";
 }
 

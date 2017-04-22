@@ -91,42 +91,50 @@ svg.animation {
     animation-direction: alternate;
   }
 
-  @keyframes scale {
-    from {
-      transform: scale(1)
-    }
-    to {
-      transform: scale(.75)
-    }
+}
+
+@keyframes scale {
+
+  from {
+    transform: scale(1);
   }
 
-  @keyframes color-secondary {
-    from {
-      fill: var(#fff)
-    }
-    to {
-      fill: var(--color-secondary)
-    }
+  to {
+    transform: scale(1.25);
+  }
+}
+
+@keyframes color-secondary {
+
+  from {
+    fill: white;
   }
 
-  @keyframes scale-color {
-    from {
-      transform: scale(1);
-      fill: var(--color-accent);
-    }
-    to {
-      transform: scale(1.25);
-      fill: var(--color-secondary);
-    }
+  to {
+    fill: var(--color-secondary);
+  }
+}
+
+@keyframes scale-color {
+
+  from {
+    transform: scale(1);
+    fill: var(--color-accent);
   }
 
-  @keyframes mover {
-    from {
-      transform: translate(0, 0)
-    }
-    to {
-      transform: translate(0, -10px)
-    }
+  to {
+    transform: scale(1.25);
+    fill: var(--color-secondary);
+  }
+}
+
+@keyframes mover {
+
+  from {
+    transform: translate(0, 0);
   }
 
+  to {
+    transform: translate(0, -10px);
+  }
 }
