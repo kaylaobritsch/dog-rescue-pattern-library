@@ -1,10 +1,8 @@
 .infographic-section {
-  background-color: #e8e8e8;
+  background-color: white;
 }
 
-.infographic h2,
-.infographic p,
-.image {
+.infographic h2, .infographic p, .image {
   display: block;
   text-align: center;
 }
@@ -58,8 +56,7 @@ svg.animation {
     transform-origin: center;
   }
 
-  .step-1:hover #heart-1,
-  .step-1:hover #heart-2 {
+  .step-1:hover #heart-1, .step-1:hover #heart-2 {
     animation-name: scale-color;
     animation-duration: 700ms;
     animation-iteration-count: infinite;
@@ -77,9 +74,7 @@ svg.animation {
     animation-direction: alternate;
   }
 
-  .step-2:hover #body,
-  .step-2:hover #wing,
-  .step-2:hover #shadow {
+  .step-2:hover #body, .step-2:hover #wing, .step-2:hover #shadow {
     animation-name: mover;
     animation-duration: 700ms;
     animation-iteration-count: infinite;
@@ -94,26 +89,41 @@ svg.animation {
   }
 
   @keyframes scale {
-    from {transform: scale(1)}
-    to {transform: scale(.75)}
+    from {
+      transform: scale(1)
+    }
+    to {
+      transform: scale(.75)
+    }
   }
 
   @keyframes color-secondary {
-    from {fill: var(#fff)}
-    to {fill: var(--color-secondary)}
+    from {
+      fill: var(#fff)
+    }
+    to {
+      fill: var(--color-secondary)
+    }
   }
 
   @keyframes scale-color {
     from {
       transform: scale(1);
-      fill: var(--color-accent)}
+      fill: var(--color-accent);
+    }
     to {
       transform: scale(1.25);
-      fill: var(--color-secondary)}
+      fill: var(--color-secondary);
     }
+  }
 
-    @keyframes mover {
-      from {transform: translate(0,0)}
-      to {transform: translate(0, -10px)}
+  @keyframes mover {
+    from {
+      transform: translate(0, 0)
     }
+    to {
+      transform: translate(0, -10px)
+    }
+  }
+
 }

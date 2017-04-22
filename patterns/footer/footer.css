@@ -22,11 +22,11 @@
   color: var(--color-primary);
 }
 
-.facebook:hover, .twitter:hover, .instagram:hover {
+.facebook-icon:hover .facebook, .twitter-icon:hover .twitter, .instagram-icon:hover .instagram {
   fill: white;
 }
 
-.facebook:focus, .twitter:focus, .instagram:focus {
+.facebook-icon:focus .facebook, .twitter-icon:focus .twitter, .instagram-icon:focus .instagram {
   fill: white;
 }
 
@@ -40,5 +40,4 @@
   .footer a {
     text-align: left;
   }
-
 }

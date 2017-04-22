@@ -6,6 +6,7 @@
 .basic-form svg {
   fill: #f33;
 }
+
 .basic-form h3 {
   color: var(--color-neutral-dark-grey);
 }
@@ -117,6 +118,10 @@ input[type="checkbox"]:checked + label::before {
 
 .error-message-highlighted {
   color: #f33;
+}
+
+.error-message-highlighted:focus {
+  outline: none;
 }
 
 .is-validated > .error-message:first-child,
