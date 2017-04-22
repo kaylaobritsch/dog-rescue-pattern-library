@@ -50,10 +50,12 @@ svg.animation {
 
   #heart-1 {
     transform-origin: center;
+    -moz-transform-origin: center;
   }
 
   #heart-2 {
     transform-origin: center;
+    -moz-transform-origin: center;
   }
 
   .step-1:hover #heart-1, .step-1:hover #heart-2 {
@@ -65,6 +67,7 @@ svg.animation {
 
   #ground {
     transform-origin: center;
+    -moz-transform-origin: center;
   }
 
   .step-2:hover #ground {
