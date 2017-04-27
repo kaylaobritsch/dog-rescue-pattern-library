@@ -551,7 +551,7 @@
             </div>
             <input type="radio" name="final-agreement-yes" id="final-agreement-yes" required aria-describedby="final-agreement-yes-error">
             <label for="final-agreement-yes" class="push-1-4"><strong>I agree to the above statements and am older than 18</strong></label>
-            <p class="error-message micro island-1-4 push-0" id="final-agreement-yes">
+            <p class="error-message micro island-1-4 push-0" id="final-agreement-yes-error">
               <i class="icon i-24"><svg><use xlink:href="../images/icons.svg#warning" /></svg></i>
               <span class="icon-label">Please agree to the terms</span>
             </p>
@@ -638,17 +638,6 @@
   </footer>
 
   <script src="https://thomasjbradley.github.io/form-validation-helper/index.js"></script>
-  <!--
-  <script>
-    var message = document.querySelector(".error-message-highlighted");
-    var form = document.querySelector("form");
-    form.addEventListener("submit", function(e) {
-      if (!this.checkValidity()) {
-        message.focus();
-        e.preventDefault();
-      }
-    })
-  </script>
-  -->
+  <script src="../common/form.js"></script>
 </body>
 </html>
